@@ -1,0 +1,614 @@
+{
+    "data": "%3Cdiv%20id%3D%22asset-css%22%20data-css%3D%22/archive/story_chapter.css%22%3E%3C/div%3E%0A%0A%3Cdiv%20class%3D%22cnt-story-chapter%22%3E%0A%09%3Cdiv%20class%3D%22cnt-chapter-box%20prt-scroll-wide%22%3E%3C/div%3E%0A%09%0A%09%3Cdiv%20class%3D%22prt-pager%22%3E%3C/div%3E%0A%3C/div%3E%0A%0A%0A%3Cdiv%20id%3D%22prt-lead-link%22%20class%3D%22prt-lead-link%22%3E%0A%09%0A%09%3Cdiv%20class%3D%22lis-lead-next%22%20data-href%3D%22quest%22%20id%3D%22js-lead-next%22%3E%3Cdiv%20class%3D%22atx-lead-link%22%3E%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%82%92%E9%80%B2%E3%82%81%E3%82%8B%3C/div%3E%3C/div%3E%0A%09%3Cdiv%20class%3D%22lis-lead-prev%20locationGroup%22%3E%3Cdiv%20class%3D%22atx-lead-link%22%3E%3C/div%3E%3C/div%3E%0A%09%3Cdiv%20class%3D%22lis-lead-prev%20locationLibrary%22%3E%3Cdiv%20class%3D%22atx-lead-link%22%3E%E7%94%A8%E8%AA%9E%E9%9B%86%E3%81%AB%E6%88%BB%E3%82%8B%3C/div%3E%3C/div%3E%0A%09%3Cdiv%20class%3D%22lis-lead-prev%20locationScenario%22%3E%3Cdiv%20class%3D%22atx-lead-link%22%3E%E3%82%B7%E3%83%8A%E3%83%AA%E3%82%AA%E3%83%AA%E3%82%B9%E3%83%88%E3%81%AB%E6%88%BB%E3%82%8B%3C/div%3E%3C/div%3E%0A%09%3Cdiv%20class%3D%22lis-lead-prev%20locationArchive%22%3E%3Cdiv%20class%3D%22atx-lead-link%22%3E%E3%83%AB%E3%83%AA%E3%82%A2%E3%83%8E%E3%83%BC%E3%83%88TOP%E3%81%AB%E6%88%BB%E3%82%8B%3C/div%3E%3C/div%3E%0A%3C/div%3E%0A%0A%3Cdiv%20id%3D%22pop%22%3E%3C/div%3E%0A%0A%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22popup%22%3E%0A%09%3Cdiv%20class%3D%22pop-usual%20%3C%25%3D%20className%20%25%3E%22%20data-token%3D%22%22%3E%0A%09%3Cdiv%20class%3D%22prt-popup-header%3C%25%20if%28typeof%20maskSubMenu%20%21%3D%3D%20%27undefined%27%20%26%26%20maskSubMenu%29%7B%20%25%3E-sm%3C%25%20%7D%20%25%3E%3C%25%20if%28Game.lang%20%3D%3D%3D%20%27ja%27%20%26%26%20typeof%20title%20%21%3D%3D%20%27undefined%27%20%26%26%20title%20%26%26%20title.length%20%3E%2022%29%20%7B%20%25%3E%20txt-small%3C%25%20%7D%20%25%3E%22%3E%3C%25%3D%20title%20%25%3E%3C/div%3E%0A%09%3Cdiv%20class%3D%22prt-popup-body%3C%25%20if%28typeof%20maskSubMenu%20%21%3D%3D%20%27undefined%27%20%26%26%20maskSubMenu%29%7B%20%25%3E-sm%3C%25%20%7D%20%25%3E%22%3E%0A%09%09%3Cdiv%20class%3D%22txt-popup-body%3C%25%20if%28typeof%20maskSubMenu%20%21%3D%3D%20%27undefined%27%20%26%26%20maskSubMenu%29%7B%20%25%3E-sm%3C%25%20%7D%20%25%3E%22%3E%3C%25%3D%20body%20%25%3E%3C/div%3E%0A%09%09%3C%25%20if%20%28btnTreasure%20%3D%3D%3D%201%29%20%7B%20%25%3E%0A%09%09%09%3Cdiv%20class%3D%22prt-treasure-registration%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22txt-treasure-registration%22%3E%E3%81%8A%E6%B0%97%E3%81%AB%E5%85%A5%E3%82%8A%E7%99%BB%E9%8C%B2%E3%81%AF%E3%81%93%E3%82%8C%E4%BB%A5%E4%B8%8A%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%3C/div%3E%0A%09%09%09%09%3Cdiv%20class%3D%22btn-treasure-registration%22%3E%3C/div%3E%0A%09%09%09%3C/div%3E%0A%09%09%3C%25%20%7D%20%25%3E%0A%09%3C/div%3E%0A%09%3Cdiv%20class%3D%22prt-popup-footer%3C%25%20if%28typeof%20maskSubMenu%20%21%3D%3D%20%27undefined%27%20%26%26%20maskSubMenu%29%7B%20%25%3E-sm%3C%25%20%7D%20%25%3E%22%3E%0A%09%09%3C%25%20if%28flagBtnCancel%3D%3D1%29%7B%20print%28%22%3Cdiv%20class%3D%27btn-usual-cancel%22%20%2B%20%28btnCancelClassName%20%3F%20%22%20%22%2BbtnCancelClassName%20%3A%20%22%22%29%20%2B%20%28arguments%5B0%5D.btnCancelText%20%3F%20%22%20hide-common-text%22%20%3A%20%22%22%29%20%2B%20%22%27%3E%22%20%2B%20%28arguments%5B0%5D.btnCancelText%20%7C%7C%20%27%27%29%20%2B%20%22%3C/div%3E%22%29%20%7D%20%25%3E%0A%09%09%3C%25%20if%28flagBtnClose%3D%3D1%29%7B%20print%28%22%3Cdiv%20class%3D%27btn-usual-close%22%20%2B%20%28btnCloseClassName%20%3F%20%22%20%22%2BbtnCloseClassName%20%3A%20%22%22%29%20%2B%20%28arguments%5B0%5D.btnCloseText%20%3F%20%22%20hide-common-text%22%20%3A%20%22%22%29%20%2B%20%22%27%3E%22%20%2B%20%28arguments%5B0%5D.btnCloseText%20%7C%7C%20%27%27%29%20%2B%20%22%3C/div%3E%22%29%20%7D%20%25%3E%0A%09%09%3C%25%20if%28flagBtnOk%3D%3D1%29%7B%20print%28%22%3Cdiv%20class%3D%27btn-usual-ok%22%20%2B%20%28btnOkClassName%20%3F%20%22%20%22%2BbtnOkClassName%20%3A%20%22%22%29%20%2B%20%28arguments%5B0%5D.btnOkText%20%3F%20%22%20hide-common-text%22%20%3A%20%22%22%29%20%20%2B%20%22%27%3E%22%20%2B%20%28arguments%5B0%5D.btnOkText%20%7C%7C%20%27%27%29%20%2B%20%22%3C/div%3E%22%29%20%7D%20%25%3E%0A%09%3C/div%3E%0A%3C/div%3E%0A%0A%3C/script%3E%0A%0A%0A%3Cscript%20type%3D%22text/html%22%20id%3D%22tpl-prt-lead-link%22%3E%0A%09%3Cdiv%20class%3D%22lis-lead-prev%22%3E%3Cdiv%20class%3D%22atx-lead-link%22%20data-href%3D%22%3C%25%3D%20prevHash%20%25%3E%22%3E%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E9%96%A2%E9%80%A3%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89%E3%81%AB%E6%88%BB%E3%82%8B%3C/div%3E%3C/div%3E%0A%3C/script%3E%0A%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22tpl-chapter-list%22%3E%0A%09%0A%09%3C%25%0A%09%09if%20%28%2Bdata.scenario_id%20%3D%3D%3D%2081010%29%20%7B%0A%09%09%09data.scenario_title%20%3D%20%22%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB%E3%83%AB%E3%83%89%E3%83%BB%E3%82%B5%E3%83%B3%E3%83%89%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9%22%3B%0A%09%09%7D%0A%09%25%3E%0A%09%3Cdiv%20class%3D%22prt-scenario-title%3C%25%20if%20%28data.scenario_title%20%26%26%20data.scenario_title.length%20%3E%2020%29%20%7B%20%25%3E%20txt-small%3C%25%20%7D%20%25%3E%22%3E%3C%25%3D%20data.scenario_title%20%25%3E%3C/div%3E%0A%09%3C%25%20if%28data.limited%29%7B%20%25%3E%0A%09%09%3Cimg%20class%3D%22img-scenario-bg%22%20src%3D%22./assets/img/sp/archive/assets/island_l/limited/%3C%25%3D%20data.scenario_id%20%25%3E.jpg%22%20/%3E%0A%09%3C%25%20%7Delse%7B%20%25%3E%0A%09%09%3Cimg%20class%3D%22img-scenario-bg%22%20src%3D%22./assets/img/sp/archive/assets/island_l/%3C%25%3D%20data.scenario_id%20%25%3E.jpg%22%20/%3E%0A%09%3C%25%20%7D%20%25%3E%0A%0A%09%3C%25%20if%28typeof%20data.event_ffxi_config%20%21%3D%3D%20%27undefined%27%20%26%26%20%21_.isEmpty%28data.event_ffxi_config%29%29%7B%20%25%3E%0A%09%09%0A%09%09%3Cdiv%20class%3D%22btn-special-setting%22%3E%3C/div%3E%0A%09%3C%25%20%7D%20%25%3E%0A%0A%09%3C%25%20if%28%20data.select_event_kind%20%3D%3D%20%271%27%20%7C%7C%20data.select_event_kind%20%3D%3D%20%272%27%20%29%20%7B%20%25%3E%0A%09%09%3Cdiv%20class%3D%22btn-scenario-link%22%20data-select-kind%3D%22%3C%25%3D%20data.select_event_kind%20%25%3E%22%20data-scenario-id%3D%22%3C%25%3Ddata.scenario_id%25%3E%22%3E%0A%09%09%09%3Cimg%20class%3D%22img-scenario-select%22%20src%3D%22./assets/img/sp/archive/story/%3C%25%3D%20data.scenario_id%20%25%3E/banner_switch_%3C%25%3D%20data.select_event_kind%20%25%3E.png%22%20alt%3D%22banner_switch_%3C%25%3D%20data.select_event_kind%20%25%3E%22%20/%3E%0A%09%09%3C/div%3E%0A%09%3C%25%20%7D%20%25%3E%0A%09%3C%25%20if%28%21data.is_main_scenario%20%26%26%20typeof%20data.joined_event%20%21%3D%3D%20%27undefined%27%20%26%26%20%21data.joined_event%29%20%7B%20%25%3E%0A%09%09%3Cdiv%20class%3D%22prt-no-joined-event%22%3E%0A%09%09%09%3C%25%20if%28typeof%20data.is_event_open%20%21%3D%3D%20%27undefined%27%20%26%26%20data.is_event_open%29%7B%20%25%3E%0A%09%09%09%09%E7%8F%BE%E5%9C%A8%E9%96%8B%E5%82%AC%E4%B8%AD%E3%81%AE%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%81%A7%E3%81%99%E3%80%82%3Cbr%3E%E4%B8%8B%E8%A8%98%E3%83%90%E3%83%8A%E3%83%BC%E3%82%88%E3%82%8A%E5%8F%82%E5%8A%A0%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82%0A%09%09%09%09%3Cdiv%20class%3D%22lis-banner%22%3E%0A%09%09%09%09%09%3C%25%0A%09%09%09%09%09%09var%20_fragment%20%3D%20%27event/%27%20%2B%20data.event_name%3B%0A%09%09%09%09%09%09if%28data.event_name%20%3D%3D%3D%20%27limited2008%27%29%7B%0A%09%09%09%09%09%09%09_fragment%20%3D%20%27limited/multi/index%27%3B%0A%09%09%09%09%09%09%7Delse%20if%28%28data.event_name%20%2B%20%27%27%29.match%28/season%5B0-9%5D%7B3%7D/i%29%20%21%3D%20null%29%7B%0A%09%09%09%09%09%09%09%0A%09%09%09%09%09%09%09_fragment%20%3D%20%27quest/extra/event%27%3B%0A%09%09%09%09%09%09%7Delse%20if%28%28data.event_name%20%2B%20%27%27%29.match%28/interlude%5B0-9%5D%7B3%7D/i%29%20%21%3D%20null%29%7B%0A%09%09%09%09%09%09%09%0A%09%09%09%09%09%09%09_fragment%20%3D%20%27event/interlude%27%3B%0A%09%09%09%09%09%09%7Delse%20if%28data.event_name%20%3D%3D%3D%20%27tower%27%29%7B%0A%09%09%09%09%09%09%09%0A%09%09%09%09%09%09%09_fragment%20%3D%20data.event_name%3B%0A%09%09%09%09%09%09%7D%0A%09%09%09%09%09%25%3E%0A%0A%09%09%09%09%09%3Cdiv%20class%3D%22btn-banner%22%20data-href%3D%22%3C%25%3D%20_fragment%20%25%3E%22%3E%0A%09%09%09%09%09%09%0A%09%09%09%09%09%09%3Cimg%20class%3D%22img-banner%22%20src%3D%22./assets/img/sp/banner/events/%3C%25%3D%20data.event_name%20%25%3E/%3C%25%3D%20data.event_banner%20%25%3E_1.png%22%3E%0A%09%09%09%09%09%3C/div%3E%0A%09%09%09%09%3C/div%3E%0A%09%09%09%3C%25%20%7D%20else%20%7B%20%25%3E%0A%09%09%09%09%3C%25%20if%28data.msg_id%20%3D%3D%201%29%20%7B%20%25%3E%0A%09%09%09%09%09%E9%81%8E%E5%8E%BB%E3%81%AB%E9%96%8B%E5%82%AC%E3%81%95%E3%82%8C%E3%81%9F%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%81%A7%E3%81%99%E3%80%82%3Cbr%3E%3Cbr%3E%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%81%AF%E4%BB%8A%E5%BE%8C%E5%BE%A9%E5%88%BB%E3%81%99%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%8C%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82%0A%09%09%09%09%3C%25%20%7D%20else%20if%28data.msg_id%20%3D%3D%202%29%20%7B%20%25%3E%0A%09%09%09%09%09%E9%81%8E%E5%8E%BB%E3%81%AB%E9%96%8B%E5%82%AC%E3%81%95%E3%82%8C%E3%81%9F%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E3%81%A7%E3%81%99%E3%80%82%3Cbr%3E%3Cbr%3E%E7%94%B3%E3%81%97%E8%A8%B3%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8C%E3%80%81%3Cbr%3E%E5%BE%A9%E5%88%BB%E3%81%AE%E4%BA%88%E5%AE%9A%E3%81%AF%E3%81%94%E3%81%96%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93%E3%80%82%0A%09%09%09%09%3C%25%20%7D%20%25%3E%0A%09%09%09%3C%25%20%7D%20%25%3E%0A%09%09%3C/div%3E%0A%09%3C%25%20%7D%20else%20%7B%20%25%3E%0A%09%09%3C%25%20if%28_.size%28data.chapter_list%29%20%3E%200%29%7B%20%25%3E%0A%09%09%09%3C%25%20if%20%28%21data.is_main_scenario%29%20%7B%20%25%3E%0A%09%09%09%09%3Cdiv%20class%3D%22prt-chapter-btns%22%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22btn-story%22%20class%3D%22btn-chapter-tab%3C%25%20if%28%2Bdata.listCategory%20%3D%3D%3D%201%29%7B%20%25%3E%20active%3C%25%20%7D%20%25%3E%22%3E%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%3C/div%3E%0A%09%09%09%09%09%3Cdiv%20id%3D%22btn-character%22%20class%3D%22btn-chapter-tab%3C%25%20if%28%2Bdata.listCategory%20%3D%3D%3D%202%29%7B%20%25%3E%20active%3C%25%20%7D%20%25%3E%22%3E%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9%3C/div%3E%0A%09%09%09%09%3C/div%3E%0A%09%09%09%3C%25%20%7D%20%25%3E%0A%09%09%09%3Cdiv%20class%3D%22prt-chapter-content%22%3E%3C/div%3E%0A%09%09%3C%25%20%7Delse%7B%20%25%3E%0A%09%09%09%3Cdiv%20class%3D%22txt-list-none%22%3E%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E3%81%AF%E3%81%82%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93%3C/div%3E%0A%09%09%3C%25%20%7D%20%25%3E%0A%09%3C%25%20%7D%20%25%3E%0A%3C/script%3E%0A%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22tpl-coop-list%22%3E%0A%09%3Cdiv%20class%3D%22prt-scenario-title%22%3E%E5%85%B1%E9%97%98%3C/div%3E%0A%09%3Cimg%20class%3D%22img-scenario-bg%22%20src%3D%22./assets/img/sp/archive/assets/island_l/coop_1.jpg%22%20/%3E%0A%09%3Cdiv%20class%3D%22prt-chapter-list%3C%25%20if%28maxTitleLength%20%3E%3D%2016%29%7B%20%25%3E%20txt-small%3C%25%20%7D%20%25%3E%22%3E%0A%09%09%3C%25%20_.each%28data.list%2C%20function%28n%29%7B%20%25%3E%0A%09%09%09%3C%25%20if%28n.stage_name%29%7B%20%25%3E%0A%09%09%09%09%3Cdiv%20class%3D%22btn-chapter%20coop%22%20data-opening-scene%3D%22%3C%25%3D%20n.opening_scene%20%25%3E%22%20data-ending-scene%3D%22%3C%25%3D%20n.ending_scene%20%25%3E%22%20data-scene%3D%22%3C%25%3D%20n.scene%20%25%3E%22%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22txt-chapter-title%22%3E%3C%25%3D%20n.stage_name%20%25%3E%3C/div%3E%0A%09%09%09%09%3C/div%3E%0A%09%09%09%3C%25%20%7D%20%25%3E%0A%09%09%3C%25%20%7D%29%3B%20%25%3E%0A%09%3C/div%3E%0A%09%3Cdiv%20class%3D%22prt-pager-text%22%3E%3C/div%3E%0A%3C/script%3E%0A%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22tpl-defendorder-list%22%3E%0A%09%3Cdiv%20class%3D%22prt-scenario-title%22%3EDEFEND%20ORDER%3C/div%3E%0A%09%3Cimg%20class%3D%22img-scenario-bg%22%20src%3D%22./assets/img/sp/archive/assets/island_l/defendorder_1.jpg%22%20/%3E%0A%09%3Cdiv%20class%3D%22prt-chapter-list%3C%25%20if%28maxTitleLength%20%3E%3D%2016%29%7B%20%25%3E%20txt-small%3C%25%20%7D%20%25%3E%22%3E%0A%09%09%3C%25%20_.each%28data.list%2C%20function%28n%29%7B%20%25%3E%0A%09%09%09%3C%25%20if%28n.chapter_name%29%7B%20%25%3E%0A%09%09%09%09%3Cdiv%20class%3D%22btn-chapter%20defendorder%22%20data-scene%3D%22%3C%25%3D%20n.scene_file%20%25%3E%22%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22txt-chapter-title%22%3E%3C%25%3D%20n.chapter_name%20%25%3E%3C/div%3E%0A%09%09%09%09%3C/div%3E%0A%09%09%09%3C%25%20%7D%20%25%3E%0A%09%09%3C%25%20%7D%29%3B%20%25%3E%0A%09%3C/div%3E%0A%09%3Cdiv%20class%3D%22prt-pager-text%22%3E%3C/div%3E%0A%3C/script%3E%0A%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22tpl-free-quest-list%22%3E%0A%09%3Cdiv%20class%3D%22prt-scenario-title%22%3E%3C%25%3D%20data.title%20%25%3E%3C/div%3E%0A%09%3Cimg%20class%3D%22img-scenario-bg%22%20src%3D%22./assets/img/sp/archive/assets/island_l/%3C%25%3D%20data.image%20%25%3E.jpg%22%20/%3E%0A%09%3Cdiv%20class%3D%22prt-chapter-list%3C%25%20if%28maxTitleLength%20%3E%3D%2016%29%7B%20%25%3E%20txt-small%3C%25%20%7D%20%25%3E%22%3E%0A%09%09%3C%25%20_.each%28data.list%2C%20function%28n%2C%20index%29%7B%20%25%3E%0A%09%09%09%3Cdiv%20class%3D%22btn-chapter%3C%25%20if%28typeof%20n.branch%20%21%3D%3D%20%27undefined%27%20%26%26%20n.branch%29%7B%20%25%3E%20has-branch%3C%25%20%7D%20%25%3E%22%20data-index%3D%22%3C%25%3D%20index%20%25%3E%22%20data-id%3D%22%3C%25%3D%20n.chapter_id%20%25%3E%22%20data-location-id%3D%22%3C%25%3D%20n.location_id%20%25%3E%22%20%3E%0A%09%09%09%09%3Cdiv%20class%3D%22txt-chapter-title%3C%25%20if%28typeof%20n.branch%20%21%3D%3D%20%27undefined%27%20%26%26%20n.branch%29%7B%20%25%3E%20has-branch%3C%25%20%7D%20%25%3E%22%3E%3C%25%3D%20n.chapter_name%20%25%3E%3C/div%3E%0A%09%09%09%3C/div%3E%0A%09%09%3C%25%20%7D%29%3B%20%25%3E%0A%09%3C/div%3E%0A%09%3Cdiv%20class%3D%22prt-pager-text%22%3E%3C/div%3E%0A%3C/script%3E%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22tpl-pop-select-branch%22%3E%3Cdiv%20class%3D%22txt-select-branch-lead%22%3E%E3%81%93%E3%81%AE%E3%82%A8%E3%83%94%E3%82%BD%E3%83%BC%E3%83%89%E3%81%AF%E4%BB%A5%E4%B8%8B%E3%81%AE%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%84%3Cbr%3E%E3%82%B9%E3%82%AD%E3%83%B3%E3%81%AE%E6%9C%89%E7%84%A1%E3%81%A7%E3%82%B7%E3%83%8A%E3%83%AA%E3%82%AA%E3%81%8C%E5%A4%89%E5%8C%96%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%3C/div%3E%3Cdiv%20class%3D%22txt-select-branch-notice%22%3E%E5%8A%A0%E5%85%A5%E6%B8%88%E3%81%AE%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%84%E6%89%80%E6%8C%81%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%82%B9%E3%82%AD%E3%83%B3%E3%81%AE%E5%A0%B4%E5%90%88%E3%80%81%3Cbr%3E%E3%82%B7%E3%83%8A%E3%83%AA%E3%82%AA%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E3%82%92%E9%81%B8%E6%8A%9E%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82%3C/div%3E%3C%25%20if%28typeof%20numbers_list%21%3D%3D%27undefined%27%26%26numbers_list.length%3E0%29%20%7B%20%25%3E%3Cselect%20class%3D%22prt-select-one-char%22%3E%3C%25%20_.each%28numbers_list%2Cfunction%28n%29%7B%20%25%3E%3Coption%20value%3D%22%3C%25%3D%20n.npc_id%20%25%3E%22%3E%3C%25%3D%20n.npc_name%20%25%3E%3C/option%3E%3C%25%20%7D%29%3B%20%25%3E%3C/select%3E%3C%25%20%7D%20%25%3E%3C%25%20if%28npc_list.length%29%20%7B%20%25%3E%3Cdiv%20class%3D%22prt-char-list%22%3E%3C%25%20var%20includeSkin%20%3D%20false%3B%20%25%3E%3C%25%20_.each%28npc_list%2C%20function%28value%2C%20index%29%7B%20%25%3E%3Cdiv%20class%3D%22btn-select-char%3C%25%20if%28%21value.has_npc%29%7B%20%25%3E%20disabled%3C%25%20%7D%20%25%3E%22%20data-index%3D%22%3C%25%3D%20index%20%25%3E%22%3E%3Cdiv%20class%3D%22prt-checked-lamp%22%3E%3C/div%3E%3C%25%20if%28value.is_character_id%29%7B%20%25%3E%3Cspan%20class%3D%22ico-multi-char%22%3E%3C/span%3E%3C%25%20%7D%20%25%3E%3Cdiv%20class%3D%22prt-char-name%22%3E%3C%25%20if%28%2Bvalue.npc_id%20%3D%3D%3D%203040229000%29%20%7B%20%25%3E1%E5%B9%B4%E7%94%9F%E3%83%81%E3%83%BC%E3%83%A0%3C%25%20%7D%20else%20if%28%2Bvalue.npc_id%20%3D%3D%3D%203040230000%29%20%7B%20%25%3E2%E5%B9%B4%E7%94%9F%E3%83%81%E3%83%BC%E3%83%A0%3C%25%20%7D%20else%20if%28%2Bvalue.npc_id%20%3D%3D%3D%203040231000%29%20%7B%20%25%3E3%E5%B9%B4%E7%94%9F%E3%83%81%E3%83%BC%E3%83%A0%3C%25%20%7D%20else%20%7B%20%25%3E%3C%25%3D%20value.npc_name%20%25%3E%3C%25%20%7D%20%25%3E%3C/div%3E%3Cdiv%20class%3D%22prt-char-image%22%3E%3Cimg%20class%3D%22img-char-image%22%20src%3D%22./assets/img/sp/assets/npc/qm/%3C%25%3D%20value.npc_id%20%25%3E_01.png%22%3E%3C/div%3E%3C%25%20if%28%21value.has_npc%29%7B%20%25%3E%3Cdiv%20class%3D%22txt-not-joined%22%3E%3C%25%20if%28value.is_skin%20%3D%3D%3D%20true%29%7B%20%25%3E%E6%9C%AA%E6%89%80%E6%8C%81%3C%25%20%7D%20else%20%7B%20%25%3E%E6%9C%AA%E5%8A%A0%E5%85%A5%3C%25%20%7D%20%25%3E%3C/div%3E%3C%25%20%7D%20%25%3E%3C/div%3E%3C%25%20includeSkin%20%3D%20includeSkin%20%7C%7C%20value.is_skin%20%25%3E%3C%25%20%7D%29%3B%20%25%3E%3C/div%3E%3C%25%20%7D%20%25%3E%3C%25%20if%28isCharacterId%29%7B%20%25%3E%3Cdiv%20class%3D%22prt-select-note%20prt-popup-frame%22%3E%3Cspan%20class%3D%27ico-multi-char%27%3E%3C/span%3E%E3%81%AE%E3%81%A4%E3%81%84%E3%81%9F%E3%82%AD%E3%83%A3%E3%83%A9%E3%81%AF%E3%80%81%E5%90%8C%E5%90%8D%E3%82%AD%E3%83%A3%E3%83%A9%E3%81%8C%E5%8A%A0%E5%85%A5%E6%B8%88%E3%81%AE%E5%A0%B4%E5%90%88%E3%80%81%3Cbr%3E%E3%82%B7%E3%83%8A%E3%83%AA%E3%82%AA%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E3%82%92%E9%81%B8%E6%8A%9E%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82%3C/div%3E%3C%25%20%7D%20%25%3E%3C%25%20if%28includeSkin%20%3D%3D%3D%20true%29%20%7B%20%25%3E%3Cdiv%20class%3D%22prt-select-note%20prt-popup-frame%22%3E%E3%82%B9%E3%82%AD%E3%83%B3%E3%82%92%E6%89%80%E6%8C%81%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E5%A0%B4%E5%90%88%E3%80%81%3Cbr%3E%E3%82%B7%E3%83%8A%E3%83%AA%E3%82%AA%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E3%82%92%E9%81%B8%E6%8A%9E%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82%3C/div%3E%3C%25%20%7D%20%25%3E%3C/script%3E%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22tpl-pop-select-quest-branch%22%3E%0A%09%3Cdiv%20class%3D%22txt-select-branch-lead%22%3E%0A%09%09%3C%25%3D%20leadText%20%25%3E%0A%09%3C/div%3E%0A%09%3Cdiv%20class%3D%22txt-select-branch-notice%22%3E%0A%09%09%E3%82%AF%E3%82%A8%E3%82%B9%E3%83%88%E3%82%92%E3%82%AF%E3%83%AA%E3%82%A2%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E5%A0%B4%E5%90%88%E3%80%81%3Cbr%3E%E3%82%B7%E3%83%8A%E3%83%AA%E3%82%AA%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E3%82%92%E9%81%B8%E6%8A%9E%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E5%87%BA%E6%9D%A5%E3%81%BE%E3%81%99%E3%80%82%0A%09%3C/div%3E%0A%09%3Cdiv%20class%3D%22prt-quest-branch%22%3E%0A%09%3C%25%20_.each%28questList%2C%20function%28value%29%20%7B%20%25%3E%3Cdiv%20class%3D%22btn-select-quest%3C%25%20if%28%21value.clear_flag%29%7B%20%25%3E%20disabled%3C%25%20%7D%20%25%3E%22%20data-quest-id%3D%3C%25%3D%20value.quest_id%20%25%3E%3E%3C%25%3D%20value.quest_name%20%25%3E%3C/div%3E%3C%25%20%7D%29%3B%20%25%3E%0A%09%3C/div%3E%0A%3C/script%3E%0A%0A%0A%0A%3Cscript%20type%3D%22text/html%22%20id%3D%22tpl-pagination%22%3E%0A%09%3C%25%20if%20%28last%20%3E%201%29%20%7B%20%25%3E%0A%0A%3Cul%20class%3D%22lis-pagination%22%3E%0A%09%3Cli%20class%3D%22btn-prev-top%22%20disable%3D%22%3C%25%20if%20%28page%20%3C%3D%201%29%20%7B%20%25%3Etrue%3C%25%20%7Delse%7B%20%25%3Efalse%3C%25%20%7D%20%25%3E%22%20page%3D%22%3C%25%3D%20first%20%25%3E%22%3E%3C/li%3E%0A%09%3Cli%20class%3D%22btn-prev%22%20disable%3D%22%3C%25%20if%20%28page%20%3C%3D%201%29%20%7B%20%25%3Etrue%3C%25%20%7Delse%7B%20%25%3Efalse%3C%25%20%7D%20%25%3E%22%20page%3D%22%3C%25%3D%20prev%20%25%3E%22%3E%3C/li%3E%0A%09%3Cli%20class%3D%22btn-forward%22%20%20disable%3D%22%3C%25%20if%20%28page%20%3E%3D%20last%29%20%7B%20%25%3Etrue%3C%25%20%7Delse%7B%20%25%3Efalse%3C%25%20%7D%20%25%3E%22%20page%3D%22%3C%25%3D%20next%20%25%3E%22%3E%3C/li%3E%0A%09%3Cli%20class%3D%22btn-forward-last%22%20disable%3D%22%3C%25%20if%20%28page%20%3E%3D%20last%29%20%7B%20%25%3Etrue%3C%25%20%7Delse%7B%20%25%3Efalse%3C%25%20%7D%20%25%3E%22%20page%3D%22%3C%25%3D%20last%20%25%3E%22%3E%3C/li%3E%0A%3C/ul%3E%0A%3Cdiv%20class%3D%22prt-pagination-renewal%22%3E%3C/div%3E%0A%3C%25%20%7D%20%25%3E%0A%0A%0A%0A%0A%0A%0A%3C/script%3E%0A%3Cscript%20type%3D%22text/html%22%20id%3D%22tpl-pagination-renewal%22%3E%0A%09%3Cdiv%20class%3D%22prt-slider-mask%22%3E%3C/div%3E%0A%0A%3C%25%20if%20%28%21end%29%20var%20end%20%3D%20last%20%25%3E%0A%3C%25%20if%20%28%21lead%29%20var%20lead%20%3D%200%20%25%3E%0A%3C%25%20if%20%28%21slide%29%20var%20slide%20%3D%200%20%25%3E%0A%3C%25%20var%20_slide%20%3D%20slide%20%25%3E%0A%0A%0A%3C%25%20if%28typeof%20reverse%20%21%3D%3D%20%27undefined%27%20%26%26%20reverse%29%20%7B%20%25%3E%0A%3Cdiv%20class%3D%22onm-pagination-renewal%22%3E%0A%09%3C%25%20var%20page_num%20%3D%20end%3B%20%25%3E%0A%09%3C%25%20for%20%28var%20i%20%3D%201%2C%20maxLength%3DMath.ceil%28%28end%20-%20lead%20%2B%20_slide%29%20/%205%29%3B%20i%20%3C%3D%20maxLength%3B%20i%2B%2B%29%20%7B%20%25%3E%0A%09%09%3Cul%20class%3D%22lis-pagination-renewal%22%3E%0A%09%09%09%3C%25%20for%20%28var%20j%20%3D%201%3B%20j%20%3C%3D%205%3B%20j%2B%2B%29%20%7B%20%25%3E%0A%09%09%09%09%3C%25%20var%20target%20%3D%20page_num%20%25%3E%0A%09%09%09%09%3C%25%20if%20%28target%20%3E%20lead%20%26%26%20target%20%3E%3D%201%20%26%26%20_slide%20%3C%3D%200%29%20%7B%20%25%3E%0A%09%09%09%09%09%3Cli%20class%3D%22prt-page-number%3C%25%20if%28target%20%21%3D%20page%29%20%7B%20%25%3E%20btn-page-number%3C%25%20%7D%20%25%3E%22%20disable%3D%22%3C%25%20if%28target%20%3D%3D%20page%29%20%7B%20%25%3Etrue%3C%25%20%7D%20else%20%7B%20%25%3Efalse%3C%25%20%7D%20%25%3E%22%20page%3D%22%3C%25%3D%20target%20%25%3E%22%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22txt-page-number%22%3E%3C%25%3D%20target%20%25%3E%3C/div%3E%0A%09%09%09%09%09%3C/li%3E%0A%09%09%09%09%09%3C%25%20page_num--%3B%20%25%3E%0A%09%09%09%09%3C%25%20%7D%20else%20if%20%28%28j%20%3C%3D%205%20%26%26%20end%20%3E%205%29%20%7C%7C%20%28_slide%20%3E%200%20%26%26%20end%20%3E%205%29%29%20%7B%20%25%3E%0A%09%09%09%09%09%3Cli%20class%3D%22prt-page-number%20hide%22%20disable%3D%22false%22%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22txt-page-number%22%3E%3C%25%3D%20target%20%25%3E%3C/div%3E%0A%09%09%09%09%09%3C/li%3E%0A%09%09%09%09%09%3C%25%20_slide%20-%3D%201%3B%20%25%3E%0A%09%09%09%09%3C%25%20%7D%20%25%3E%0A%09%09%09%3C%25%20%7D%20%25%3E%0A%09%09%3C/ul%3E%0A%09%3C%25%20%7D%20%25%3E%0A%3C/div%3E%0A%3Cul%20class%3D%22onm-pagination-direction-max%22%3E%0A%09%3Cli%20%0A%09%09class%3D%22lis-direction-max-prev%20btn-page-number%22%20%0A%09%09disable%3D%22%3C%25%3D%20%2Bpage%20%3D%3D%20last%20%25%3E%22%20%0A%09%09page%3D%22%3C%25%20if%28end%20%3D%3D%20last%29%20%7B%20%25%3E%3C%25%3D%20end%20%25%3E%3C%25%20%7D%20else%20%7B%20%25%3E%3C%25%3D%20end%2B1%20%25%3E%3C%25%20%7D%20%25%3E%22%3E%0A%09%3Cli%20%0A%09%09class%3D%22lis-direction-max-next%20btn-page-number%22%20%0A%09%09disable%3D%22%3C%25%3D%20%2Bpage%20%3D%3D%201%20%25%3E%22%20%0A%09%09page%3D%22%3C%25%3D%20lead%2B1%20%25%3E%22%3E%0A%3C/ul%3E%0A%0A%3C%25%20%7D%20else%20%7B%20%25%3E%0A%3Cdiv%20class%3D%22onm-pagination-renewal%22%3E%0A%09%3C%25%20var%20page_num%20%3D%201%3B%20%25%3E%0A%09%3C%25%20for%20%28var%20i%20%3D%201%2C%20maxLength%3DMath.ceil%28%28end%20-%20lead%20%2B%20_slide%29%20/%205%29%3B%20i%20%3C%3D%20maxLength%3B%20i%2B%2B%29%20%7B%20%25%3E%0A%09%09%3Cul%20class%3D%22lis-pagination-renewal%22%3E%0A%09%09%09%3C%25%20for%20%28var%20j%20%3D%201%3B%20j%20%3C%3D%205%3B%20j%2B%2B%29%20%7B%20%25%3E%0A%09%09%09%09%3C%25%20var%20target%20%3D%20lead%20%2B%20page_num%20%25%3E%0A%09%09%09%09%3C%25%20if%20%28target%20%3C%3D%20end%20%26%26%20_slide%20%3C%3D%200%29%20%7B%20%25%3E%0A%09%09%09%09%09%3Cli%20class%3D%22prt-page-number%3C%25%20if%28target%20%21%3D%20page%29%20%7B%20%25%3E%20btn-page-number%3C%25%20%7D%20%25%3E%22%20disable%3D%22%3C%25%20if%28target%20%3D%3D%20page%29%20%7B%20%25%3Etrue%3C%25%20%7D%20else%20%7B%20%25%3Efalse%3C%25%20%7D%20%25%3E%22%20page%3D%22%3C%25%3D%20target%20%25%3E%22%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22txt-page-number%22%3E%3C%25%3D%20target%20%25%3E%3C/div%3E%0A%09%09%09%09%09%3C/li%3E%0A%09%09%09%09%09%3C%25%20page_num%2B%2B%3B%20%25%3E%0A%0A%09%09%09%09%3C%25%20%7D%20else%20if%20%28%28j%20%3C%3D%205%20%26%26%20end%20%3E%205%29%20%7C%7C%20%28_slide%20%3E%200%20%26%26%20end%20%3E%205%29%29%20%7B%20%25%3E%0A%09%09%09%09%09%3Cli%20class%3D%22prt-page-number%20hide%22%20disable%3D%22false%22%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22txt-page-number%22%3E%3C%25%3D%20target%20%25%3E%3C/div%3E%0A%09%09%09%09%09%3C/li%3E%0A%09%09%09%09%09%3C%25%20_slide%20-%3D%201%3B%20%25%3E%0A%09%09%09%09%3C%25%20%7D%20%25%3E%0A%09%09%09%3C%25%20%7D%20%25%3E%0A%09%09%3C/ul%3E%0A%09%3C%25%20%7D%20%25%3E%0A%3C/div%3E%0A%3Cul%20class%3D%22onm-pagination-direction-max%22%3E%0A%09%3Cli%20%0A%09%09class%3D%22lis-direction-max-prev%20btn-page-number%22%20%0A%09%09disable%3D%22%3C%25%3D%20%2Bpage%20%3D%3D%201%20%25%3E%22%20%0A%09%09page%3D%22%3C%25%3D%20lead%2B1%20%25%3E%22%3E%0A%09%3Cli%20%0A%09%09class%3D%22lis-direction-max-next%20btn-page-number%22%20%0A%09%09disable%3D%22%3C%25%3D%20%2Bpage%20%3D%3D%20last%20%25%3E%22%20%0A%09%09page%3D%22%3C%25%20if%28end%20%3D%3D%20last%29%20%7B%20%25%3E%3C%25%3D%20end%20%25%3E%3C%25%20%7D%20else%20%7B%20%25%3E%3C%25%3D%20end%2B1%20%25%3E%3C%25%20%7D%20%25%3E%22%3E%0A%3C/ul%3E%0A%3C%25%20%7D%20%25%3E%0A%0A%0A%3C/script%3E%0A%3Cscript%20type%3D%22text/html%22%20id%3D%22tpl-pagination-text%22%3E%0A%09%3C%25%20if%20%28last%20%3E%200%29%20%7B%20%25%3E%0A%09%3Cdiv%20class%3D%22txt-total-paging%22%3E%3C%25%3D%20page%20%25%3E/%3C%25%3D%20last%20%25%3E%3C/div%3E%0A%3C%25%20%7D%20%25%3E%0A%0A%3C/script%3E%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22tpl-prt-chapter-list%22%3E%0A%09%3Cdiv%20class%3D%22prt-chapter-list%3C%25%20if%28maxTitleLength%20%3E%3D%2016%29%7B%20%25%3E%20txt-small%3C%25%20%7D%20%25%3E%22%3E%0A%09%09%3C%25%20_.each%28chapter_list%2C%20function%28n%2C%20index%29%7B%20%25%3E%0A%09%09%09%3C%25%20if%28n.chapter_name%29%7B%20%25%3E%0A%09%09%09%09%3Cdiv%20class%3D%22btn-chapter%3C%25%20if%28n.branch%29%7B%20%25%3E%20has-branch%3C%25%20%7D%20if%28n.quest_branch_flag%29%7B%20%25%3E%20has-quest-branch%3C%25%20%7D%25%3E%3C%25%20if%28typeof%20is_arcarum%20%21%3D%3D%20%27undefined%27%20%26%26%20is_arcarum%20%3D%3D%3D%20true%29%7B%20%25%3E%20arcarum%3C%25%20%7D%20%25%3E%22%20data-index%3D%22%3C%25%3D%20index%20%25%3E%22%20data-id%3D%22%3C%25%3D%20n.scene_id%20%7C%7C%20n.id%20%25%3E%22%20data-event-id%3D%22%3C%25%3D%20n.event_id%20%25%3E%22%20data-location-id%3D%22%3C%25%3D%20n.location_id%20%25%3E%22%20%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22prt-chapter-title%22%3E%0A%09%09%09%09%09%09%3C%25%20if%20%28n.chapter_sub_name%29%20%7B%20%25%3E%0A%09%09%09%09%09%09%09%3Cdiv%20class%3D%22txt-chapter-sub-title%22%3E%3C%25%3D%20n.chapter_sub_name%20%25%3E%3C/div%3E%0A%09%09%09%09%09%09%3C%25%20%7D%20%25%3E%0A%09%09%09%09%09%09%3Cdiv%20class%3D%22txt-chapter-title%3C%25%20if%28n.branch%29%7B%20%25%3E%20has-branch%3C%25%20%7D%20%25%3E%22%3E%3C%25%3D%20n.chapter_name%20%25%3E%3C/div%3E%0A%09%09%09%09%09%3C/div%3E%0A%09%09%09%09%3C/div%3E%0A%09%09%09%3C%25%20%7D%20%25%3E%0A%09%09%3C%25%20%7D%29%3B%20%25%3E%0A%09%09%0A%09%09%3C%25%20if%28has_additional.length%20%3E%200%29%20%7B%20%25%3E%0A%09%09%09%3C%25%20_.each%28has_additional%2C%20function%28n%2C%20index%29%7B%20%25%3E%0A%09%09%09%09%3Cdiv%20class%3D%22btn-chapter%20has-additional%22%20data-id%3D%22%3C%25%3D%20n.id%20%25%3E%22%3E%0A%09%09%09%09%09%3Cdiv%20class%3D%22txt-chapter-title%22%3E%3C%25%3D%20n.title%20%25%3E%3C/div%3E%0A%09%09%09%09%3C/div%3E%0A%09%09%09%3C%25%20%7D%29%3B%20%25%3E%0A%09%09%3C%25%20%7D%20%25%3E%0A%09%3C/div%3E%0A%3C/script%3E%0A%0A%0A%3Cscript%20type%3D%22text/html%22%20id%3D%22tpl-prt-character-list%22%3E%0A%09%3C%25%20if%20%28characters.length%29%20%7B%20%25%3E%0A%09%09%3Cdiv%20class%3D%22prt-character-list%22%3E%0A%09%09%09%3C%25%20_.each%28characters%2C%20function%28n%29%20%7B%20%25%3E%0A%09%09%09%09%3Cdiv%20class%3D%22lis-item%20btn-chapter-character%20%3C%25%3D%20n.optionalClasses%20%25%3E%22%20data-name%3D%22%3C%25%3D%20n.name%20%25%3E%22%20data-message%3D%22%3C%25%3D%20n.message%20%25%3E%22%20data-image-id%3D%22%3C%25%3D%20n.imageId%20%25%3E%22%3C%25%20if%20%28n.href%29%20%7B%20%25%3E%20data-href%3D%22%3C%25%3D%20n.href%20%25%3E%22%3C%25%20%7D%20%25%3E%3E%0A%09%09%09%09%09%3Cimg%20class%3D%22img-item%22%20src%3D%22./assets/img/sp/assets/npc/m/%3C%25%3D%20n.imageId%20%25%3E.jpg%22%20alt%3D%22%3C%25%3D%20n.id%20%25%3E%22%3E%0A%09%09%09%09%3C/div%3E%0A%09%09%09%3C%25%20%7D%29%3B%20%25%3E%0A%09%09%3C/div%3E%0A%09%3C%25%20%7D%20else%20%7B%20%25%3E%0A%09%09%3Cdiv%20class%3D%22prt-character-notice%22%3E%E7%99%BB%E5%A0%B4%E4%BA%BA%E7%89%A9%E3%81%8C%E7%99%BB%E9%8C%B2%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%9B%E3%82%93%3C/div%3E%0A%09%3C%25%20%7D%20%25%3E%0A%3C/script%3E%0A%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22tpl-pop-unopened-detail%22%3E%0A%09%3Cdiv%20class%3D%22prt-item-thumb%22%3E%0A%09%09%3Cimg%20class%3D%22img-item-thumb%22%20src%3D%22./assets/img/sp/assets/npc/m/%3C%25%3D%20imageId%20%25%3E.jpg%22%20%25%7D%3E%0A%09%3C/div%3E%0A%09%3Cdiv%20class%3D%22txt-item-name%22%3E%3C%25%3D%20name%20%7C%7C%20%27%EF%BC%9F%EF%BC%9F%EF%BC%9F%27%20%25%3E%3C/div%3E%0A%09%3Cdiv%20class%3D%22prt-comment-box%20prt-popup-frame%22%3E%0A%09%09%3Cdiv%20class%3D%22txt-item-comment%22%3E%0A%09%09%09%3C%25%20if%20%28message%29%20%7B%20%25%3E%0A%09%09%09%09%3C%25%3D%20message%20%25%3E%0A%09%09%09%3C%25%20%7D%20else%20%7B%20%25%3E%0A%09%09%09%09%E8%A9%B3%E7%B4%B0%E3%81%AF%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%80%8C%3C%25%3D%20name%20%25%3E%E3%80%8D%E3%81%8C%E6%AD%A3%E5%BC%8F%E5%8A%A0%E5%85%A5%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%A7%E7%A2%BA%E8%AA%8D%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82%0A%09%09%09%3C%25%20%7D%20%25%3E%0A%09%09%3C/div%3E%0A%09%3Cdiv%3E%0A%3C/script%3E%0A%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22tpl-pop-pose-unlocked%22%3E%3Cdiv%20class%3D%22txt-pose-message%22%3E%3C%25%3D%20data.pose_open_message%20%25%3E%3C/div%3E%3Cdiv%20class%3D%22prt-pose-image%22%3E%3Cimg%20class%3D%22img-pose%22%20src%3D%22./assets/img/sp/assets/npc/add_pose/%3C%25%3D%20data.image%20%25%3E.png%22%3E%3C/div%3E%3Cdiv%20class%3D%22txt-pose-message%20attention%22%3E%E3%83%9E%E3%82%A4%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AE%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%E3%82%84%E5%90%84%E7%A8%AE%E3%82%B5%E3%83%A0%E3%83%8D%E3%82%A4%E3%83%AB%E3%82%92%3Cbr%3E%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%3C/div%3E%3C%25%20if%20%28%21%21data.user_npc_id%29%20%7B%20%25%3E%3Cdiv%20class%3D%22btn-set-pose%22%20data-href%3D%22party/set_poses/%3C%25%3D%20data.user_npc_id%20%25%3E/%3C%25%3D%20data.npc_id%20%25%3E/1%22%3E%E3%82%B9%E3%82%AD%E3%83%B3%E3%83%BBPOSE%E5%88%87%E3%82%8A%E6%9B%BF%E3%81%88%E8%A8%AD%E5%AE%9A%3C/div%3E%3C%25%20%7D%20else%20%7B%20%25%3E%3Cdiv%20class%3D%22txt-pose-message%22%3E%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%BC%E3%81%8C%E5%8A%A0%E5%85%A5%E3%81%97%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84%E5%A0%B4%E5%90%88%E3%80%81%3Cbr%3E%E5%8A%A0%E5%85%A5%E5%BE%8C%E3%81%AB%E8%A8%AD%E5%AE%9A%E5%8F%AF%E8%83%BD%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%99%3C/div%3E%3C%25%20%7D%20%25%3E%3C/script%3E%0A%0A%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22tpl-pop-special-setting%22%3E%3Cdiv%20class%3D%22prt-setting-wrapper%22%3E%3Cdiv%20class%3D%22txt-setting-title%22%3E%E3%80%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BCXI%E3%80%8D%E3%83%A2%E3%83%BC%E3%83%89%3C/div%3E%3Cdiv%20class%3D%22txt-setting-comment%22%3E%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E3%82%92%E3%80%8C%E9%9F%B3%E5%A3%B0%E3%81%82%E3%82%8A%E3%80%8D%E3%81%8B%E3%80%8C%E9%9F%B3%E5%A3%B0%E3%81%AA%E3%81%97%E3%80%8D%E3%81%AB%3Cbr%3E%E3%81%97%E3%81%A6%E3%80%81%E3%80%8C%E5%B0%82%E7%94%A8SE%E3%80%8D%E3%81%A7%E6%A5%BD%E3%81%97%E3%82%81%E3%82%8B%E3%83%A2%E3%83%BC%E3%83%89%E3%81%A7%E3%81%99%E3%80%82%3C/div%3E%3Cdiv%20class%3D%22prt-setting-form%20original-mode%22%3E%3Cinput%20type%3D%22radio%22%20name%3D%22original-mode%22%20id%3D%22original-mode-off%22%20value%3D%220%22%3C%25%20if%28%2BcurrentSetting.ffxi_mode%20%3D%3D%3D%200%29%7B%20%25%3E%20checked%3C%25%20%7D%20%25%3E%3E%3Clabel%20class%3D%22btn-radio%22%20for%3D%22original-mode-off%22%3EOFF%3C/label%3E%3Cinput%20type%3D%22radio%22%20name%3D%22original-mode%22%20id%3D%22original-mode-disable-voice%22%20value%3D%221%22%3C%25%20if%28%2BcurrentSetting.ffxi_mode%20%3D%3D%3D%201%29%7B%20%25%3E%20checked%3C%25%20%7D%20%25%3E%3E%3Clabel%20class%3D%22btn-radio%22%20for%3D%22original-mode-disable-voice%22%3E%E9%9F%B3%E5%A3%B0%E3%81%AA%E3%81%97%3C/label%3E%3Cinput%20type%3D%22radio%22%20name%3D%22original-mode%22%20id%3D%22original-mode-enable-voice%22%20value%3D%222%22%3C%25%20if%28%2BcurrentSetting.ffxi_mode%20%3D%3D%3D%202%29%7B%20%25%3E%20checked%3C%25%20%7D%20%25%3E%3E%3Clabel%20class%3D%22btn-radio%22%20for%3D%22original-mode-enable-voice%22%3E%E9%9F%B3%E5%A3%B0%E3%81%82%E3%82%8A%3C/label%3E%3C/div%3E%3C/div%3E%3Cdiv%20class%3D%22prt-setting-wrapper%22%3E%3Cdiv%20class%3D%22txt-setting-title%22%3E%E7%A8%AE%E6%97%8F%E8%A8%AD%E5%AE%9A%3C/div%3E%3Cdiv%20class%3D%22txt-setting-comment%22%3E%E4%BC%9A%E8%A9%B1%E3%82%B7%E3%83%BC%E3%83%B3%E3%81%AB%E9%81%A9%E7%94%A8%E3%81%99%E3%82%8B%E7%A8%AE%E6%97%8F%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82%3C/div%3E%3Cdiv%20class%3D%22prt-setting-form%20display-race%20prt-popup-frame%22%3E%3Cinput%20type%3D%22radio%22%20name%3D%22display-race%22%20id%3D%22display-race-hume%22%20value%3D%221%22%3C%25%20if%28%2BcurrentSetting.ffxi_race%20%3D%3D%3D%201%29%7B%20%25%3E%20checked%3C%25%20%7D%20%25%3E%3E%3Clabel%20class%3D%22btn-radio%22%20for%3D%22display-race-hume%22%3E%E3%83%92%E3%83%A5%E3%83%BC%E3%83%A0%3C/label%3E%3Cinput%20type%3D%22radio%22%20name%3D%22display-race%22%20id%3D%22display-race-elvaan%22%20value%3D%222%22%3C%25%20if%28%2BcurrentSetting.ffxi_race%20%3D%3D%3D%202%29%7B%20%25%3E%20checked%3C%25%20%7D%20%25%3E%3E%3Clabel%20class%3D%22btn-radio%22%20for%3D%22display-race-elvaan%22%3E%E3%82%A8%E3%83%AB%E3%83%B4%E3%82%A1%E3%83%BC%E3%83%B3%3C/label%3E%3Cinput%20type%3D%22radio%22%20name%3D%22display-race%22%20id%3D%22display-race-tarutaru%22%20value%3D%223%22%3C%25%20if%28%2BcurrentSetting.ffxi_race%20%3D%3D%3D%203%29%7B%20%25%3E%20checked%3C%25%20%7D%20%25%3E%3E%3Clabel%20class%3D%22btn-radio%22%20for%3D%22display-race-tarutaru%22%3E%E3%82%BF%E3%83%AB%E3%82%BF%E3%83%AB%3C/label%3E%3Cinput%20type%3D%22radio%22%20name%3D%22display-race%22%20id%3D%22display-race-mithra%22%20value%3D%224%22%3C%25%20if%28%2BcurrentSetting.ffxi_race%20%3D%3D%3D%204%29%7B%20%25%3E%20checked%3C%25%20%7D%20%25%3E%3E%3Clabel%20class%3D%22btn-radio%22%20for%3D%22display-race-mithra%22%3E%E3%83%9F%E3%82%B9%E3%83%A9%3C/label%3E%3Cinput%20type%3D%22radio%22%20name%3D%22display-race%22%20id%3D%22display-race-galka%22%20value%3D%225%22%3C%25%20if%28%2BcurrentSetting.ffxi_race%20%3D%3D%3D%205%29%7B%20%25%3E%20checked%3C%25%20%7D%20%25%3E%3E%3Clabel%20class%3D%22btn-radio%22%20for%3D%22display-race-galka%22%3E%E3%82%AC%E3%83%AB%E3%82%AB%3C/label%3E%3Cinput%20type%3D%22radio%22%20name%3D%22display-race%22%20id%3D%22display-race-none%22%20value%3D%226%22%3C%25%20if%28%2BcurrentSetting.ffxi_race%20%3D%3D%3D%206%29%7B%20%25%3E%20checked%3C%25%20%7D%20%25%3E%3E%3Clabel%20class%3D%22btn-radio%22%20for%3D%22display-race-none%22%3E%E8%A8%98%E6%86%B6%E3%81%AF%E3%81%AA%E3%81%84%3C/label%3E%3C/div%3E%3C/div%3E%3C/script%3E%0A%0A",
+    "option": {
+        "langMsg": {
+            "general_chat_type_message": {
+                "msgid": "general_chat_type_message",
+                "msg": "テキスト入力"
+            },
+            "guild_main_103": {
+                "msgid": "guild_main_103",
+                "msg": "送信完了"
+            },
+            "guild_main_106": {
+                "msgid": "guild_main_106",
+                "msg": "チャットを送りました。"
+            },
+            "guild_main_107": {
+                "msgid": "guild_main_107",
+                "msg": "禁止ワードが含まれています。"
+            },
+            "guild_main_108": {
+                "msgid": "guild_main_108",
+                "msg": "チャット"
+            },
+            "guild_main_114": {
+                "msgid": "guild_main_114",
+                "msg": "スタンプを送りました。"
+            },
+            "guild_main_145": {
+                "msgid": "guild_main_145",
+                "msg": "利用制限"
+            },
+            "guild_main_146": {
+                "msgid": "guild_main_146",
+                "msg": "先の利用から5秒経過すると<br>再度利用可能です。"
+            },
+            "guild_main_147": {
+                "msgid": "guild_main_147",
+                "msg": "チャット(スタンプ)"
+            },
+            "guild_main_148": {
+                "msgid": "guild_main_148",
+                "msg": "エラーにより送信できませんでした。"
+            },
+            "guild_main_149": {
+                "msgid": "guild_main_149",
+                "msg": "1文字以上入力してください。"
+            },
+            "guild_main_150": {
+                "msgid": "guild_main_150",
+                "msg": "%s文字以内で入力してください。"
+            },
+            "logout_error_01": {
+                "msgid": "logout_error_01",
+                "msg": "エラー"
+            },
+            "logout_error_02": {
+                "msgid": "logout_error_02",
+                "msg": "かんたん会員の方はログアウトできません。"
+            },
+            "menu_pop_1": {
+                "msgid": "menu_pop_1",
+                "msg": "共闘"
+            },
+            "menu_pop_2": {
+                "msgid": "menu_pop_2",
+                "msg": "移動先選択"
+            },
+            "menu_pop_3": {
+                "msgid": "menu_pop_3",
+                "msg": "停止中"
+            },
+            "tutorial_movie_1": {
+                "msgid": "tutorial_movie_1",
+                "msg": "はじブルで攻略指南！！"
+            },
+            "pop_treasure_title": {
+                "msgid": "pop_treasure_title",
+                "msg": "トレジャー"
+            },
+            "pop_treasure_title_2": {
+                "msgid": "pop_treasure_title_2",
+                "msg": "お気に入り登録"
+            },
+            "sequencequest_progress_1": {
+                "msgid": "sequencequest_progress_1",
+                "msg": "クエスト再開"
+            },
+            "item_detail_1": {
+                "msgid": "item_detail_1",
+                "msg": "アイテム詳細"
+            },
+            "pop_get_title_1": {
+                "msgid": "pop_get_title_1",
+                "msg": "称号獲得"
+            },
+            "pop_get_title_2": {
+                "msgid": "pop_get_title_2",
+                "msg": "他称号を%s個獲得しました"
+            },
+            "pop_get_title_3": {
+                "msgid": "pop_get_title_3",
+                "msg": "称号設定"
+            },
+            "pop_select_set_title": {
+                "msgid": "pop_select_set_title",
+                "msg": "編成セット切り替え"
+            },
+            "pop_select_set_alert_1": {
+                "msgid": "pop_select_set_alert_1",
+                "msg": "このクエストでは<br>編成セットExtraのみ使用できます。"
+            },
+            "pop_select_set_alert_2": {
+                "msgid": "pop_select_set_alert_2",
+                "msg": "＜解放条件＞<br>アーカルムの転世 EXTREMEを<br>全てクリアすることで解放できます。"
+            },
+            "pop_select_set_alert_3": {
+                "msgid": "pop_select_set_alert_3",
+                "msg": "編成サンプルからの登録は<br>編成セットA/Bのみ登録可能です。"
+            },
+            "pop_select_set_alert_4": {
+                "msgid": "pop_select_set_alert_4",
+                "msg": "編成セットExtraは<br>レプリカルド・サンドボックスのみ<br>使用できます。"
+            },
+            "pop_select_set_setA": {
+                "msgid": "pop_select_set_setA",
+                "msg": "Set A"
+            },
+            "pop_select_set_setB": {
+                "msgid": "pop_select_set_setB",
+                "msg": "Set B"
+            },
+            "pop_select_set_extra": {
+                "msgid": "pop_select_set_extra",
+                "msg": "Extra"
+            },
+            "pop_mission_update_title": {
+                "msgid": "pop_mission_update_title",
+                "msg": "ミッション"
+            },
+            "pop_skyscope_achieved_mission_title": {
+                "msgid": "pop_skyscope_achieved_mission_title",
+                "msg": "スカイスコープ"
+            },
+            "pop_skyscope_achieved_mission_over_mission_message": {
+                "msgid": "pop_skyscope_achieved_mission_over_mission_message",
+                "msg": "他、%s件のミッションを達成"
+            },
+            "pop_skyscope_achieved_mission_got_reward": {
+                "msgid": "pop_skyscope_achieved_mission_got_reward",
+                "msg": "他、報酬を%sつ獲得！"
+            },
+            "pop_to_skyscope_button": {
+                "msgid": "pop_to_skyscope_button",
+                "msg": "スカイスコープへ"
+            },
+            "pop_common_rank_up_title": {
+                "msgid": "pop_common_rank_up_title",
+                "msg": "Rankアップ"
+            },
+            "pop_common_zenith_bonus_open_title": {
+                "msgid": "pop_common_zenith_bonus_open_title",
+                "msg": "Limit Bonus 解放"
+            },
+            "pop_common_zc_up_title": {
+                "msgid": "pop_common_zc_up_title",
+                "msg": "Limit Bonus Classアップ"
+            },
+            "campaign_mission_1": {
+                "msgid": "campaign_mission_1",
+                "msg": "サマーキャンペーン"
+            },
+            "campaign_mission_2": {
+                "msgid": "campaign_mission_2",
+                "msg": "他、%s件のサマーミッションをクリア！"
+            },
+            "retire_replicard_common_1": {
+                "msgid": "retire_replicard_common_1",
+                "msg": "<br><br>未クリアクエストのため、<br>AAP%sが返却されました。<br><br>AAP: %s→<span class='txt-after-ap'>%s</span>"
+            },
+            "campaign_mission_beginner_1": {
+                "msgid": "campaign_mission_beginner_1",
+                "msg": "新米騎空士応援キャンペーン"
+            },
+            "campaign_mission_beginner_2": {
+                "msgid": "campaign_mission_beginner_2",
+                "msg": "他、%s件の新米ミッションをクリア！"
+            },
+            "campaign_mission_beginner_3": {
+                "msgid": "campaign_mission_beginner_3",
+                "msg": "新米ミッションを達成！"
+            },
+            "campaign_mission_winter_1": {
+                "msgid": "campaign_mission_winter_1",
+                "msg": "ウィンターキャンペーン"
+            },
+            "campaign_mission_winter_2": {
+                "msgid": "campaign_mission_winter_2",
+                "msg": "他、%s件のウィンターミッションをクリア！"
+            },
+            "campaign_mission_winter_3": {
+                "msgid": "campaign_mission_winter_3",
+                "msg": "ウィンターミッションを達成！"
+            },
+            "pop_captcha_empty": {
+                "msgid": "pop_captcha_empty",
+                "msg": "1文字以上入力してください"
+            },
+            "pop_captcha_incorrect": {
+                "msgid": "pop_captcha_incorrect",
+                "msg": "もう一度入力してください<br>読み取りづらい場合は一度送信してください"
+            },
+            "archive_1": {
+                "msgid": "archive_1",
+                "msg": "用語集"
+            },
+            "archive_2": {
+                "msgid": "archive_2",
+                "msg": "信頼度"
+            },
+            "archive_3": {
+                "msgid": "archive_3",
+                "msg": "フェイト"
+            },
+            "archive_5": {
+                "msgid": "archive_5",
+                "msg": "%sエピソード解放"
+            },
+            "archive_6": {
+                "msgid": "archive_6",
+                "msg": "%sエピソード解放条件"
+            },
+            "archive_9": {
+                "msgid": "archive_9",
+                "msg": "アイテム獲得"
+            },
+            "archive_10": {
+                "msgid": "archive_10",
+                "msg": "シナリオパターン選択"
+            },
+            "archive_11": {
+                "msgid": "archive_11",
+                "msg": "ルリアノート"
+            },
+            "archive_35": {
+                "msgid": "archive_35",
+                "msg": "図鑑"
+            },
+            "archive_36": {
+                "msgid": "archive_36",
+                "msg": "プロフィールに戻る"
+            },
+            "archive_37": {
+                "msgid": "archive_37",
+                "msg": "ストーリー"
+            },
+            "archive_38": {
+                "msgid": "archive_38",
+                "msg": "オープニング"
+            },
+            "archive_39": {
+                "msgid": "archive_39",
+                "msg": "旅立ち"
+            },
+            "archive_40": {
+                "msgid": "archive_40",
+                "msg": "エピソード1"
+            },
+            "archive_41": {
+                "msgid": "archive_41",
+                "msg": "エピソード2"
+            },
+            "archive_42": {
+                "msgid": "archive_42",
+                "msg": "エピソード3"
+            },
+            "archive_43": {
+                "msgid": "archive_43",
+                "msg": "エピソード4"
+            },
+            "archive_44": {
+                "msgid": "archive_44",
+                "msg": "降焔祭"
+            },
+            "archive_45": {
+                "msgid": "archive_45",
+                "msg": "臆病勇者と囚われの姫君"
+            },
+            "archive_46": {
+                "msgid": "archive_46",
+                "msg": "不屈の勇者と熱砂の動乱"
+            },
+            "archive_47": {
+                "msgid": "archive_47",
+                "msg": "プロローグ"
+            },
+            "archive_48": {
+                "msgid": "archive_48",
+                "msg": "ストーリーはありません"
+            },
+            "archive_49": {
+                "msgid": "archive_49",
+                "msg": "図鑑 武器一覧に戻る"
+            },
+            "archive_50": {
+                "msgid": "archive_50",
+                "msg": "図鑑 召喚石一覧に戻る"
+            },
+            "archive_51": {
+                "msgid": "archive_51",
+                "msg": "登場人物一覧に戻る"
+            },
+            "archive_52": {
+                "msgid": "archive_52",
+                "msg": "このエピソードは<br>イベントでの謎解きに対する解答が<br>「正解」か「不正解」かによって<br>一部内容が異なります。<br><br>どちらの内容で再生しますか？"
+            },
+            "archive_53": {
+                "msgid": "archive_53",
+                "msg": "不正解"
+            },
+            "archive_54": {
+                "msgid": "archive_54",
+                "msg": "正解"
+            },
+            "archive_55": {
+                "msgid": "archive_55",
+                "msg": "メッセージ選択"
+            },
+            "archive_56": {
+                "msgid": "archive_56",
+                "msg": "メインシナリオ"
+            },
+            "archive_57": {
+                "msgid": "archive_57",
+                "msg": "登場人物一覧に戻る"
+            },
+            "archive_58": {
+                "msgid": "archive_58",
+                "msg": "確認条件"
+            },
+            "archive_59": {
+                "msgid": "archive_59",
+                "msg": "ストーリーのエンディングをクリアすると<br>確認できるようになります"
+            },
+            "archive_60": {
+                "msgid": "archive_60",
+                "msg": "イベントリストに戻る"
+            },
+            "archive_61": {
+                "msgid": "archive_61",
+                "msg": "%sリストに戻る"
+            },
+            "archive_page_title_npc": {
+                "msgid": "archive_page_title_npc",
+                "msg": "登場人物"
+            },
+            "seasonmessage_halloween_title": {
+                "msgid": "seasonmessage_halloween_title",
+                "msg": "ハロウィンメッセージ"
+            },
+            "seasonmessage_christmas_title": {
+                "msgid": "seasonmessage_christmas_title",
+                "msg": "クリスマスメッセージ"
+            },
+            "seasonmessage_newyear_title": {
+                "msgid": "seasonmessage_newyear_title",
+                "msg": "お正月メッセージ"
+            },
+            "seasonmessage_valentine_title": {
+                "msgid": "seasonmessage_valentine_title",
+                "msg": "バレンタインメッセージ"
+            },
+            "seasonmessage_white_title": {
+                "msgid": "seasonmessage_white_title",
+                "msg": "ホワイトデーメッセージ"
+            },
+            "seasonmessage_birthday_title": {
+                "msgid": "seasonmessage_birthday_title",
+                "msg": "バースデーメッセージ"
+            },
+            "seasonmessage_halloween_message_title": {
+                "msgid": "seasonmessage_halloween_message_title",
+                "msg": "ハロウィンメッセージ"
+            },
+            "seasonmessage_christmas_message_title": {
+                "msgid": "seasonmessage_christmas_message_title",
+                "msg": "クリスマスメッセージ"
+            },
+            "seasonmessage_newyear_message_title": {
+                "msgid": "seasonmessage_newyear_message_title",
+                "msg": "お正月メッセージ"
+            },
+            "seasonmessage_valentine_message_title": {
+                "msgid": "seasonmessage_valentine_message_title",
+                "msg": "バレンタインメッセージ"
+            },
+            "seasonmessage_white_message_title": {
+                "msgid": "seasonmessage_white_message_title",
+                "msg": "ホワイトデーメッセージ"
+            },
+            "seasonmessage_birthday_message_title": {
+                "msgid": "seasonmessage_birthday_message_title",
+                "msg": "バースデーメッセージ"
+            },
+            "seasonmessage_1": {
+                "msgid": "seasonmessage_1",
+                "msg": "メッセージ選択"
+            },
+            "seasonmessage_2": {
+                "msgid": "seasonmessage_2",
+                "msg": "モルフェ"
+            },
+            "seasonmessage_3": {
+                "msgid": "seasonmessage_3",
+                "msg": "ヴェトル"
+            },
+            "seasonmessage_4": {
+                "msgid": "seasonmessage_4",
+                "msg": "性別について"
+            },
+            "seasonmessage_valentine_1": {
+                "msgid": "seasonmessage_valentine_1",
+                "msg": "このキャラからメッセージを受け取るには、<br>性別を男性にする必要があります。"
+            },
+            "seasonmessage_valentine_2": {
+                "msgid": "seasonmessage_valentine_2",
+                "msg": "このキャラからメッセージを受け取るには、<br>性別を女性にする必要があります。"
+            },
+            "seasonmessage_valentine_3": {
+                "msgid": "seasonmessage_valentine_3",
+                "msg": "性別確認"
+            },
+            "seasonmessage_valentine_4": {
+                "msgid": "seasonmessage_valentine_4",
+                "msg": "受け渡し確認"
+            },
+            "seasonmessage_valentine_6": {
+                "msgid": "seasonmessage_valentine_6",
+                "msg": "バレンタインチョコ購入"
+            },
+            "seasonmessage_valentine_7": {
+                "msgid": "seasonmessage_valentine_7",
+                "msg": "購入完了"
+            },
+            "seasonmessage_valentine_8": {
+                "msgid": "seasonmessage_valentine_8",
+                "msg": "購入エラー"
+            },
+            "seasonmessage_valentine_9": {
+                "msgid": "seasonmessage_valentine_9",
+                "msg": "購入できませんでした"
+            },
+            "seasonmessage_valentine_10": {
+                "msgid": "seasonmessage_valentine_10",
+                "msg": "ハッピーバレンタイン！"
+            },
+            "seasonmessage_white_1": {
+                "msgid": "seasonmessage_white_1",
+                "msg": "ホワイトデーの贈り物購入"
+            },
+            "seasonmessage_white_2": {
+                "msgid": "seasonmessage_white_2",
+                "msg": "購入完了"
+            },
+            "seasonmessage_white_3": {
+                "msgid": "seasonmessage_white_3",
+                "msg": "購入エラー"
+            },
+            "seasonmessage_white_4": {
+                "msgid": "seasonmessage_white_4",
+                "msg": "購入できませんでした"
+            },
+            "seasonmessage_white_8": {
+                "msgid": "seasonmessage_white_8",
+                "msg": "ハッピーホワイトデー！"
+            },
+            "sort_filter_53": {
+                "msgid": "sort_filter_53",
+                "msg": "絞り込んで表示する"
+            },
+            "archive_back_btn_1": {
+                "msgid": "archive_back_btn_1",
+                "msg": "図鑑に戻る"
+            },
+            "arcarum_1": {
+                "msgid": "arcarum_1",
+                "msg": "アーカルムの転世"
+            },
+            "arcarum_enhancement_1": {
+                "msgid": "arcarum_enhancement_1",
+                "msg": "アーカルム召喚石"
+            },
+            "arcarum_enhancement_2": {
+                "msgid": "arcarum_enhancement_2",
+                "msg": "アーカルム召喚石に戻る"
+            },
+            "revival002_exception_title": {
+                "msgid": "revival002_exception_title",
+                "msg": "なァ……"
+            },
+            "comic_1": {
+                "msgid": "comic_1",
+                "msg": "シナリオパターン選択"
+            },
+            "ability_effect_1": {
+                "msgid": "ability_effect_1",
+                "msg": "アビリティ効果"
+            },
+            "coopraid_1": {
+                "msgid": "coopraid_1",
+                "msg": "共闘"
+            },
+            "locationSidestory": {
+                "msgid": "locationSidestory",
+                "msg": "サイドストーリーに戻る"
+            },
+            "locationEventTop": {
+                "msgid": "locationEventTop",
+                "msg": "イベントTOPへ"
+            },
+            "archive_replicard_1": {
+                "msgid": "archive_replicard_1",
+                "msg": "レプリカルド・サンドボックス"
+            },
+            "interlude_title": {
+                "msgid": "interlude_title",
+                "msg": "アーカルムの転世外伝"
+            },
+            "select_quest_branch_lead": {
+                "msgid": "select_quest_branch_lead",
+                "msg": "このエピソードは以下のクエストを<br>クリアしているかどうかで変化します。"
+            },
+            "auto_recycle_1": {
+                "msgid": "auto_recycle_1",
+                "msg": "自動リサイクル"
+            },
+            "auto_recycle_2": {
+                "msgid": "auto_recycle_2",
+                "msg": "自動リサイクル武器一覧に戻る"
+            },
+            "pop_pose_unlocked_title": {
+                "msgid": "pop_pose_unlocked_title",
+                "msg": "新規POSE追加"
+            },
+            "ffxi_config_title": {
+                "msgid": "ffxi_config_title",
+                "msg": "ゲーム設定"
+            },
+            "rarity_ssr": {
+                "msgid": "rarity_ssr",
+                "msg": "SSレア"
+            },
+            "rarity_sr": {
+                "msgid": "rarity_sr",
+                "msg": "Sレア"
+            },
+            "rarity_r": {
+                "msgid": "rarity_r",
+                "msg": "レア"
+            },
+            "rarity_weapon": {
+                "msgid": "rarity_weapon",
+                "msg": "・%s武器"
+            },
+            "pop_auto_recycle_1": {
+                "msgid": "pop_auto_recycle_1",
+                "msg": "リサイクル使用確認"
+            },
+            "pop_auto_recycle_2": {
+                "msgid": "pop_auto_recycle_2",
+                "msg": "自動リサイクル設定"
+            },
+            "pop_auto_recycle_3": {
+                "msgid": "pop_auto_recycle_3",
+                "msg": "%s武器の自動リサイクル化は<br>無効になっています。<br>有効にする場合は「設定」＞「便利設定」から<br>設定してください。"
+            },
+            "pop_auto_recycle_4": {
+                "msgid": "pop_auto_recycle_4",
+                "msg": "自動リサイクルを設定しました。<br><br>※以下のレアリティの武器は、<br>自動リサイクル化が無効になっています<br><span class='txt-orange'>%s</span><br>有効にする場合は「設定」＞「便利設定」から<br>設定してください。"
+            },
+            "pop_auto_recycle_5": {
+                "msgid": "pop_auto_recycle_5",
+                "msg": "便利設定へ"
+            },
+            "pop_auto_recycle_6": {
+                "msgid": "pop_auto_recycle_6",
+                "msg": "リサイクル解除確認"
+            },
+            "pop_auto_recycle_7": {
+                "msgid": "pop_auto_recycle_7",
+                "msg": "自動リサイクル解除"
+            },
+            "pop_auto_recycle_8": {
+                "msgid": "pop_auto_recycle_8",
+                "msg": "自動リサイクルする"
+            },
+            "pop_alter_style_title": {
+                "msgid": "pop_alter_style_title",
+                "msg": "スタイルシフト確認"
+            },
+            "pop_alter_style_title_confirm_0": {
+                "msgid": "pop_alter_style_title_confirm_0",
+                "msg": "<span class='txt-note'>スタイル</span>をまだ解放していません"
+            },
+            "pop_alter_style_title_confirm_1": {
+                "msgid": "pop_alter_style_title_confirm_1",
+                "msg": "スタイルシフトを実行しますか？"
+            }
+        },
+        "anenounce": null,
+        "force_process_ids": []
+    },
+    "display_list": false
+}

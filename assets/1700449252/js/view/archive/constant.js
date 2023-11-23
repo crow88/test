@@ -1,0 +1,1 @@
+define(function(){return{STORY_SUBSTITUTE_LOCATION_ID:{DIGEST:"digest"}}});

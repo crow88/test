@@ -1,0 +1,7197 @@
+@charset "UTF-8";
+.pop-usual .txt-popup-body,
+.pop-usual .txt-popup-body-sm,
+.prt-scene-comment .txt-character-name,
+.prt-scene-comment .prt-message-area .txt-message {
+  font-size: 9px;
+  color: #f2eee2;
+  line-height: 1;
+  text-shadow: 0px 0px 1px #150f0f,0px 0px 1px #150f0f,0px 0px 1px #150f0f,0px 0px 2px #150f0f,0px 0px 2px #150f0f,0px 0px 2px #150f0f
+}
+
+@-webkit-keyframes blink {
+  0%{opacity: 0.5
+}
+
+15% {
+  opacity: 1
+}
+
+85% {
+  opacity: 1
+}
+
+100% {
+  opacity: 0.5
+}
+
+}
+
+@keyframes blink {
+  0%{opacity: 0.5
+}
+
+15% {
+  opacity: 1
+}
+
+85% {
+  opacity: 1
+}
+
+100% {
+  opacity: 0.5
+}
+
+}
+
+@-webkit-keyframes scaleEffect {
+  0%{-webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 1
+}
+
+100% {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  opacity: 0.5
+}
+
+}
+
+@keyframes scaleEffect {
+  0%{-webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 1
+}
+
+100% {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  opacity: 0.5
+}
+
+}
+
+.pop-usual.pop-show {
+  -webkit-transition: -webkit-transform 0.24s ease;
+  transition: transform 0.24s ease;
+  -webkit-transform: translateY(0);
+  transform: translateY(0)
+}
+
+.pop-usual.pop-hide {
+  -webkit-transition: -webkit-transform 0.24s ease;
+  transition: transform 0.24s ease;
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px)
+}
+
+@-webkit-keyframes pop-show {
+  0%{-webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+  opacity: 0
+}
+
+85% {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  opacity: 1
+}
+
+99.9%,
+100% {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 1
+}
+
+}
+
+@keyframes pop-show {
+  0%{-webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+  opacity: 0
+}
+
+85% {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  opacity: 1
+}
+
+99.9%,
+100% {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 1
+}
+
+}
+
+@-webkit-keyframes pop-hide {
+  0%{-webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 1
+}
+
+15% {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  opacity: 1
+}
+
+99.9%,
+100% {
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+  opacity: 0
+}
+
+}
+
+@keyframes pop-hide {
+  0%{-webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 1
+}
+
+15% {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  opacity: 1
+}
+
+99.9%,
+100% {
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+  opacity: 0
+}
+
+}
+
+@-webkit-keyframes riseup {
+  0%{-webkit-transform: translate(0px, 7px);
+  transform: translate(0px, 7px);
+  opacity: 0.0
+}
+
+15% {
+  -webkit-transform: translate(0px, 1px);
+  transform: translate(0px, 1px);
+  opacity: 1
+}
+
+85% {
+  -webkit-transform: translate(0px, -1px);
+  transform: translate(0px, -1px);
+  opacity: 1
+}
+
+100% {
+  -webkit-transform: translate(0px, -7px);
+  transform: translate(0px, -7px);
+  opacity: 0.0
+}
+
+}
+
+@keyframes riseup {
+  0%{-webkit-transform: translate(0px, 7px);
+  transform: translate(0px, 7px);
+  opacity: 0.0
+}
+
+15% {
+  -webkit-transform: translate(0px, 1px);
+  transform: translate(0px, 1px);
+  opacity: 1
+}
+
+85% {
+  -webkit-transform: translate(0px, -1px);
+  transform: translate(0px, -1px);
+  opacity: 1
+}
+
+100% {
+  -webkit-transform: translate(0px, -7px);
+  transform: translate(0px, -7px);
+  opacity: 0.0
+}
+
+}
+
+[class^="btn-usual-"].on,
+.cnt-quest-scene .btn-skip.on,
+.cnt-quest-scene #btn-auto.on,
+.prt-scene-comment .btn-play-voice.on,
+.prt-log-display .prt-log-each .btn-play-log-voice.on,
+.prt-sel-area .prt-sel-inner .img-choice.btn-choice.on,
+.pop-synopsis.pop-usual .btn-scenario-all-read.on,
+.pop-synopsis.pop-usual .btn-scene-skip.on,
+.pop-input-name .btn-send-name.on {
+  -webkit-transform: scale(0.95, 0.95) translateY(2px);
+  transform: scale(0.95, 0.95) translateY(2px)
+}
+
+@-webkit-keyframes anim-button-scale-fade {
+  0%{-webkit-transform: scale(1, 1);
+  transform: scale(1, 1)
+}
+
+99.9%,
+100% {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1)
+}
+
+}
+
+@keyframes anim-button-scale-fade {
+  0%{-webkit-transform: scale(1, 1);
+  transform: scale(1, 1)
+}
+
+99.9%,
+100% {
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1)
+}
+
+}
+
+@-webkit-keyframes full_blink {
+  0%{opacity: 0
+}
+
+100% {
+  opacity: 1
+}
+
+}
+
+@keyframes full_blink {
+  0%{opacity: 0
+}
+
+100% {
+  opacity: 1
+}
+
+}
+
+.pop-usual {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  z-index: 150000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  width: 320px;
+  min-height: 115px;
+  display: none
+}
+
+.pop-usual::before {
+  -webkit-border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop.png?1511244036') 106 0 124 stretch round;
+  -webkit-border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop.png?1511244036') 106 0 124 stretch round;
+  border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop.png?1511244036') 106 0 124 fill stretch round;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+  border-width: 53px 0 62px;
+  border-style: solid;
+  content: ""
+}
+
+.pop-usual.pop-ornament-crown::before {
+  -webkit-border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_ornament_crown.png?1552176167') 106 0 124 stretch round;
+  -webkit-border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_ornament_crown.png?1552176167') 106 0 124 stretch round;
+  border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_ornament_crown.png?1552176167') 106 0 124 fill stretch round
+}
+
+.pop-usual.pop-ornament-premium::before {
+  -webkit-border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_premiumfriday.png?1548035583') 106 0 124 stretch round;
+  -webkit-border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_premiumfriday.png?1548035583') 106 0 124 stretch round;
+  border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_premiumfriday.png?1548035583') 106 0 124 fill stretch round
+}
+
+.pop-usual .prt-popup-header,
+.pop-usual .prt-popup-header-sm {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 53px;
+  text-align: center;
+  color: #150f0f;
+  padding-top: 18px
+}
+
+.pop-usual .prt-popup-body,
+.pop-usual .prt-popup-body-sm {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  width: 320px
+}
+
+.pop-usual .txt-popup-body,
+.pop-usual .txt-popup-body-sm {
+  font-size: 12px;
+  padding: 10px 15px 5px;
+  text-align: center;
+  line-height: 1.2
+}
+
+.pop-usual .txt-popup-body .orange,
+.pop-usual .txt-popup-body-sm .orange {
+  color: #ffa826
+}
+
+.pop-usual .prt-popup-frame {
+  background: rgba(0,0,0,0.6);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #716860;
+  padding: 8px 5px
+}
+
+.pop-usual .prt-popup-footer,
+.pop-usual .prt-popup-footer-sm {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 62px;
+  text-align: center;
+  padding-top: 12px;
+  font-size: 0
+}
+
+.pop-usual.pop-submenu {
+  position: fixed;
+  left: auto;
+  margin-left: 384px
+}
+
+#pop-force .pop-usual {
+  z-index: 300000
+}
+
+.btn-usual-text,
+.btn-usual-questlist,
+.btn-usual-fate,
+.btn-usual-mypage,
+.btn-usual-ok,
+.btn-usual-present,
+.btn-usual-buy,
+.btn-usual-exchange,
+.btn-usual-extra,
+.btn-usual-enhance,
+.btn-usual-gacha,
+.btn-usual-use,
+.btn-usual-set,
+.btn-usual-remove,
+.btn-usual-remove-all,
+.btn-usual-party,
+.btn-usual-aquisition,
+.btn-usual-add-to-party,
+.btn-usual-vote,
+.pop-synopsis.pop-usual .btn-scenario-all-read,
+.pop-synopsis.pop-usual .btn-scene-skip,
+.pop-input-name .btn-send-name,
+.prt-sel-area .btn-select-balloon {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #f2eee2;
+  text-shadow: 0 0 1px #253544,0 0 1px #253544,0 0 1px #253544,0 0 1px #253544,0 0 2px #253544,0 0 2px #253544,0 0 2px #253544,0 0 2px #253544;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1
+}
+
+.btn-usual-text,
+.btn-usual-questlist,
+.btn-usual-fate,
+.btn-usual-mypage,
+.btn-usual-ok,
+.btn-usual-present,
+.btn-usual-buy,
+.btn-usual-exchange,
+.btn-usual-extra,
+.btn-usual-enhance,
+.btn-usual-gacha,
+.btn-usual-use,
+.btn-usual-set,
+.btn-usual-remove,
+.btn-usual-remove-all,
+.btn-usual-party,
+.btn-usual-aquisition,
+.btn-usual-add-to-party,
+.btn-usual-vote,
+.pop-synopsis.pop-usual .btn-scenario-all-read,
+.pop-synopsis.pop-usual .btn-scene-skip,
+.pop-input-name .btn-send-name {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/button-s6dd74ff65a.png') no-repeat 0 -1450px;
+  -webkit-background-size: 230px 3002px;
+  background-size: 230px 3002px;
+  width: 141px;
+  height: 36px;
+  display: inline-block;
+  padding-top: 10px
+}
+
+.cnt-quest-scene .btn-skip,
+.btn-usual-back,
+.btn-usual-appearance {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #f2eee2;
+  text-shadow: 0 0 1px #532d0d,0 0 1px #532d0d,0 0 1px #532d0d,0 0 1px #532d0d,0 0 2px #532d0d,0 0 2px #532d0d,0 0 2px #532d0d,0 0 2px #532d0d;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1
+}
+
+.cnt-quest-scene .btn-skip {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/button-s6dd74ff65a.png') no-repeat 0 -1796px;
+  -webkit-background-size: 230px 3002px;
+  background-size: 230px 3002px;
+  width: 105px;
+  height: 36px;
+  display: inline-block;
+  padding-top: 10px
+}
+
+.btn-usual-back,
+.btn-usual-appearance {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/button-s6dd74ff65a.png') no-repeat 0 -1300px;
+  -webkit-background-size: 230px 3002px;
+  background-size: 230px 3002px;
+  width: 141px;
+  height: 36px;
+  display: inline-block;
+  padding-top: 10px
+}
+
+.btn-usual-cancel-small,
+.btn-usual-dismiss,
+.btn-usual-text-cancel,
+.btn-usual-cancel,
+.btn-usual-close {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #f2eee2;
+  text-shadow: 0 0 1px #532d0d,0 0 1px #532d0d,0 0 1px #532d0d,0 0 1px #532d0d,0 0 2px #532d0d,0 0 2px #532d0d,0 0 2px #532d0d,0 0 2px #532d0d;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1
+}
+
+.btn-usual-cancel-small,
+.btn-usual-dismiss {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/button-s6dd74ff65a.png') no-repeat 0 -1944px;
+  -webkit-background-size: 230px 3002px;
+  background-size: 230px 3002px;
+  width: 105px;
+  height: 36px;
+  display: inline-block;
+  padding-top: 10px
+}
+
+.btn-usual-text-cancel,
+.btn-usual-cancel,
+.btn-usual-close {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/button-s6dd74ff65a.png') no-repeat 0 -1339px;
+  -webkit-background-size: 230px 3002px;
+  background-size: 230px 3002px;
+  width: 141px;
+  height: 36px;
+  display: inline-block;
+  padding-top: 10px
+}
+
+.cnt-quest-scene .btn-skip.disable {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #c2c2c2;
+  text-shadow: 0 0 1px #3f3f3f,0 0 1px #3f3f3f,0 0 1px #3f3f3f,0 0 1px #3f3f3f,0 0 2px #3f3f3f,0 0 2px #3f3f3f,0 0 2px #3f3f3f,0 0 2px #3f3f3f;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1
+}
+
+.cnt-quest-scene .btn-skip.disable {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/button-s6dd74ff65a.png') no-repeat 0 -335px;
+  -webkit-background-size: 230px 3002px;
+  background-size: 230px 3002px;
+  width: 105px;
+  height: 36px;
+  display: inline-block;
+  padding-top: 10px
+}
+
+[class^="btn-usual-"] {
+  font-size: 12px;
+  text-decoration: none
+}
+
+[class^="btn-usual-"].hide-common-text::after {
+  content: none
+}
+
+.btn-usual-ok::after {
+  content: "OK"
+}
+
+.btn-usual-cancel::after {
+  content: "キャンセル"
+}
+
+.btn-usual-close::after {
+  content: "閉じる"
+}
+
+.btn-usual-present::after {
+  content: "プレゼントリスト"
+}
+
+.btn-usual-buy::after {
+  content: "購入する"
+}
+
+.btn-usual-exchange::after {
+  content: "交換する"
+}
+
+.btn-usual-extra::after {
+  content: "エクストラクエスト"
+}
+
+.btn-usual-questlist::after {
+  content: "クエストリストへ"
+}
+
+.btn-usual-fate::after {
+  content: "エピソード一覧"
+}
+
+.btn-usual-back::after {
+  content: "戻る"
+}
+
+.btn-usual-mypage::after {
+  content: "マイページ"
+}
+
+.btn-usual-cancel-small::after {
+  content: "キャンセル"
+}
+
+.btn-usual-dismiss::after {
+  content: "パーティ解散"
+}
+
+.btn-usual-enhance::after {
+  content: "強化・上限解放"
+}
+
+.btn-usual-gacha::after {
+  content: "ガチャ"
+}
+
+.btn-usual-use::after {
+  content: "使用する"
+}
+
+.btn-usual-set::after {
+  content: "セットする"
+}
+
+.btn-usual-remove::after {
+  content: "外す"
+}
+
+.btn-usual-remove-all::after {
+  content: "全部外す"
+}
+
+.btn-usual-party::after {
+  content: "編成"
+}
+
+.btn-usual-aquisition::after {
+  content: "獲得する"
+}
+
+.btn-usual-add-to-party::after {
+  content: "仲間にする"
+}
+
+.btn-usual-vote::after {
+  content: "投票する"
+}
+
+.btn-usual-tips {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/button-s6dd74ff65a.png') no-repeat 0 -634px;
+  -webkit-background-size: 230px 3002px;
+  background-size: 230px 3002px;
+  width: 105px;
+  height: 36px;
+  display: inline-block
+}
+
+.btn-usual-help {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/button-s6dd74ff65a.png') no-repeat 0 -884px;
+  -webkit-background-size: 230px 3002px;
+  background-size: 230px 3002px;
+  width: 105px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_0_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -121px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_0_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -692px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_0_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -1010px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_0_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -121px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_0_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -692px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_0_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -1037px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_0_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -121px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_0_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -692px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_0_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -1037px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_0_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -121px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_0_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -692px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_0_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -1037px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_0_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -121px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_0_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -692px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_0_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -1037px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_0_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -121px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_0_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -692px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_0_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -1037px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_0_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -121px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_0_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -692px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_0_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -1037px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage99_0_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -195px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 21px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_1_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -1115px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 14px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_1_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -1193px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 10px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_1_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -1232px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 7px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_1_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -1181px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 14px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_1_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -1142px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 10px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_1_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -1232px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 7px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_1_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -1181px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 14px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_1_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -1142px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 10px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_1_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -1232px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 7px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_1_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -1181px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 14px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_1_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -1142px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 10px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_1_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -1232px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 7px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_1_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -1181px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 14px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_1_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -1142px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 10px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_1_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -1232px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 7px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_1_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -1181px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 14px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_1_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -1142px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 10px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_1_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -1232px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 7px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_1_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -1181px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 14px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_1_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -1142px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 10px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_1_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -1232px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 7px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage99_1_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -351px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 11px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_2_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -641px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_2_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -809px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 17px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_2_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -1166px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_2_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -641px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_2_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -809px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 17px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_2_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -1064px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_2_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -641px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_2_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -809px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 17px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_2_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -1064px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_2_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -641px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_2_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -809px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 17px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_2_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -1064px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_2_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -641px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_2_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -809px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 17px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_2_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -1064px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_2_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -641px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_2_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -809px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 17px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_2_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -1064px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_2_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -641px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_2_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -809px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 17px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_2_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -1064px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage99_2_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -312px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 21px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_3_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -391px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 22px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_3_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -500px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 16px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_3_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -956px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 11px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_3_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -391px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 22px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_3_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -551px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 16px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_3_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -956px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 11px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_3_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -391px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 22px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_3_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -500px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 16px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_3_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -956px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 11px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_3_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -391px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 22px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_3_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -551px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 16px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_3_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -956px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 11px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_3_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -391px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 22px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_3_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -551px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 16px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_3_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -956px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 11px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_3_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -391px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 22px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_3_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -500px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 16px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_3_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -956px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 11px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_3_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -391px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 22px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_3_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -500px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 16px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_3_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -956px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 11px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage99_3_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -117px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 20px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_4_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -539px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_4_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -731px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 17px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_4_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -983px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_4_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -500px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_4_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -731px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 17px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_4_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -1010px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_4_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -539px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_4_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -731px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 17px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_4_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -1010px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_4_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -481px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_4_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -731px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 17px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_4_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -1010px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_4_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -481px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_4_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -731px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 17px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_4_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -1010px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_4_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -539px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_4_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -731px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 17px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_4_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -1010px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_4_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -539px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_4_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -731px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 17px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_4_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -1010px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage99_4_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -234px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 19px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_5_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -262px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_5_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -461px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_5_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -929px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_5_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -301px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_5_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -442px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_5_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -929px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_5_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -340px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_5_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -461px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_5_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -929px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_5_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -301px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_5_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -442px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_5_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -929px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_5_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -262px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_5_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -442px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_5_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -929px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_5_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -340px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_5_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -442px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_5_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -929px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_5_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -340px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_5_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -442px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_5_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -929px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage99_5_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -156px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 20px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_6_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -70px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_6_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -313px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_6_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -902px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_6_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -70px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_6_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -352px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_6_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -902px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_6_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -70px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_6_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -301px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_6_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -902px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_6_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -70px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_6_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -352px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_6_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -875px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_6_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -70px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_6_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -352px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_6_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -902px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_6_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -70px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_6_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -301px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_6_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -902px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_6_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -70px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_6_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -301px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_6_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -902px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage99_6_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -78px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 21px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_7_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -590px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_7_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -770px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_7_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -1037px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_7_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -590px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_7_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -770px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_7_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -983px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_7_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -590px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_7_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -770px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_7_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -983px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_7_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -590px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_7_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -770px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_7_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -983px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_7_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -590px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_7_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -770px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_7_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -983px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_7_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -590px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_7_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -770px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_7_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -983px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_7_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -590px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_7_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -770px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_7_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -983px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage99_7_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -273px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 21px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_8_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -172px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_8_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -223px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 19px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_8_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -848px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_8_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -172px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_8_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -223px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 19px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_8_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -848px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_8_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -172px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_8_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -223px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 19px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_8_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -848px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_8_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -172px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_8_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -223px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 19px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_8_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -848px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_8_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -172px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_8_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -223px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 19px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_8_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -848px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_8_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -172px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_8_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -223px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 19px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_8_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -848px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_8_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -172px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 26px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_8_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -223px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 19px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_8_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -848px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 13px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage99_8_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 0;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 21px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_9_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -19px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_9_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -352px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_9_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -875px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_9_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -19px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_9_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -262px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_9_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -875px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_9_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -19px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_9_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -262px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_9_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -875px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_9_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -19px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_9_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -262px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_9_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -902px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_9_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -19px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_9_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -313px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_9_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -875px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_9_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -19px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_9_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -262px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_9_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -875px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_9_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -19px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 24px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_9_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -262px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 18px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_9_s {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -875px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 12px;
+  height: 24px;
+  display: inline-block
+}
+
+.txt-damage .num-damage99_9_m {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -39px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 21px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-damage .num-damage0_attention_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -1064px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 14px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage1_attention_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -1091px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 14px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage2_attention_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -1091px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 14px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage3_attention_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -1091px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 14px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage4_attention_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -1091px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 14px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage5_attention_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -1091px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 14px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-damage .num-damage6_attention_l {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -1091px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 14px;
+  height: 48px;
+  display: inline-block
+}
+
+.txt-recover .num-recover0 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -195px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 21px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-recover .num-recover1 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -351px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 11px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-recover .num-recover2 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -312px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 21px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-recover .num-recover3 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -117px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 20px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-recover .num-recover4 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -234px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 19px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-recover .num-recover5 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -156px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 20px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-recover .num-recover6 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -78px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 21px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-recover .num-recover7 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -273px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 21px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-recover .num-recover8 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 0;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 21px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-recover .num-recover9 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/heal-sc74d35b164.png') no-repeat 0 -39px;
+  -webkit-background-size: 21px 387px;
+  background-size: 21px 387px;
+  width: 21px;
+  height: 36px;
+  display: inline-block
+}
+
+.txt-total-damage0 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 -442px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 36px;
+  height: 16px
+}
+
+.txt-total-damage1 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 -481px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 36px;
+  height: 16px
+}
+
+.txt-total-damage2 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 -442px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 36px;
+  height: 16px
+}
+
+.txt-total-damage3 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 -532px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 36px;
+  height: 16px
+}
+
+.txt-total-damage4 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 -532px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 36px;
+  height: 16px
+}
+
+.txt-total-damage5 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 -481px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 36px;
+  height: 16px
+}
+
+.txt-total-damage6 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 -481px;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 36px;
+  height: 16px
+}
+
+[class^="txt-total-damage"] {
+  position: relative;
+  display: inline-block;
+  z-index: 20;
+  margin-bottom: -15px
+}
+
+.txt-critical-damage0 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_0-sfd4f856dee.png') no-repeat 0 0;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 87px;
+  height: 16px
+}
+
+.txt-critical-damage1 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_1-s23bdb8ad91.png') no-repeat 0 0;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 87px;
+  height: 16px
+}
+
+.txt-critical-damage2 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_2-sb444b745e3.png') no-repeat 0 0;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 87px;
+  height: 16px
+}
+
+.txt-critical-damage3 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_3-s3f289790fc.png') no-repeat 0 0;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 87px;
+  height: 16px
+}
+
+.txt-critical-damage4 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_4-s691d91eb82.png') no-repeat 0 0;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 87px;
+  height: 16px
+}
+
+.txt-critical-damage5 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_5-s084f1550c6.png') no-repeat 0 0;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 87px;
+  height: 16px
+}
+
+.txt-critical-damage6 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/attribute_6-s4ffc294e76.png') no-repeat 0 0;
+  -webkit-background-size: 87px 1256px;
+  background-size: 87px 1256px;
+  width: 87px;
+  height: 16px
+}
+
+[class^="txt-critical-damage"] {
+  position: relative;
+  display: inline-block;
+  z-index: 20;
+  margin-bottom: -15px
+}
+
+.txt-recast {
+  width: 24px;
+  height: 24px;
+  text-align: right
+}
+
+.txt-recast span[class^="num-recast"] {
+  display: inline-block;
+  margin-left: 1px;
+  position: relative
+}
+
+.txt-recast .num-recast-s1 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -900px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s2 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -666px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s3 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -576px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s4 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -612px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s5 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -540px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s6 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -504px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s7 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -594px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s8 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -378px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s9 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -468px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s10 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -306px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s11 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -810px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s12 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -324px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s13 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -252px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s14 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 0;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s15 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -234px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s16 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -180px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s17 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -270px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s18 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -162px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s19 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -216px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s20 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -198px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s21 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -288px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s22 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -432px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s23 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -90px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s24 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -126px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s25 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -54px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s26 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -72px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s27 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -144px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s28 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -18px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s29 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -36px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-s30 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -108px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 45px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a1 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -1062px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a2 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -1026px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a3 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -972px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a4 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -990px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a5 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -954px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a6 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -936px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a7 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -1008px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a8 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -882px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a9 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -918px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a10 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -846px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a11 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -1044px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a12 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -864px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a13 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -738px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a14 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -756px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a15 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -702px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a16 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -648px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a17 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -792px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a18 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -630px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a19 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -720px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a20 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -684px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a21 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -774px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a22 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -828px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a23 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -486px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a24 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -522px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a25 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -396px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a26 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -414px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a27 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -558px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a28 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -342px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a29 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -360px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-recast .num-recast-a30 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/recast-s16dcb42ee4.png') no-repeat 0 -450px;
+  -webkit-background-size: 45px 1077px;
+  background-size: 45px 1077px;
+  width: 37px;
+  height: 15px
+}
+
+.txt-info-num .num-info0 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -270px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 8px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info0.light {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info_light-s4893887a0e.png') no-repeat 0 -105px;
+  -webkit-background-size: 8px 147px;
+  background-size: 8px 147px;
+  width: 8px;
+  height: 12px;
+  -webkit-animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  display: inline-block;
+  opacity: 0
+}
+
+.txt-info-num .num-info1 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -315px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 6px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info1.light {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info_light-s4893887a0e.png') no-repeat 0 -135px;
+  -webkit-background-size: 8px 147px;
+  background-size: 8px 147px;
+  width: 6px;
+  height: 12px;
+  -webkit-animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  display: inline-block;
+  opacity: 0
+}
+
+.txt-info-num .num-info2 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -255px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 8px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info2.light {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info_light-s4893887a0e.png') no-repeat 0 -45px;
+  -webkit-background-size: 8px 147px;
+  background-size: 8px 147px;
+  width: 8px;
+  height: 12px;
+  -webkit-animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  display: inline-block;
+  opacity: 0
+}
+
+.txt-info-num .num-info3 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -180px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 8px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info3.light {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info_light-s4893887a0e.png') no-repeat 0 -15px;
+  -webkit-background-size: 8px 147px;
+  background-size: 8px 147px;
+  width: 8px;
+  height: 12px;
+  -webkit-animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  display: inline-block;
+  opacity: 0
+}
+
+.txt-info-num .num-info4 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -285px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 8px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info4.light {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info_light-s4893887a0e.png') no-repeat 0 -90px;
+  -webkit-background-size: 8px 147px;
+  background-size: 8px 147px;
+  width: 8px;
+  height: 12px;
+  -webkit-animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  display: inline-block;
+  opacity: 0
+}
+
+.txt-info-num .num-info5 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -240px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 7px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info5.light {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info_light-s4893887a0e.png') no-repeat 0 -75px;
+  -webkit-background-size: 8px 147px;
+  background-size: 8px 147px;
+  width: 7px;
+  height: 12px;
+  -webkit-animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  display: inline-block;
+  opacity: 0
+}
+
+.txt-info-num .num-info6 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -225px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 8px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info6.light {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info_light-s4893887a0e.png') no-repeat 0 -30px;
+  -webkit-background-size: 8px 147px;
+  background-size: 8px 147px;
+  width: 8px;
+  height: 12px;
+  -webkit-animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  display: inline-block;
+  opacity: 0
+}
+
+.txt-info-num .num-info7 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -300px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 8px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info7.light {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info_light-s4893887a0e.png') no-repeat 0 -120px;
+  -webkit-background-size: 8px 147px;
+  background-size: 8px 147px;
+  width: 8px;
+  height: 12px;
+  -webkit-animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  display: inline-block;
+  opacity: 0
+}
+
+.txt-info-num .num-info8 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -195px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 7px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info8.light {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info_light-s4893887a0e.png') no-repeat 0 -60px;
+  -webkit-background-size: 8px 147px;
+  background-size: 8px 147px;
+  width: 7px;
+  height: 12px;
+  -webkit-animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  display: inline-block;
+  opacity: 0
+}
+
+.txt-info-num .num-info9 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -210px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 7px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info9.light {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info_light-s4893887a0e.png') no-repeat 0 0;
+  -webkit-background-size: 8px 147px;
+  background-size: 8px 147px;
+  width: 7px;
+  height: 12px;
+  -webkit-animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  animation: "numInfoLight" 0.7s linear 0s 1 normal;
+  display: inline-block;
+  opacity: 0
+}
+
+.txt-info-num .num-info10 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -135px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 12px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info11 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -165px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 12px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info12 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -120px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 12px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info13 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -30px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 12px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info14 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -60px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 12px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info15 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -75px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 12px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info16 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -105px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 12px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info17 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -90px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 13px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info18 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -15px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 12px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info19 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -45px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 12px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info20 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 0;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 14px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info-colon {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -345px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 4px;
+  height: 12px;
+  display: inline-block
+}
+
+.txt-info-num .num-info-slash {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/info-sa353077a6c.png') no-repeat 0 -330px;
+  -webkit-background-size: 14px 357px;
+  background-size: 14px 357px;
+  width: 8px;
+  height: 12px;
+  display: inline-block
+}
+
+@-webkit-keyframes numInfoLight {
+  0%{-webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  opacity: 1
+}
+
+100% {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 0
+}
+
+}
+
+@keyframes numInfoLight {
+  0%{-webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  opacity: 1
+}
+
+100% {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 0
+}
+
+}
+
+.prt-number .num-turn0 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/turn-s3fc413ab0d.png') no-repeat 0 -195px;
+  -webkit-background-size: 19px 387px;
+  background-size: 19px 387px;
+  width: 18px;
+  height: 36px
+}
+
+.prt-number .num-turn1 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/turn-s3fc413ab0d.png') no-repeat 0 -351px;
+  -webkit-background-size: 19px 387px;
+  background-size: 19px 387px;
+  width: 10px;
+  height: 36px
+}
+
+.prt-number .num-turn2 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/turn-s3fc413ab0d.png') no-repeat 0 -312px;
+  -webkit-background-size: 19px 387px;
+  background-size: 19px 387px;
+  width: 17px;
+  height: 36px
+}
+
+.prt-number .num-turn3 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/turn-s3fc413ab0d.png') no-repeat 0 -156px;
+  -webkit-background-size: 19px 387px;
+  background-size: 19px 387px;
+  width: 16px;
+  height: 36px
+}
+
+.prt-number .num-turn4 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/turn-s3fc413ab0d.png') no-repeat 0 -234px;
+  -webkit-background-size: 19px 387px;
+  background-size: 19px 387px;
+  width: 17px;
+  height: 36px
+}
+
+.prt-number .num-turn5 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/turn-s3fc413ab0d.png') no-repeat 0 -117px;
+  -webkit-background-size: 19px 387px;
+  background-size: 19px 387px;
+  width: 18px;
+  height: 36px
+}
+
+.prt-number .num-turn6 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/turn-s3fc413ab0d.png') no-repeat 0 -39px;
+  -webkit-background-size: 19px 387px;
+  background-size: 19px 387px;
+  width: 18px;
+  height: 36px
+}
+
+.prt-number .num-turn7 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/turn-s3fc413ab0d.png') no-repeat 0 -273px;
+  -webkit-background-size: 19px 387px;
+  background-size: 19px 387px;
+  width: 18px;
+  height: 36px
+}
+
+.prt-number .num-turn8 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/turn-s3fc413ab0d.png') no-repeat 0 0;
+  -webkit-background-size: 19px 387px;
+  background-size: 19px 387px;
+  width: 19px;
+  height: 36px
+}
+
+.prt-number .num-turn9 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/turn-s3fc413ab0d.png') no-repeat 0 -78px;
+  -webkit-background-size: 19px 387px;
+  background-size: 19px 387px;
+  width: 18px;
+  height: 36px
+}
+
+.prt-exp .num-wrapper {
+  display: -webkit-box;
+  display: box;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+  -webkit-box-align: center;
+  box-align: center
+}
+
+.prt-exp .num-wrapper:before {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/exp-s31fb9a0368.png') no-repeat 0 0;
+  -webkit-background-size: 35px 345px;
+  background-size: 35px 345px;
+  width: 35px;
+  height: 15px;
+  content: ""
+}
+
+.prt-exp .num-wrapper .num-exp0 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/exp-s31fb9a0368.png') no-repeat 0 -216px;
+  -webkit-background-size: 35px 345px;
+  background-size: 35px 345px;
+  width: 14px;
+  height: 30px
+}
+
+.prt-exp .num-wrapper .num-exp1 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/exp-s31fb9a0368.png') no-repeat 0 -315px;
+  -webkit-background-size: 35px 345px;
+  background-size: 35px 345px;
+  width: 11px;
+  height: 30px
+}
+
+.prt-exp .num-wrapper .num-exp2 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/exp-s31fb9a0368.png') no-repeat 0 -150px;
+  -webkit-background-size: 35px 345px;
+  background-size: 35px 345px;
+  width: 14px;
+  height: 30px
+}
+
+.prt-exp .num-wrapper .num-exp3 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/exp-s31fb9a0368.png') no-repeat 0 -117px;
+  -webkit-background-size: 35px 345px;
+  background-size: 35px 345px;
+  width: 14px;
+  height: 30px
+}
+
+.prt-exp .num-wrapper .num-exp4 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/exp-s31fb9a0368.png') no-repeat 0 -249px;
+  -webkit-background-size: 35px 345px;
+  background-size: 35px 345px;
+  width: 14px;
+  height: 30px
+}
+
+.prt-exp .num-wrapper .num-exp5 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/exp-s31fb9a0368.png') no-repeat 0 -183px;
+  -webkit-background-size: 35px 345px;
+  background-size: 35px 345px;
+  width: 13px;
+  height: 30px
+}
+
+.prt-exp .num-wrapper .num-exp6 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/exp-s31fb9a0368.png') no-repeat 0 -84px;
+  -webkit-background-size: 35px 345px;
+  background-size: 35px 345px;
+  width: 14px;
+  height: 30px
+}
+
+.prt-exp .num-wrapper .num-exp7 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/exp-s31fb9a0368.png') no-repeat 0 -282px;
+  -webkit-background-size: 35px 345px;
+  background-size: 35px 345px;
+  width: 14px;
+  height: 30px
+}
+
+.prt-exp .num-wrapper .num-exp8 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/exp-s31fb9a0368.png') no-repeat 0 -18px;
+  -webkit-background-size: 35px 345px;
+  background-size: 35px 345px;
+  width: 14px;
+  height: 30px
+}
+
+.prt-exp .num-wrapper .num-exp9 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/exp-s31fb9a0368.png') no-repeat 0 -51px;
+  -webkit-background-size: 35px 345px;
+  background-size: 35px 345px;
+  width: 14px;
+  height: 30px
+}
+
+.prt-rp .num-wrapper {
+  display: -webkit-box;
+  display: box;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+  -webkit-box-align: center;
+  box-align: center
+}
+
+.prt-rp .num-wrapper:before {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/rp-s7102d3bd0b.png') no-repeat 0 -198px;
+  -webkit-background-size: 24px 345px;
+  background-size: 24px 345px;
+  width: 24px;
+  height: 15px;
+  content: ""
+}
+
+.prt-rp .num-wrapper .num-rp0 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/rp-s7102d3bd0b.png') no-repeat 0 -216px;
+  -webkit-background-size: 24px 345px;
+  background-size: 24px 345px;
+  width: 14px;
+  height: 30px
+}
+
+.prt-rp .num-wrapper .num-rp1 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/rp-s7102d3bd0b.png') no-repeat 0 -315px;
+  -webkit-background-size: 24px 345px;
+  background-size: 24px 345px;
+  width: 11px;
+  height: 30px
+}
+
+.prt-rp .num-wrapper .num-rp2 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/rp-s7102d3bd0b.png') no-repeat 0 -132px;
+  -webkit-background-size: 24px 345px;
+  background-size: 24px 345px;
+  width: 14px;
+  height: 30px
+}
+
+.prt-rp .num-wrapper .num-rp3 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/rp-s7102d3bd0b.png') no-repeat 0 -99px;
+  -webkit-background-size: 24px 345px;
+  background-size: 24px 345px;
+  width: 14px;
+  height: 30px
+}
+
+.prt-rp .num-wrapper .num-rp4 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/rp-s7102d3bd0b.png') no-repeat 0 -249px;
+  -webkit-background-size: 24px 345px;
+  background-size: 24px 345px;
+  width: 14px;
+  height: 30px
+}
+
+.prt-rp .num-wrapper .num-rp5 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/rp-s7102d3bd0b.png') no-repeat 0 -165px;
+  -webkit-background-size: 24px 345px;
+  background-size: 24px 345px;
+  width: 13px;
+  height: 30px
+}
+
+.prt-rp .num-wrapper .num-rp6 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/rp-s7102d3bd0b.png') no-repeat 0 -66px;
+  -webkit-background-size: 24px 345px;
+  background-size: 24px 345px;
+  width: 14px;
+  height: 30px
+}
+
+.prt-rp .num-wrapper .num-rp7 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/rp-s7102d3bd0b.png') no-repeat 0 -282px;
+  -webkit-background-size: 24px 345px;
+  background-size: 24px 345px;
+  width: 14px;
+  height: 30px
+}
+
+.prt-rp .num-wrapper .num-rp8 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/rp-s7102d3bd0b.png') no-repeat 0 0;
+  -webkit-background-size: 24px 345px;
+  background-size: 24px 345px;
+  width: 14px;
+  height: 30px
+}
+
+.prt-rp .num-wrapper .num-rp9 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/rp-s7102d3bd0b.png') no-repeat 0 -33px;
+  -webkit-background-size: 24px 345px;
+  background-size: 24px 345px;
+  width: 14px;
+  height: 30px
+}
+
+.prt-lupi .num-wrapper {
+  display: -webkit-box;
+  display: box;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+  -webkit-box-align: center;
+  box-align: center
+}
+
+.prt-lupi .num-wrapper:before {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/lupi-sa5124af931.png') no-repeat 0 0;
+  -webkit-background-size: 19px 261px;
+  background-size: 19px 261px;
+  width: 19px;
+  height: 21px;
+  content: ""
+}
+
+.prt-lupi .num-wrapper .num-lupi0 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/lupi-sa5124af931.png') no-repeat 0 -168px;
+  -webkit-background-size: 19px 261px;
+  background-size: 19px 261px;
+  width: 10px;
+  height: 21px
+}
+
+.prt-lupi .num-wrapper .num-lupi1 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/lupi-sa5124af931.png') no-repeat 0 -240px;
+  -webkit-background-size: 19px 261px;
+  background-size: 19px 261px;
+  width: 8px;
+  height: 21px
+}
+
+.prt-lupi .num-wrapper .num-lupi2 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/lupi-sa5124af931.png') no-repeat 0 -144px;
+  -webkit-background-size: 19px 261px;
+  background-size: 19px 261px;
+  width: 10px;
+  height: 21px
+}
+
+.prt-lupi .num-wrapper .num-lupi3 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/lupi-sa5124af931.png') no-repeat 0 -96px;
+  -webkit-background-size: 19px 261px;
+  background-size: 19px 261px;
+  width: 10px;
+  height: 21px
+}
+
+.prt-lupi .num-wrapper .num-lupi4 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/lupi-sa5124af931.png') no-repeat 0 -192px;
+  -webkit-background-size: 19px 261px;
+  background-size: 19px 261px;
+  width: 10px;
+  height: 21px
+}
+
+.prt-lupi .num-wrapper .num-lupi5 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/lupi-sa5124af931.png') no-repeat 0 -120px;
+  -webkit-background-size: 19px 261px;
+  background-size: 19px 261px;
+  width: 10px;
+  height: 21px
+}
+
+.prt-lupi .num-wrapper .num-lupi6 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/lupi-sa5124af931.png') no-repeat 0 -72px;
+  -webkit-background-size: 19px 261px;
+  background-size: 19px 261px;
+  width: 10px;
+  height: 21px
+}
+
+.prt-lupi .num-wrapper .num-lupi7 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/lupi-sa5124af931.png') no-repeat 0 -216px;
+  -webkit-background-size: 19px 261px;
+  background-size: 19px 261px;
+  width: 10px;
+  height: 21px
+}
+
+.prt-lupi .num-wrapper .num-lupi8 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/lupi-sa5124af931.png') no-repeat 0 -48px;
+  -webkit-background-size: 19px 261px;
+  background-size: 19px 261px;
+  width: 10px;
+  height: 21px
+}
+
+.prt-lupi .num-wrapper .num-lupi9 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/lupi-sa5124af931.png') no-repeat 0 -24px;
+  -webkit-background-size: 19px 261px;
+  background-size: 19px 261px;
+  width: 10px;
+  height: 21px
+}
+
+.num-battle0 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/battle_count-seb4edbd3bf.png') no-repeat 0 -165px;
+  -webkit-background-size: 20px 327px;
+  background-size: 20px 327px;
+  width: 20px;
+  height: 30px
+}
+
+.num-battle1 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/battle_count-seb4edbd3bf.png') no-repeat 0 -297px;
+  -webkit-background-size: 20px 327px;
+  background-size: 20px 327px;
+  width: 20px;
+  height: 30px
+}
+
+.num-battle2 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/battle_count-seb4edbd3bf.png') no-repeat 0 -132px;
+  -webkit-background-size: 20px 327px;
+  background-size: 20px 327px;
+  width: 20px;
+  height: 30px
+}
+
+.num-battle3 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/battle_count-seb4edbd3bf.png') no-repeat 0 -99px;
+  -webkit-background-size: 20px 327px;
+  background-size: 20px 327px;
+  width: 20px;
+  height: 30px
+}
+
+.num-battle4 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/battle_count-seb4edbd3bf.png') no-repeat 0 -231px;
+  -webkit-background-size: 20px 327px;
+  background-size: 20px 327px;
+  width: 20px;
+  height: 30px
+}
+
+.num-battle5 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/battle_count-seb4edbd3bf.png') no-repeat 0 -198px;
+  -webkit-background-size: 20px 327px;
+  background-size: 20px 327px;
+  width: 20px;
+  height: 30px
+}
+
+.num-battle6 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/battle_count-seb4edbd3bf.png') no-repeat 0 -33px;
+  -webkit-background-size: 20px 327px;
+  background-size: 20px 327px;
+  width: 20px;
+  height: 30px
+}
+
+.num-battle7 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/battle_count-seb4edbd3bf.png') no-repeat 0 -264px;
+  -webkit-background-size: 20px 327px;
+  background-size: 20px 327px;
+  width: 20px;
+  height: 30px
+}
+
+.num-battle8 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/battle_count-seb4edbd3bf.png') no-repeat 0 0;
+  -webkit-background-size: 20px 327px;
+  background-size: 20px 327px;
+  width: 20px;
+  height: 30px
+}
+
+.num-battle9 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/number/raid/battle_count-seb4edbd3bf.png') no-repeat 0 -66px;
+  -webkit-background-size: 20px 327px;
+  background-size: 20px 327px;
+  width: 20px;
+  height: 30px
+}
+
+.anim-damage-gauge {
+  -webkit-animation: "damage-gauge" 0.48s linear 0s 1 normal;
+  animation: "damage-gauge" 0.48s linear 0s 1 normal
+}
+
+@-webkit-keyframes damage-gauge {
+  0%{-webkit-transform: translate(-2px, 2px);
+  transform: translate(-2px, 2px)
+}
+
+16% {
+  -webkit-transform: translate(2px, -2px);
+  transform: translate(2px, -2px)
+}
+
+33% {
+  -webkit-transform: translate(-1px, 1px);
+  transform: translate(-1px, 1px)
+}
+
+50% {
+  -webkit-transform: translate(0px, -1px);
+  transform: translate(0px, -1px)
+}
+
+67% {
+  -webkit-transform: translate(1px, 1px);
+  transform: translate(1px, 1px)
+}
+
+84% {
+  -webkit-transform: translate(0px, -1px);
+  transform: translate(0px, -1px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px)
+}
+
+}
+
+@keyframes damage-gauge {
+  0%{-webkit-transform: translate(-2px, 2px);
+  transform: translate(-2px, 2px)
+}
+
+16% {
+  -webkit-transform: translate(2px, -2px);
+  transform: translate(2px, -2px)
+}
+
+33% {
+  -webkit-transform: translate(-1px, 1px);
+  transform: translate(-1px, 1px)
+}
+
+50% {
+  -webkit-transform: translate(0px, -1px);
+  transform: translate(0px, -1px)
+}
+
+67% {
+  -webkit-transform: translate(1px, 1px);
+  transform: translate(1px, 1px)
+}
+
+84% {
+  -webkit-transform: translate(0px, -1px);
+  transform: translate(0px, -1px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px)
+}
+
+}
+
+.anim-damage-enemy {
+  -webkit-animation: "damage-enemy" 0.3s linear 0s 1 normal;
+  animation: "damage-enemy" 0.3s linear 0s 1 normal
+}
+
+@-webkit-keyframes damage-enemy {
+  0%{-webkit-transform: translate(-2px, 2px);
+  transform: translate(-2px, 2px)
+}
+
+33% {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px)
+}
+
+66% {
+  -webkit-transform: translate(0px, 1px);
+  transform: translate(0px, 1px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px)
+}
+
+}
+
+@keyframes damage-enemy {
+  0%{-webkit-transform: translate(-2px, 2px);
+  transform: translate(-2px, 2px)
+}
+
+33% {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px)
+}
+
+66% {
+  -webkit-transform: translate(0px, 1px);
+  transform: translate(0px, 1px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px)
+}
+
+}
+
+.anim-damage-value {
+  -webkit-animation: "damage-value" 0.6s linear 0s 1 normal both;
+  animation: "damage-value" 0.6s linear 0s 1 normal both
+}
+
+@-webkit-keyframes damage-value {
+  0%{-webkit-transform: translate(0px, 10px);
+  transform: translate(0px, 10px);
+  opacity: 0
+}
+
+20% {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  opacity: 1
+}
+
+50% {
+  -webkit-transform: translate(0px, -1px);
+  transform: translate(0px, -1px);
+  opacity: 1
+}
+
+99.9%,
+100% {
+  -webkit-transform: translate(0px, -10px);
+  transform: translate(0px, -10px);
+  opacity: 0
+}
+
+}
+
+@keyframes damage-value {
+  0%{-webkit-transform: translate(0px, 10px);
+  transform: translate(0px, 10px);
+  opacity: 0
+}
+
+20% {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  opacity: 1
+}
+
+50% {
+  -webkit-transform: translate(0px, -1px);
+  transform: translate(0px, -1px);
+  opacity: 1
+}
+
+99.9%,
+100% {
+  -webkit-transform: translate(0px, -10px);
+  transform: translate(0px, -10px);
+  opacity: 0
+}
+
+}
+
+.anim-recover-value {
+  -webkit-animation: "recover-value" 0.84s linear 0s 1 normal both;
+  animation: "recover-value" 0.84s linear 0s 1 normal both
+}
+
+@-webkit-keyframes recover-value {
+  0%{-webkit-transform: translate(0px, 10px);
+  transform: translate(0px, 10px);
+  opacity: 0
+}
+
+20% {
+  -webkit-transform: translate(0px, 1px);
+  transform: translate(0px, 1px);
+  opacity: 1
+}
+
+90% {
+  -webkit-transform: translate(0px, -1px);
+  transform: translate(0px, -1px);
+  opacity: 1
+}
+
+99.9%,
+100% {
+  -webkit-transform: translate(0px, -10px);
+  transform: translate(0px, -10px);
+  opacity: 0
+}
+
+}
+
+@keyframes recover-value {
+  0%{-webkit-transform: translate(0px, 10px);
+  transform: translate(0px, 10px);
+  opacity: 0
+}
+
+20% {
+  -webkit-transform: translate(0px, 1px);
+  transform: translate(0px, 1px);
+  opacity: 1
+}
+
+90% {
+  -webkit-transform: translate(0px, -1px);
+  transform: translate(0px, -1px);
+  opacity: 1
+}
+
+99.9%,
+100% {
+  -webkit-transform: translate(0px, -10px);
+  transform: translate(0px, -10px);
+  opacity: 0
+}
+
+}
+
+.shake-regular {
+  -webkit-animation: "shake-regular" 0.36s linear 0s 1 normal;
+  animation: "shake-regular" 0.36s linear 0s 1 normal
+}
+
+@-webkit-keyframes shake-regular {
+  0%,24.9%{-webkit-transform: translateY(-1px);
+  transform: translateY(-1px)
+}
+
+25%,
+74.9% {
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px)
+}
+
+75%,
+99.8% {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px)
+}
+
+}
+
+@keyframes shake-regular {
+  0%,24.9%{-webkit-transform: translateY(-1px);
+  transform: translateY(-1px)
+}
+
+25%,
+74.9% {
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px)
+}
+
+75%,
+99.8% {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px)
+}
+
+}
+
+.shake-full {
+  -webkit-animation: "shake-full" 0.24s linear 0s infinite normal;
+  animation: "shake-full" 0.24s linear 0s infinite normal
+}
+
+@-webkit-keyframes shake-full {
+  0%,24.9%{-webkit-transform: translateY(1px);
+  transform: translateY(1px)
+}
+
+25%,
+74.9% {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px)
+}
+
+75%,
+99.8% {
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px)
+}
+
+}
+
+@keyframes shake-full {
+  0%,24.9%{-webkit-transform: translateY(1px);
+  transform: translateY(1px)
+}
+
+25%,
+74.9% {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px)
+}
+
+75%,
+99.8% {
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px)
+}
+
+}
+
+.vibrate-regular {
+  -webkit-animation: "vibrate-regular" 0.36s linear 0s 1 normal;
+  animation: "vibrate-regular" 0.36s linear 0s 1 normal
+}
+
+@-webkit-keyframes vibrate-regular {
+  0%{-webkit-transform: translateX(2px);
+  transform: translateX(2px)
+}
+
+25% {
+  -webkit-transform: translateX(-2px);
+  transform: translateX(-2px)
+}
+
+50% {
+  -webkit-transform: translateX(2px);
+  transform: translateX(2px)
+}
+
+75% {
+  -webkit-transform: translateX(-2px);
+  transform: translateX(-2px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translateX(2px);
+  transform: translateX(2px)
+}
+
+}
+
+@keyframes vibrate-regular {
+  0%{-webkit-transform: translateX(2px);
+  transform: translateX(2px)
+}
+
+25% {
+  -webkit-transform: translateX(-2px);
+  transform: translateX(-2px)
+}
+
+50% {
+  -webkit-transform: translateX(2px);
+  transform: translateX(2px)
+}
+
+75% {
+  -webkit-transform: translateX(-2px);
+  transform: translateX(-2px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translateX(2px);
+  transform: translateX(2px)
+}
+
+}
+
+.jump-regular {
+  -webkit-animation: "jump-regular" 0.25s linear 0s 1 normal;
+  animation: "jump-regular" 0.25s linear 0s 1 normal
+}
+
+@-webkit-keyframes jump-regular {
+  0%{-webkit-transform: translateY(10px);
+  transform: translateY(10px)
+}
+
+45% {
+  -webkit-transform: translateY(-25px);
+  transform: translateY(-25px)
+}
+
+90% {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px)
+}
+
+}
+
+@keyframes jump-regular {
+  0%{-webkit-transform: translateY(10px);
+  transform: translateY(10px)
+}
+
+45% {
+  -webkit-transform: translateY(-25px);
+  transform: translateY(-25px)
+}
+
+90% {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px)
+}
+
+}
+
+.jump-full {
+  -webkit-animation: "jump-full" 0.25s linear 0s infinite normal;
+  animation: "jump-full" 0.25s linear 0s infinite normal
+}
+
+@-webkit-keyframes jump-full {
+  0%{-webkit-transform: translateY(10px);
+  transform: translateY(10px)
+}
+
+45% {
+  -webkit-transform: translateY(-25px);
+  transform: translateY(-25px)
+}
+
+90% {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px)
+}
+
+}
+
+@keyframes jump-full {
+  0%{-webkit-transform: translateY(10px);
+  transform: translateY(10px)
+}
+
+45% {
+  -webkit-transform: translateY(-25px);
+  transform: translateY(-25px)
+}
+
+90% {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px)
+}
+
+}
+
+.flash-full {
+  -webkit-animation: "flash-full" 1s linear 0s infinite normal;
+  animation: "flash-full" 1s linear 0s infinite normal
+}
+
+@-webkit-keyframes flash-full {
+  0%,24.9%{-webkit-transform: translateY(20px);
+  transform: translateY(20px)
+}
+
+25%,
+74.9% {
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px)
+}
+
+75%,
+99.8% {
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px)
+}
+
+}
+
+@keyframes flash-full {
+  0%,24.9%{-webkit-transform: translateY(20px);
+  transform: translateY(20px)
+}
+
+25%,
+74.9% {
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px)
+}
+
+75%,
+99.8% {
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px)
+}
+
+}
+
+.shake-gradual {
+  -webkit-animation: "shake-gradual" 2s linear 0s 1 normal;
+  animation: "shake-gradual" 2s linear 0s 1 normal
+}
+
+@-webkit-keyframes shake-gradual {
+  0%,2.9%{-webkit-transform: translateY(1px);
+  transform: translateY(1px)
+}
+
+3%,
+9.4% {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px)
+}
+
+9.5%,
+15.4% {
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px)
+}
+
+15.5%,
+21.9% {
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px)
+}
+
+22%,
+27.9% {
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px)
+}
+
+28%,
+34.4% {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px)
+}
+
+34.5%,
+40.4% {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px)
+}
+
+40.5%,
+46.9% {
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px)
+}
+
+47%,
+52.9% {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px)
+}
+
+53%,
+59.4% {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px)
+}
+
+59.5%,
+65.4% {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px)
+}
+
+65.5%,
+71.9% {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px)
+}
+
+72%,
+77.9% {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px)
+}
+
+78%,
+84.4% {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px)
+}
+
+84.5%,
+90.4% {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px)
+}
+
+90.5%,
+96.9% {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px)
+}
+
+97%,
+99.9%,
+100% {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px)
+}
+
+}
+
+@keyframes shake-gradual {
+  0%,2.9%{-webkit-transform: translateY(1px);
+  transform: translateY(1px)
+}
+
+3%,
+9.4% {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px)
+}
+
+9.5%,
+15.4% {
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px)
+}
+
+15.5%,
+21.9% {
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px)
+}
+
+22%,
+27.9% {
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px)
+}
+
+28%,
+34.4% {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px)
+}
+
+34.5%,
+40.4% {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px)
+}
+
+40.5%,
+46.9% {
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px)
+}
+
+47%,
+52.9% {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px)
+}
+
+53%,
+59.4% {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px)
+}
+
+59.5%,
+65.4% {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px)
+}
+
+65.5%,
+71.9% {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px)
+}
+
+72%,
+77.9% {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px)
+}
+
+78%,
+84.4% {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px)
+}
+
+84.5%,
+90.4% {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px)
+}
+
+90.5%,
+96.9% {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px)
+}
+
+97%,
+99.9%,
+100% {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px)
+}
+
+}
+
+.to-black {
+  -webkit-animation: "to-black" 0s linear 0s 1 normal;
+  animation: "to-black" 0s linear 0s 1 normal
+}
+
+@-webkit-keyframes to-black {
+  0%{background-color: rgba(0,0,0,0)
+}
+
+10%,
+90% {
+  background-color: rgba(0,0,0,0.6)
+}
+
+99.9%,
+100% {
+  background-color: rgba(0,0,0,0)
+}
+
+}
+
+@keyframes to-black {
+  0%{background-color: rgba(0,0,0,0)
+}
+
+10%,
+90% {
+  background-color: rgba(0,0,0,0.6)
+}
+
+99.9%,
+100% {
+  background-color: rgba(0,0,0,0)
+}
+
+}
+
+.to-black-stop {
+  -webkit-animation: "to-black-stop" 0s linear 0s 1 normal both;
+  animation: "to-black-stop" 0s linear 0s 1 normal both
+}
+
+@-webkit-keyframes to-black-stop {
+  0%{background-color: rgba(0,0,0,0)
+}
+
+99.9%,
+100% {
+  background-color: rgba(0,0,0,0.6)
+}
+
+}
+
+@keyframes to-black-stop {
+  0%{background-color: rgba(0,0,0,0)
+}
+
+99.9%,
+100% {
+  background-color: rgba(0,0,0,0.6)
+}
+
+}
+
+.to-black-start {
+  -webkit-animation: "to-black-start" 0s linear 0s 1 normal both;
+  animation: "to-black-start" 0s linear 0s 1 normal both
+}
+
+@-webkit-keyframes to-black-start {
+  0%{background-color: rgba(0,0,0,0.6)
+}
+
+99.9%,
+100% {
+  background-color: rgba(0,0,0,0)
+}
+
+}
+
+@keyframes to-black-start {
+  0%{background-color: rgba(0,0,0,0.6)
+}
+
+99.9%,
+100% {
+  background-color: rgba(0,0,0,0)
+}
+
+}
+
+.to-white {
+  -webkit-animation: "to-white" 0s linear 0s 1 normal;
+  animation: "to-white" 0s linear 0s 1 normal
+}
+
+@-webkit-keyframes to-white {
+  0%{background-color: rgba(255,255,255,0)
+}
+
+10%,
+90% {
+  background-color: rgba(255,255,255,0.4)
+}
+
+99.9%,
+100% {
+  background-color: rgba(255,255,255,0)
+}
+
+}
+
+@keyframes to-white {
+  0%{background-color: rgba(255,255,255,0)
+}
+
+10%,
+90% {
+  background-color: rgba(255,255,255,0.4)
+}
+
+99.9%,
+100% {
+  background-color: rgba(255,255,255,0)
+}
+
+}
+
+.to-white-stop {
+  -webkit-animation: "to-white-stop" 0.5s linear 0s 1 normal both;
+  animation: "to-white-stop" 0.5s linear 0s 1 normal both
+}
+
+@-webkit-keyframes to-white-stop {
+  0%{background-color: rgba(255,255,255,0)
+}
+
+99.9%,
+100% {
+  background-color: rgba(255,255,255,0.8)
+}
+
+}
+
+@keyframes to-white-stop {
+  0%{background-color: rgba(255,255,255,0)
+}
+
+99.9%,
+100% {
+  background-color: rgba(255,255,255,0.8)
+}
+
+}
+
+.to-white-start {
+  -webkit-animation: "to-white-start" 0.5s linear 0s 1 normal both;
+  animation: "to-white-start" 0.5s linear 0s 1 normal both
+}
+
+@-webkit-keyframes to-white-start {
+  0%{background-color: rgba(255,255,255,0.8)
+}
+
+99.9%,
+100% {
+  background-color: rgba(255,255,255,0)
+}
+
+}
+
+@keyframes to-white-start {
+  0%{background-color: rgba(255,255,255,0.8)
+}
+
+99.9%,
+100% {
+  background-color: rgba(255,255,255,0)
+}
+
+}
+
+.to-red {
+  -webkit-animation: "to-red" 0s linear 0s 1 normal;
+  animation: "to-red" 0s linear 0s 1 normal
+}
+
+@-webkit-keyframes to-red {
+  0%{background-color: rgba(100,0,0,0)
+}
+
+10%,
+90% {
+  background-color: rgba(100,0,0,0.5)
+}
+
+99.9%,
+100% {
+  background-color: rgba(100,0,0,0)
+}
+
+}
+
+@keyframes to-red {
+  0%{background-color: rgba(100,0,0,0)
+}
+
+10%,
+90% {
+  background-color: rgba(100,0,0,0.5)
+}
+
+99.9%,
+100% {
+  background-color: rgba(100,0,0,0)
+}
+
+}
+
+.to-green {
+  -webkit-animation: "to-green" 0s linear 0s 1 normal;
+  animation: "to-green" 0s linear 0s 1 normal
+}
+
+@-webkit-keyframes to-green {
+  0%{background-color: rgba(0,100,0,0)
+}
+
+10%,
+90% {
+  background-color: rgba(0,100,0,0.5)
+}
+
+99.9%,
+100% {
+  background-color: rgba(0,100,0,0)
+}
+
+}
+
+@keyframes to-green {
+  0%{background-color: rgba(0,100,0,0)
+}
+
+10%,
+90% {
+  background-color: rgba(0,100,0,0.5)
+}
+
+99.9%,
+100% {
+  background-color: rgba(0,100,0,0)
+}
+
+}
+
+.to-blue {
+  -webkit-animation: "to-blue" 0s linear 0s 1 normal;
+  animation: "to-blue" 0s linear 0s 1 normal
+}
+
+@-webkit-keyframes to-blue {
+  0%{background-color: rgba(0,0,100,0)
+}
+
+10%,
+90% {
+  background-color: rgba(0,0,100,0.5)
+}
+
+99.9%,
+100% {
+  background-color: rgba(0,0,100,0)
+}
+
+}
+
+@keyframes to-blue {
+  0%{background-color: rgba(0,0,100,0)
+}
+
+10%,
+90% {
+  background-color: rgba(0,0,100,0.5)
+}
+
+99.9%,
+100% {
+  background-color: rgba(0,0,100,0)
+}
+
+}
+
+.to-yellow {
+  -webkit-animation: "to-yellow" 0s linear 0s 1 normal;
+  animation: "to-yellow" 0s linear 0s 1 normal
+}
+
+@-webkit-keyframes to-yellow {
+  0%{background-color: rgba(100,100,0,0)
+}
+
+10%,
+90% {
+  background-color: rgba(100,100,0,0.5)
+}
+
+99.9%,
+100% {
+  background-color: rgba(100,100,0,0)
+}
+
+}
+
+@keyframes to-yellow {
+  0%{background-color: rgba(100,100,0,0)
+}
+
+10%,
+90% {
+  background-color: rgba(100,100,0,0.5)
+}
+
+99.9%,
+100% {
+  background-color: rgba(100,100,0,0)
+}
+
+}
+
+.to-purple {
+  -webkit-animation: "to-purple" 0s linear 0s 1 normal;
+  animation: "to-purple" 0s linear 0s 1 normal
+}
+
+@-webkit-keyframes to-purple {
+  0%{background-color: rgba(100,0,100,0)
+}
+
+10%,
+90% {
+  background-color: rgba(100,0,100,0.5)
+}
+
+99.9%,
+100% {
+  background-color: rgba(100,0,100,0)
+}
+
+}
+
+@keyframes to-purple {
+  0%{background-color: rgba(100,0,100,0)
+}
+
+10%,
+90% {
+  background-color: rgba(100,0,100,0.5)
+}
+
+99.9%,
+100% {
+  background-color: rgba(100,0,100,0)
+}
+
+}
+
+.to-pink {
+  -webkit-animation: "to-pink" 0s linear 0s 1 normal;
+  animation: "to-pink" 0s linear 0s 1 normal
+}
+
+@-webkit-keyframes to-pink {
+  0%{background-color: rgba(200,50,100,0)
+}
+
+10%,
+90% {
+  background-color: rgba(200,50,100,0.5)
+}
+
+99.9%,
+100% {
+  background-color: rgba(200,50,100,0)
+}
+
+}
+
+@keyframes to-pink {
+  0%{background-color: rgba(200,50,100,0)
+}
+
+10%,
+90% {
+  background-color: rgba(200,50,100,0.5)
+}
+
+99.9%,
+100% {
+  background-color: rgba(200,50,100,0)
+}
+
+}
+
+.to-aqua {
+  -webkit-animation: "to-aqua" 0s linear 0s 1 normal;
+  animation: "to-aqua" 0s linear 0s 1 normal
+}
+
+@-webkit-keyframes to-aqua {
+  0%{background-color: rgba(50,50,100,0)
+}
+
+10%,
+90% {
+  background-color: rgba(50,50,100,0.5)
+}
+
+99.9%,
+100% {
+  background-color: rgba(50,50,100,0)
+}
+
+}
+
+@keyframes to-aqua {
+  0%{background-color: rgba(50,50,100,0)
+}
+
+10%,
+90% {
+  background-color: rgba(50,50,100,0.5)
+}
+
+99.9%,
+100% {
+  background-color: rgba(50,50,100,0)
+}
+
+}
+
+.anim-character-list-show {
+  -webkit-animation: "list-show" 0.3s ease-out 0s 1 normal both;
+  animation: "list-show" 0.3s ease-out 0s 1 normal both
+}
+
+.anim-character-list-hide {
+  -webkit-animation: "list-hide" 0.3s ease-in 0s 1 normal both;
+  animation: "list-hide" 0.3s ease-in 0s 1 normal both
+}
+
+@-webkit-keyframes list-show {
+  0%{-webkit-transform: translateY(0px);
+  transform: translateY(0px)
+}
+
+85% {
+  -webkit-transform: translateY(70px);
+  transform: translateY(70px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translateY(65px);
+  transform: translateY(65px)
+}
+
+}
+
+@keyframes list-show {
+  0%{-webkit-transform: translateY(0px);
+  transform: translateY(0px)
+}
+
+85% {
+  -webkit-transform: translateY(70px);
+  transform: translateY(70px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translateY(65px);
+  transform: translateY(65px)
+}
+
+}
+
+@-webkit-keyframes list-hide {
+  0%{-webkit-transform: translateY(65px);
+  transform: translateY(65px)
+}
+
+15% {
+  -webkit-transform: translateY(70px);
+  transform: translateY(70px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px)
+}
+
+}
+
+@keyframes list-hide {
+  0%{-webkit-transform: translateY(65px);
+  transform: translateY(65px)
+}
+
+15% {
+  -webkit-transform: translateY(70px);
+  transform: translateY(70px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px)
+}
+
+}
+
+.anim-cut-in {
+  -webkit-animation: "anim-cut-in" 2s linear 0s 1 normal both;
+  animation: "anim-cut-in" 2s linear 0s 1 normal both
+}
+
+@-webkit-keyframes anim-cut-in {
+  0%{-webkit-transform: scale(1, 1) translateX(-320px);
+  transform: scale(1, 1) translateX(-320px);
+  opacity: 1
+}
+
+3% {
+  -webkit-transform: scale(1, 1) translateX(0px);
+  transform: scale(1, 1) translateX(0px);
+  opacity: 1
+}
+
+92% {
+  -webkit-transform: scale(1, 1) translateX(0px);
+  transform: scale(1, 1) translateX(0px);
+  opacity: 1
+}
+
+95% {
+  -webkit-transform: scale(1, 0.6) translateX(0px);
+  transform: scale(1, 0.6) translateX(0px);
+  opacity: 1
+}
+
+99.9%,
+100% {
+  -webkit-transform: scale(0.6, 3) translateX(0px);
+  transform: scale(0.6, 3) translateX(0px);
+  opacity: 0
+}
+
+}
+
+@keyframes anim-cut-in {
+  0%{-webkit-transform: scale(1, 1) translateX(-320px);
+  transform: scale(1, 1) translateX(-320px);
+  opacity: 1
+}
+
+3% {
+  -webkit-transform: scale(1, 1) translateX(0px);
+  transform: scale(1, 1) translateX(0px);
+  opacity: 1
+}
+
+92% {
+  -webkit-transform: scale(1, 1) translateX(0px);
+  transform: scale(1, 1) translateX(0px);
+  opacity: 1
+}
+
+95% {
+  -webkit-transform: scale(1, 0.6) translateX(0px);
+  transform: scale(1, 0.6) translateX(0px);
+  opacity: 1
+}
+
+99.9%,
+100% {
+  -webkit-transform: scale(0.6, 3) translateX(0px);
+  transform: scale(0.6, 3) translateX(0px);
+  opacity: 0
+}
+
+}
+
+.prt-quest-header {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/header-s18efd299bd.png') no-repeat 0 0;
+  -webkit-background-size: 320px 396px;
+  background-size: 320px 396px;
+  width: 320px;
+  height: 58px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: box;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+  padding-top: 2px
+}
+
+.prt-quest-header .btn-bgm-change {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/header-s18efd299bd.png') no-repeat 0 -105px;
+  -webkit-background-size: 320px 396px;
+  background-size: 320px 396px;
+  width: 67px;
+  height: 40px
+}
+
+.prt-quest-header .btn-bgm-change.soundOn {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/header-s18efd299bd.png') no-repeat 0 -148px;
+  -webkit-background-size: 320px 396px;
+  background-size: 320px 396px;
+  width: 67px;
+  height: 40px
+}
+
+.prt-quest-header .prt-article {
+  color: #ffe1a2;
+  line-height: 1.3
+}
+
+.prt-quest-header .prt-article::before {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/header-s18efd299bd.png') no-repeat 0 -324px;
+  -webkit-background-size: 320px 396px;
+  background-size: 320px 396px;
+  width: 19px;
+  height: 17px;
+  display: inline-block;
+  content: '';
+  vertical-align: top;
+  margin-right: 5px
+}
+
+.prt-quest-header .prt-treasure {
+  color: #ffe1a2;
+  line-height: 1.3
+}
+
+.prt-quest-header .prt-treasure::before {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/header-s18efd299bd.png') no-repeat 0 -359px;
+  -webkit-background-size: 320px 396px;
+  background-size: 320px 396px;
+  width: 18px;
+  height: 17px;
+  display: inline-block;
+  content: '';
+  vertical-align: top;
+  margin: -1px 5px 0 0
+}
+
+.prt-quest-header .prt-lupi {
+  color: #ffe1a2;
+  line-height: 1.3
+}
+
+.prt-quest-header .prt-lupi::before {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/header-s18efd299bd.png') no-repeat 0 -379px;
+  -webkit-background-size: 320px 396px;
+  background-size: 320px 396px;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  content: '';
+  vertical-align: top;
+  margin: -1px 5px 0 0
+}
+
+.prt-quest-header .btn-header {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/header-s18efd299bd.png') no-repeat 0 -61px;
+  -webkit-background-size: 320px 396px;
+  background-size: 320px 396px;
+  width: 67px;
+  height: 41px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 5px
+}
+
+.prt-quest-header .btn-header::after {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/header-s18efd299bd.png') no-repeat 0 -246px;
+  -webkit-background-size: 320px 396px;
+  background-size: 320px 396px;
+  width: 43px;
+  height: 23px;
+  display: inline-block;
+  content: ''
+}
+
+.prt-quest-header .prt-scene-num {
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  width: 320px;
+  display: none;
+  text-align: center;
+  font-size: 0px
+}
+
+.prt-quest-header .prt-scene-num .prt-scene-text {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/header-s18efd299bd.png') no-repeat 0 -344px;
+  -webkit-background-size: 320px 396px;
+  background-size: 320px 396px;
+  width: 36px;
+  height: 12px;
+  display: inline-block;
+  margin-right: 10px
+}
+
+.prt-quest-header .prt-scene-num .txt-info-num {
+  display: inline-block
+}
+
+.prt-quest-header.scene .btn-header::after {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/header-s18efd299bd.png') no-repeat 0 -298px;
+  -webkit-background-size: 320px 396px;
+  background-size: 320px 396px;
+  width: 43px;
+  height: 23px;
+  display: inline-block
+}
+
+.prt-quest-header.scene .btn-header.talkView::after {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/header-s18efd299bd.png') no-repeat 0 -220px;
+  -webkit-background-size: 320px 396px;
+  background-size: 320px 396px;
+  width: 43px;
+  height: 23px;
+  display: inline-block
+}
+
+.prt-quest-header.scene .btn-header.btn-scene-skip::after {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/header-s18efd299bd.png') no-repeat 0 -272px;
+  -webkit-background-size: 320px 396px;
+  background-size: 320px 396px;
+  width: 43px;
+  height: 23px;
+  display: inline-block
+}
+
+.prt-quest-header.result .btn-header {
+  opacity: 0.3
+}
+
+.prt-quest-title {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/header-s18efd299bd.png') no-repeat 0 -191px;
+  -webkit-background-size: 320px 396px;
+  background-size: 320px 396px;
+  width: 270px;
+  height: 26px;
+  position: absolute;
+  top: 31px;
+  left: 25px;
+  z-index: 8;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #150f0f;
+  text-shadow: 0 0 1px #f5e5c4,0 0 1px #f5e5c4,0 0 1px #f5e5c4,0 0 1px #f5e5c4,0 0 2px #f5e5c4,0 0 2px #f5e5c4,0 0 2px #f5e5c4,0 0 2px #f5e5c4;
+  text-align: center;
+  line-height: 1;
+  padding-top: 6px
+}
+
+#mobage-game-container,
+#gree-game-container {
+  z-index: 0
+}
+
+#debug {
+  display: none
+}
+
+.cnt-global-header {
+  display: none
+}
+
+.cnt-global-footer {
+  display: none
+}
+
+.cnt-copyright {
+  display: none
+}
+
+.prt-treasure {
+  display: none
+}
+
+.prt-lupi {
+  display: none
+}
+
+.wrapper {
+  padding: 0;
+  margin-bottom: 0;
+  background: none
+}
+
+.cnt-quest-scene {
+  width: 320px;
+  height: 460px;
+  position: relative;
+  overflow: hidden
+}
+
+.cnt-quest-scene .btn-skip {
+  position: absolute;
+  top: 426px;
+  bottom: 0px;
+  left: 20px;
+  z-index: 910;
+  padding-top: 6px
+}
+
+.cnt-quest-scene .btn-skip::after {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/parts-s6e4724d7a7.png') no-repeat 0 -406px;
+  -webkit-background-size: 320px 427px;
+  background-size: 320px 427px;
+  width: 43px;
+  height: 21px;
+  content: '';
+  display: inline-block
+}
+
+.cnt-quest-scene .btn-skip.disable {
+  pointer-events: none;
+  padding-top: 6px
+}
+
+.cnt-quest-scene .btn-skip.disable::after {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/parts-s6e4724d7a7.png') no-repeat 0 -151px;
+  -webkit-background-size: 320px 427px;
+  background-size: 320px 427px;
+  width: 43px;
+  height: 21px;
+  display: inline-block
+}
+
+.cnt-quest-scene #btn-auto {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/parts-s6e4724d7a7.png') no-repeat 0 -308px;
+  -webkit-background-size: 320px 427px;
+  background-size: 320px 427px;
+  width: 55px;
+  height: 20px;
+  position: absolute;
+  top: 274px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 98;
+  margin-top: -294px
+}
+
+.cnt-quest-scene #btn-auto.off {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/parts-s6e4724d7a7.png') no-repeat 0 -358px;
+  -webkit-background-size: 320px 427px;
+  background-size: 320px 427px;
+  width: 55px;
+  height: 20px
+}
+
+.cnt-quest-scene.disabled {
+  pointer-events: none
+}
+
+.prt-next-btn-area {
+  width: 320px;
+  height: 450px;
+  position: absolute
+}
+
+.prt-quest-header {
+  z-index: 4000
+}
+
+#cjs-scene-effect {
+  position: absolute;
+  z-index: 20
+}
+
+#cjs-scene-effect-container {
+  position: absolute;
+  z-index: 20
+}
+
+#cjs-bg-effect-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2
+}
+
+.prt-scene-stage {
+  width: 320px;
+  height: 300px;
+  position: relative;
+  z-index: -1;
+  margin-bottom: -5px;
+  overflow: hidden
+}
+
+.prt-scene-stage .prt-scene-bg {
+  position: relative
+}
+
+.prt-scene-stage .prt-scene-bg .img-scene-background {
+  width: 350px;
+  margin-left: -15px
+}
+
+.prt-scene-stage .prt-character-display {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 5
+}
+
+.prt-scene-stage .prt-character-display .img-scene-character {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 320px;
+  height: 344px
+}
+
+.prt-scene-stage .onm-effect-layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 320px;
+  height: 300px
+}
+
+.prt-scene-comment {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/parts-s6e4724d7a7.png') no-repeat 0 0;
+  -webkit-background-size: 320px 427px;
+  background-size: 320px 427px;
+  width: 320px;
+  height: 148px;
+  position: relative;
+  z-index: 900
+}
+
+.prt-scene-comment .txt-character-name {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 7px 0 0 12px;
+  min-height: 22px
+}
+
+.prt-scene-comment .prt-message-area {
+  padding: 20px 15px 0 25px
+}
+
+.prt-scene-comment .prt-message-area .txt-message {
+  font-size: 14px;
+  line-height: 1.5
+}
+
+.prt-scene-comment .btn-play-voice {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/parts-s6e4724d7a7.png') no-repeat 0 -281px;
+  -webkit-background-size: 320px 427px;
+  background-size: 320px 427px;
+  width: 41px;
+  height: 24px;
+  position: absolute;
+  top: 310px;
+  right: 13px;
+  z-index: 3000;
+  margin-top: -294px;
+  display: none
+}
+
+.prt-scene-comment .ico-cursor-talk {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/parts-s6e4724d7a7.png') no-repeat 0 -331px;
+  -webkit-background-size: 320px 427px;
+  background-size: 320px 427px;
+  width: 12px;
+  height: 24px;
+  position: absolute;
+  right: 20px;
+  bottom: 35px;
+  -webkit-animation: "anim-ico-pointer" 0.8s linear 0s infinite normal;
+  animation: "anim-ico-pointer" 0.8s linear 0s infinite normal;
+  display: none
+}
+
+.prt-scene-comment-after-mask {
+  width: 320px;
+  height: 100%;
+  position: relative;
+  z-index: 900;
+  background-color: #150f0f
+}
+
+.prt-log-display {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 3000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 45px 0 50px;
+  height: 450px;
+  overflow: hidden;
+  display: none;
+  background: #150f0f
+}
+
+.prt-log-display .prt-log-each {
+  position: relative;
+  overflow: hidden
+}
+
+.prt-log-display .prt-log-each::after {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/parts-s6e4724d7a7.png') no-repeat 0 -381px;
+  -webkit-background-size: 320px 427px;
+  background-size: 320px 427px;
+  width: 307px;
+  height: 1px;
+  position: absolute;
+  bottom: 0px;
+  left: 6px;
+  content: ''
+}
+
+.prt-log-display .prt-log-each .btn-log-each,
+.prt-log-display .prt-log-each .prt-disable-log-each {
+  position: relative;
+  box-sizing: border-box;
+  padding: 8px 0 10px 10px;
+  width: 274px
+}
+
+.prt-log-display .prt-log-each .btn-log-each.on::before {
+  position: absolute;
+  top: 0px;
+  right: -46px;
+  bottom: 1px;
+  left: 0px;
+  z-index: -1;
+  content: "";
+  background-color: rgba(255,255,255,0.2)
+}
+
+.prt-log-display .prt-log-each .txt-log-name {
+  color: #42e5ff;
+  font-size: 14px
+}
+
+.prt-log-display .prt-log-each .txt-log-name.is-select {
+  color: #e47a24
+}
+
+.prt-log-display .prt-log-each .txt-log-message {
+  color: #f2eee2;
+  padding-left: 15px;
+  font-size: 12px;
+  line-height: 1.4
+}
+
+.prt-log-display .prt-log-each .txt-log-message.is-select {
+  color: #ffbb84
+}
+
+.prt-log-display .prt-log-each .btn-play-log-voice {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/parts-s6e4724d7a7.png') no-repeat 0 -385px;
+  -webkit-background-size: 320px 427px;
+  background-size: 320px 427px;
+  width: 35px;
+  height: 18px
+}
+
+.prt-log-display.disabled {
+  pointer-events: none
+}
+
+.prt-comic-display {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 2999;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 320px;
+  height: 460px;
+  background: #150f0f;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 70px;
+  overflow: hidden;
+  display: none
+}
+
+.prt-comic-display::before {
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/comic/bg_edit.jpg?1527501760') no-repeat;
+  -webkit-background-size: 320px 460px;
+  background-size: 320px 460px;
+  width: 320px;
+  height: 460px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: -1;
+  margin: 0 auto;
+  content: ''
+}
+
+.prt-comic-display .prt-scene-comic .img-scene-comic {
+  width: 280px;
+  height: 360px
+}
+
+.prt-comic-display .ico-cursor-talk-comic {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/parts-s6e4724d7a7.png') no-repeat 0 -331px;
+  -webkit-background-size: 320px 427px;
+  background-size: 320px 427px;
+  width: 12px;
+  height: 24px;
+  position: absolute;
+  top: 385px;
+  right: 20px;
+  -webkit-animation: "anim-ico-pointer" 0.8s linear 0s infinite normal;
+  animation: "anim-ico-pointer" 0.8s linear 0s infinite normal;
+  display: none
+}
+
+.tap-blocker {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2999;
+  width: 100%;
+  height: 100%;
+  display: none
+}
+
+.prt-sel-area {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  bottom: -15px;
+  left: 0px;
+  z-index: 2000;
+  display: none
+}
+
+.prt-sel-area .prt-sel-inner {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(21,15,15,0.7)), color-stop(100%, rgba(27,45,50,0.7)));
+  background-image: -webkit-linear-gradient(rgba(21,15,15,0.7) 0%,rgba(27,45,50,0.7) 100%);
+  background-image: linear-gradient(rgba(21,15,15,0.7) 0%,rgba(27,45,50,0.7) 100%);
+  padding-top: 10px;
+  border-top: 2px solid #7c6746;
+  border-bottom: 2px solid #7c6746;
+  text-align: center
+}
+
+.prt-sel-area .prt-sel-inner.has-1-sel {
+  position: absolute;
+  top: 109px;
+  left: 0px;
+  z-index: 1;
+  width: 320px
+}
+
+.prt-sel-area .prt-sel-inner.has-2-sel {
+  position: absolute;
+  top: 109px;
+  left: 0px;
+  z-index: 1;
+  width: 320px
+}
+
+.prt-sel-area .prt-sel-inner.has-3-sel {
+  position: absolute;
+  top: 56px;
+  left: 0px;
+  z-index: 1;
+  width: 320px
+}
+
+.prt-sel-area .prt-sel-inner.has-4-sel {
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  z-index: 1;
+  width: 320px
+}
+
+.prt-sel-area .prt-sel-inner.has-img-sel {
+  position: absolute;
+  top: 52px;
+  left: 0px;
+  z-index: 1;
+  width: 320px
+}
+
+.prt-sel-area .prt-sel-inner .img-choice {
+  width: 95px;
+  height: 72px;
+  display: inline-block;
+  padding-bottom: 8px
+}
+
+.prt-sel-area .btn-sel-taparea {
+  position: absolute;
+  top: 260px;
+  right: 13px;
+  z-index: 2001;
+  width: 41px;
+  height: 24px
+}
+
+.prt-sel-area .btn-select-balloon {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/parts-s6e4724d7a7.png') no-repeat 0 -175px;
+  -webkit-background-size: 320px 427px;
+  background-size: 320px 427px;
+  width: 260px;
+  height: 50px;
+  color: #f2eee2;
+  text-shadow: 0 0 3px #253544,0 0 3px #253544,0 0 3px #253544,0 0 3px #253544,0 0 4px #253544,0 0 4px #253544,0 0 4px #253544,0 0 4px #253544;
+  display: inline-block;
+  padding-top: 11px;
+  margin: 0 auto 3px
+}
+
+.prt-sel-area .btn-select-balloon.on {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/parts-s6e4724d7a7.png') no-repeat 0 -228px;
+  -webkit-background-size: 320px 427px;
+  background-size: 320px 427px;
+  width: 260px;
+  height: 50px;
+  display: inline-block
+}
+
+.prt-sel-area .btn-select-balloon.txt-small {
+  font-size: 10px;
+  padding-top: 13px
+}
+
+.prt-sel-area.sel2048 .prt-sel-inner {
+  position: absolute;
+  top: 9px;
+  bottom: 205px;
+  padding-bottom: 10px
+}
+
+.prt-sel-area.sel2048 .prt-sel-inner::before {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/select/2048-s024c4df1b3.png') no-repeat 0 0;
+  -webkit-background-size: 270px 182px;
+  background-size: 270px 182px;
+  width: 270px;
+  height: 76px;
+  content: "";
+  display: block;
+  margin: 0 auto 10px
+}
+
+.prt-sel-area.sel2048 .btn-select-balloon {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/select/2048-s024c4df1b3.png') no-repeat 0 -79px;
+  -webkit-background-size: 270px 182px;
+  background-size: 270px 182px;
+  width: 260px;
+  height: 50px
+}
+
+.prt-sel-area.sel2048 .btn-select-balloon .scene-font-katari {
+  color: #f2eee2;
+  text-shadow: 0 0 3px #5a040e,0 0 3px #5a040e,0 0 3px #5a040e,0 0 3px #5a040e,0 0 4px #5a040e,0 0 4px #5a040e,0 0 4px #5a040e,0 0 4px #5a040e
+}
+
+.prt-sel-area.sel2048 .btn-select-balloon.on {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/select/2048-s024c4df1b3.png') no-repeat 0 -132px;
+  -webkit-background-size: 270px 182px;
+  background-size: 270px 182px;
+  width: 260px;
+  height: 50px
+}
+
+.prt-sel-area.seltreasureraid130_1 .prt-sel-inner {
+  position: absolute;
+  top: 9px;
+  bottom: 205px
+}
+
+.prt-sel-area.seltreasureraid130_1 .prt-sel-inner::before {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/select/treasureraid130-see486305fb.png') no-repeat 0 -74px;
+  -webkit-background-size: 270px 293px;
+  background-size: 270px 293px;
+  width: 270px;
+  height: 71px;
+  content: "";
+  margin: 0 auto 10px
+}
+
+.prt-sel-area.seltreasureraid130_2 .prt-sel-inner {
+  position: absolute;
+  top: 9px;
+  bottom: 205px
+}
+
+.prt-sel-area.seltreasureraid130_2 .prt-sel-inner::before {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/select/treasureraid130-see486305fb.png') no-repeat 0 -222px;
+  -webkit-background-size: 270px 293px;
+  background-size: 270px 293px;
+  width: 270px;
+  height: 71px;
+  content: "";
+  margin: 0 auto 10px
+}
+
+.prt-sel-area.seltreasureraid130_3 .prt-sel-inner {
+  position: absolute;
+  top: 9px;
+  bottom: 205px
+}
+
+.prt-sel-area.seltreasureraid130_3 .prt-sel-inner::before {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/select/treasureraid130-see486305fb.png') no-repeat 0 -148px;
+  -webkit-background-size: 270px 293px;
+  background-size: 270px 293px;
+  width: 270px;
+  height: 71px;
+  content: "";
+  margin: 0 auto 10px
+}
+
+.prt-sel-area.seltreasureraid130_4 .prt-sel-inner {
+  position: absolute;
+  top: 9px;
+  bottom: 205px
+}
+
+.prt-sel-area.seltreasureraid130_4 .prt-sel-inner::before {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/select/treasureraid130-see486305fb.png') no-repeat 0 0;
+  -webkit-background-size: 270px 293px;
+  background-size: 270px 293px;
+  width: 270px;
+  height: 71px;
+  content: "";
+  margin: 0 auto 10px
+}
+
+.pop-vw-receive-item.pop-usual.type-1::before {
+  -webkit-border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_valentinesday.png?1549250928') 108 0 124 stretch round;
+  -webkit-border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_valentinesday.png?1549250928') 108 0 124 stretch round;
+  border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_valentinesday.png?1549250928') 108 0 124 fill stretch round;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+  border-width: 56px 0 62px;
+  border-style: solid;
+  content: ""
+}
+
+.pop-vw-receive-item.pop-usual.type-2::before {
+  -webkit-border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_whiteday.png?1511244036') 108 0 124 stretch round;
+  -webkit-border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_whiteday.png?1511244036') 108 0 124 stretch round;
+  border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_whiteday.png?1511244036') 108 0 124 fill stretch round;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: -1;
+  border-width: 53px 0 62px;
+  border-style: solid;
+  content: ""
+}
+
+.pop-vw-receive-item.pop-usual .txt-popup-body {
+  padding: 10px 10px 5px
+}
+
+.pop-vw-receive-item.pop-usual .img-vw-present {
+  width: 65px;
+  height: 65px
+}
+
+.pop-vw-receive-item.pop-usual .txt-vw-present {
+  margin-bottom: 10px
+}
+
+.pop-vw-receive-item.pop-usual .txt-vw-present:last-child {
+  margin-bottom: 0
+}
+
+#img-preload {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  opacity: 0
+}
+
+#img-preload .sel2048 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/select/2048-s024c4df1b3.png') no-repeat 0 0;
+  -webkit-background-size: 270px 182px;
+  background-size: 270px 182px;
+  width: 270px;
+  height: 76px
+}
+
+#img-preload .seltreasureraid130_1 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/select/treasureraid130-see486305fb.png') no-repeat 0 -74px;
+  -webkit-background-size: 270px 293px;
+  background-size: 270px 293px;
+  width: 270px;
+  height: 71px
+}
+
+#img-preload .seltreasureraid130_2 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/select/treasureraid130-see486305fb.png') no-repeat 0 -222px;
+  -webkit-background-size: 270px 293px;
+  background-size: 270px 293px;
+  width: 270px;
+  height: 71px
+}
+
+#img-preload .seltreasureraid130_3 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/select/treasureraid130-see486305fb.png') no-repeat 0 -148px;
+  -webkit-background-size: 270px 293px;
+  background-size: 270px 293px;
+  width: 270px;
+  height: 71px
+}
+
+#img-preload .seltreasureraid130_4 {
+  display: block;
+  background: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/quest/scene/select/treasureraid130-see486305fb.png') no-repeat 0 0;
+  -webkit-background-size: 270px 293px;
+  background-size: 270px 293px;
+  width: 270px;
+  height: 71px
+}
+
+.log {
+  overflow: visible;
+  height: auto
+}
+
+.log.cnt-quest-scene {
+  min-height: 450px
+}
+
+.log .prt-quest-header {
+  position: fixed;
+  top: 0px;
+  left: auto
+}
+
+.log .prt-scene-stage {
+  display: none
+}
+
+.log #cjs-scene-effect {
+  display: none
+}
+
+.log .prt-log-display {
+  min-height: 450px;
+  overflow: visible;
+  height: auto
+}
+
+.pop-synopsis.pop-usual .txt-popup-body {
+  padding-top: 0;
+  overflow: hidden
+}
+
+.pop-synopsis.pop-usual .txt-synopsis {
+  margin-bottom: 10px
+}
+
+.pop-synopsis.pop-usual .prt-pop-synopsis {
+  color: #daa540;
+  text-align: left;
+  line-height: 1.5
+}
+
+.pop-synopsis.pop-usual .prt-pop-synopsis span {
+  font-family: "nickname","FOT-ニューロダン Pro M","FOT-筑紫オールド明朝 Pro R","Average Sans",sans-serif
+}
+
+.pop-synopsis.pop-usual .prt-synopsis-buttons {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-top: 10px
+}
+
+.pop-synopsis.pop-usual .btn-scenario-all-read {
+  font-size: 10px;
+  line-height: 12px
+}
+
+.pop-input-name .txt-popup-body {
+  padding: 10px 15px 20px
+}
+
+.pop-input-name .txt-err-msg {
+  color: #ff4d00;
+  padding-top: 10px;
+  display: none
+}
+
+.pop-input-name #name_set {
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 170px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border: 1px solid #705337;
+  padding: 2px 5px;
+  margin: 10px 5px 15px
+}
+
+.pop-input-name .prt-notice-list {
+  text-align: left;
+  line-height: 1.4
+}
+
+.pop-input-name .prt-notice-list li {
+  text-indent: -1em;
+  padding-left: 1em;
+  margin-bottom: 5px
+}
+
+.pop-input-name .prt-notice-list li:nth-last-child(1) {
+  margin-bottom: 0
+}
+
+@-webkit-keyframes anim-ico-pointer {
+  0%{-webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px)
+}
+
+49.9% {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px)
+}
+
+50% {
+  -webkit-transform: translate(0px, 5px);
+  transform: translate(0px, 5px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translate(0px, 5px);
+  transform: translate(0px, 5px)
+}
+
+}
+
+@keyframes anim-ico-pointer {
+  0%{-webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px)
+}
+
+49.9% {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px)
+}
+
+50% {
+  -webkit-transform: translate(0px, 5px);
+  transform: translate(0px, 5px)
+}
+
+99.9%,
+100% {
+  -webkit-transform: translate(0px, 5px);
+  transform: translate(0px, 5px)
+}
+
+}
+
+[class*=pop-season-event].pop-season-event1::before {
+  -webkit-border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_season_event1.png?1511244036') 106 0 124 stretch round;
+  -webkit-border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_season_event1.png?1511244036') 106 0 124 stretch round;
+  border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_season_event1.png?1511244036') 106 0 124 fill stretch round
+}
+
+[class*=pop-season-event].pop-season-event2::before {
+  -webkit-border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_season_event2.png?1514441284') 106 0 124 stretch round;
+  -webkit-border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_season_event2.png?1514441284') 106 0 124 stretch round;
+  border-image: url('https://prd-game-a-gbf.akamaized.net/assets/img/sp/ui/pop/ui_pop_season_event2.png?1514441284') 106 0 124 fill stretch round
+}
+
+#cjs-npc_get {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 100000;
+  width: 320px;
+  height: 480px;
+  display: none
+}
+
+#cjs-npc_get.show {
+  display: block
+}
+
+#prt-mask-cjs {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 99999;
+  background: #150f0f;
+  display: none
+}
+
+#prt-mask-cjs.show {
+  display: block
+}
+
+.scene-font-1 {
+  font-size: 10px
+}
+
+.scene-font-2 {
+  font-size: 12px
+}
+
+.scene-font-3 {
+  font-size: 14px
+}
+
+.scene-font-4 {
+  font-size: 18px
+}
+
+.scene-font-5 {
+  font-size: 32px
+}
+
+.scene-font-6 {
+  font-size: 50px
+}
+
+.scene-font-bold {
+  color: #fff;
+  text-shadow: 0 0 3px #150f0f,0 0 3px #150f0f,0 0 3px #150f0f,0 0 3px #150f0f,0 0 4px #150f0f,0 0 4px #150f0f,0 0 4px #150f0f,0 0 4px #150f0f;
+  letter-spacing: 0.1rem
+}
+
+.scene-font-italic {
+  font-style: italic
+}
+
+.scene-font-red {
+  color: #ff4d00
+}
+
+.scene-font-blue {
+  color: #258eb5
+}
+
+.scene-font-gray {
+  color: #71645a
+}
+
+.scene-font-purple {
+  color: #ab7dff
+}
+
+.scene-font-kokoro {
+  color: #6fc4ff
+}
+
+.scene-font-katari {
+  color: #cdcd99
+}
+
+.scene-font-spword {
+  color: #ffce4a
+}
+
+.scene-font-place {
+  color: #9dff67
+}
+
+.scene-font-palegray {
+  color: #b5a598
+}
+
+.cnt-movie {
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: 100%;
+  height: 450px;
+  z-index: 250001
+}
+
+.cnt-movie .prt-movie {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+
+.cnt-movie .prt-movie #video {
+  width: 100%
+}
+
