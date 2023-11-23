@@ -2421,7 +2421,7 @@
             "command2": "bg_vibrate_one",
             "command3": "",
             "command_list": "",
-            "detail": "<span class='scene-font-katari'>그때, 근처 수풀에서</span><br>\n<span class='scene-font-katari'>바스락거리는 소리가 났다.。</span>",
+            "detail": "<span class='scene-font-katari'>그때, 근처 수풀에서</span><br>\n<span class='scene-font-katari'>바스락거리는 소리가 났다.</span>",
             "effect1": "",
             "effect2": "",
             "effect3": "",
