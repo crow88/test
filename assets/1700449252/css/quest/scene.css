@@ -560,7 +560,7 @@
 }
 
 .btn-usual-cancel::after {
-  content: "キャンセル"
+  content: "취소"
 }
 
 .btn-usual-close::after {
@@ -600,7 +600,7 @@
 }
 
 .btn-usual-cancel-small::after {
-  content: "キャンセル"
+  content: "취소"
 }
 
 .btn-usual-dismiss::after {
