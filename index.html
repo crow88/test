@@ -81,7 +81,7 @@
 	};
 
 	Game.setting = {
-	    sound_flag: localStorage.getItem("sound_flag") | 1,
+	    sound_flag: localStorage.getItem("sound_flag") === "true" ? 1 : 0,
 	    bgm_mode: 2,
 	    se_mode: 2,
 	    voice_mode: 2,
