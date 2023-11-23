@@ -5,7 +5,7 @@
     "chapter_name": "PINYA HAZARD",
     "list": {
         "1": {
-            "episode_name": "エピソード 1",
+            "episode_name": "에피소드 1",
             "quest_id": "719211",
             "is_cleared": true,
             "branch": false,
@@ -13,7 +13,7 @@
             "answer": null
         },
         "2": {
-            "episode_name": "エピソード 2",
+            "episode_name": "에피소드 2",
             "quest_id": "719212",
             "is_cleared": true,
             "branch": false,
@@ -21,7 +21,7 @@
             "answer": null
         },
         "3": {
-            "episode_name": "エピソード 3",
+            "episode_name": "에피소드 3",
             "quest_id": "719213",
             "is_cleared": true,
             "branch": false,
@@ -29,7 +29,7 @@
             "answer": null
         },
         "4": {
-            "episode_name": "エピソード 4",
+            "episode_name": "에피소드 4",
             "quest_id": "719214",
             "is_cleared": true,
             "branch": false,

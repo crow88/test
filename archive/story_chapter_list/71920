@@ -2,7 +2,7 @@
     "chapter_list": [
         {
             "chapter_id": "scene_evt170609_cp0_q1_s10",
-            "chapter_name": "オープニング",
+            "chapter_name": "오프닝",
             "branch": false,
             "npc_list": [],
             "quest_branch_flag": false,
@@ -20,7 +20,7 @@
         },
         {
             "chapter_id": "scene_evt170609_cp0_q2_s10",
-            "chapter_name": "エンディング",
+            "chapter_name": "엔딩",
             "branch": false,
             "npc_list": [],
             "quest_branch_flag": false,
@@ -28,67 +28,67 @@
         },
         {
             "chapter_id": "scene_evt170609_cp9_q1_s10",
-            "chapter_name": "一日目",
+            "chapter_name": "1일차",
             "chapter_sub_name": ""
         },
         {
             "chapter_id": "scene_evt170609_cp10_q1_s10",
-            "chapter_name": "二日目",
+            "chapter_name": "2일차",
             "chapter_sub_name": ""
         },
         {
             "chapter_id": "scene_evt170609_cp11_q1_s10",
-            "chapter_name": "三日目",
+            "chapter_name": "3일차",
             "chapter_sub_name": ""
         },
         {
             "chapter_id": "scene_evt170609_cp12_q1_s10",
-            "chapter_name": "四日目",
+            "chapter_name": "4일차",
             "chapter_sub_name": ""
         },
         {
             "chapter_id": "scene_evt170609_cp13_q1_s10",
-            "chapter_name": "五日目",
+            "chapter_name": "5일차",
             "chapter_sub_name": ""
         },
         {
             "chapter_id": "scene_evt170609_cp14_q1_s10",
-            "chapter_name": "六日目",
+            "chapter_name": "6일차",
             "chapter_sub_name": ""
         },
         {
             "chapter_id": "scene_evt170609_cp15_q1_s10",
-            "chapter_name": "七日目",
+            "chapter_name": "7일차",
             "chapter_sub_name": ""
         },
         {
             "chapter_id": "scene_evt170609_cp16_q1_s10",
-            "chapter_name": "八日目",
+            "chapter_name": "8일차",
             "chapter_sub_name": ""
         },
         {
             "chapter_id": "scene_evt170609_cp17_q1_s10",
-            "chapter_name": "九日目",
+            "chapter_name": "9일차",
             "chapter_sub_name": ""
         },
         {
             "chapter_id": "scene_evt170609_cp18_q1_s10",
-            "chapter_name": "十日目",
+            "chapter_name": "10일차",
             "chapter_sub_name": ""
         },
         {
             "chapter_id": "scene_evt170609_cp19_q1_s10",
-            "chapter_name": "十一日目",
+            "chapter_name": "11일차",
             "chapter_sub_name": ""
         },
         {
             "chapter_id": "scene_evt170609_cp20_q1_s10",
-            "chapter_name": "十二日目",
+            "chapter_name": "12일차",
             "chapter_sub_name": ""
         },
         {
             "chapter_id": "scene_evt170609_cp21_q1_s10",
-            "chapter_name": "十三日目",
+            "chapter_name": "13일차",
             "chapter_sub_name": ""
         }
     ],
