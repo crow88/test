@@ -1,0 +1,1 @@
+define([],function(){return{scrollToElement:function(a,b){b=_.defaults(b||{},{offset:0,duration:400,easing:"swing"});var c=function e(a,b){return a?e(a.offsetParent,b+a.offsetTop):b}(a[0],0),d=c*Game.getZoom()+b.offset;return Game.get$ScrollElem().animate({scrollTop:d},b.duration,b.easing).promise()}}});

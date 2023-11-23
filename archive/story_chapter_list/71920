@@ -1,0 +1,166 @@
+{
+    "chapter_list": [
+        {
+            "chapter_id": "scene_evt170609_cp0_q1_s10",
+            "chapter_name": "オープニング",
+            "branch": false,
+            "npc_list": [],
+            "quest_branch_flag": false,
+            "quest_list": []
+        },
+        {
+            "chapter_id": "71921",
+            "chapter_name": "PINYA HAZARD",
+            "chapter_sub_name": ""
+        },
+        {
+            "chapter_id": "71922",
+            "chapter_name": "THE LAST HOPE",
+            "chapter_sub_name": ""
+        },
+        {
+            "chapter_id": "scene_evt170609_cp0_q2_s10",
+            "chapter_name": "エンディング",
+            "branch": false,
+            "npc_list": [],
+            "quest_branch_flag": false,
+            "quest_list": []
+        },
+        {
+            "chapter_id": "scene_evt170609_cp9_q1_s10",
+            "chapter_name": "一日目",
+            "chapter_sub_name": ""
+        },
+        {
+            "chapter_id": "scene_evt170609_cp10_q1_s10",
+            "chapter_name": "二日目",
+            "chapter_sub_name": ""
+        },
+        {
+            "chapter_id": "scene_evt170609_cp11_q1_s10",
+            "chapter_name": "三日目",
+            "chapter_sub_name": ""
+        },
+        {
+            "chapter_id": "scene_evt170609_cp12_q1_s10",
+            "chapter_name": "四日目",
+            "chapter_sub_name": ""
+        },
+        {
+            "chapter_id": "scene_evt170609_cp13_q1_s10",
+            "chapter_name": "五日目",
+            "chapter_sub_name": ""
+        },
+        {
+            "chapter_id": "scene_evt170609_cp14_q1_s10",
+            "chapter_name": "六日目",
+            "chapter_sub_name": ""
+        },
+        {
+            "chapter_id": "scene_evt170609_cp15_q1_s10",
+            "chapter_name": "七日目",
+            "chapter_sub_name": ""
+        },
+        {
+            "chapter_id": "scene_evt170609_cp16_q1_s10",
+            "chapter_name": "八日目",
+            "chapter_sub_name": ""
+        },
+        {
+            "chapter_id": "scene_evt170609_cp17_q1_s10",
+            "chapter_name": "九日目",
+            "chapter_sub_name": ""
+        },
+        {
+            "chapter_id": "scene_evt170609_cp18_q1_s10",
+            "chapter_name": "十日目",
+            "chapter_sub_name": ""
+        },
+        {
+            "chapter_id": "scene_evt170609_cp19_q1_s10",
+            "chapter_name": "十一日目",
+            "chapter_sub_name": ""
+        },
+        {
+            "chapter_id": "scene_evt170609_cp20_q1_s10",
+            "chapter_name": "十二日目",
+            "chapter_sub_name": ""
+        },
+        {
+            "chapter_id": "scene_evt170609_cp21_q1_s10",
+            "chapter_name": "十三日目",
+            "chapter_sub_name": ""
+        }
+    ],
+    "popup_data": [],
+    "limited": false,
+    "scenario_title": "PINYA HAZARD",
+    "scenario_id": "71920",
+    "npc_list": [
+        {
+            "data_npc": {
+                "is_cleared": true,
+                "is_joined": true,
+                "id_of_npc_master": 3030193000,
+                "awakening_level": "1",
+                "id_of_orm_user_npc": 35497050,
+                "character_id_of_npc_master": 2129,
+                "name": "新田美波"
+            },
+            "data_story_npc": [],
+            "npc_type": "0"
+        },
+        {
+            "data_npc": {
+                "is_cleared": true,
+                "is_joined": true,
+                "id_of_npc_master": 3030194000,
+                "awakening_level": "1",
+                "id_of_orm_user_npc": 35758339,
+                "character_id_of_npc_master": 2130,
+                "name": "一ノ瀬志希"
+            },
+            "data_story_npc": [],
+            "npc_type": "0"
+        },
+        {
+            "data_npc": [],
+            "data_story_npc": {
+                "is_cleared": true,
+                "id_of_npc_story_master": 3990165000,
+                "awakening_level": "1",
+                "character_id_of_npc_story_master": 5027,
+                "name": "ぴにゃこら太",
+                "message": ""
+            },
+            "npc_type": "1"
+        },
+        {
+            "data_npc": [],
+            "data_story_npc": {
+                "is_cleared": true,
+                "id_of_npc_story_master": 3990674000,
+                "awakening_level": "1",
+                "character_id_of_npc_story_master": 5181,
+                "name": "桃色の生物",
+                "message": ""
+            },
+            "npc_type": "1"
+        }
+    ],
+    "group_id": "",
+    "group_name": null,
+    "part": 1,
+    "is_main_scenario": false,
+    "is_arcarum": false,
+    "arcarum_link_type": 0,
+    "is_event_open": false,
+    "event_name": null,
+    "event_banner": null,
+    "joined_event": true,
+    "msg_id": 1,
+    "is_sidestory": false,
+    "sidestory_id": null,
+    "has_additional": [],
+    "event_ffxi_config": []
+}

@@ -1,0 +1,1 @@
+define(["jquery","backbone"],function(a,b){var c=b.Model.extend({defaults:{manifest:[{src:Game.imgUri+"/sp/cjs/encount_common_18_common_18.jpg",id:"encount_common_18_common_18",type:"image"},{src:Game.imgUri+"/sp/cjs/encount_common_18_common_18_ef.jpg",id:"encount_common_18_common_18_ef",type:"image"}]}});return c});

@@ -1,0 +1,1294 @@
+{
+    "data": "%3Cdiv%20id%3D%22asset-css%22%20data-css%3D%22/quest/scene.css%22%3E%3C/div%3E%0A%3Cdiv%20id%3D%27auto_scene_mode%27%20data-auto-scene-mode%3D%22off%22%20style%3D%22display%3Anone%3B%22%3E%3C/div%3E%0A%3Cscript%3E%0A%28function%28%29%7B%0Avar%20e%20%3D%20document.getElementById%28%22auto_scene_mode%22%29%3B%0Avar%20attr%20%3D%20localStorage.getItem%28%22mode_scene_auto%22%29%20%3D%3D%3D%20%22true%22%20%3F%20%22on%22%20%3A%20%22off%22%3B%0Ae.setAttribute%28%22data-auto-scene-mode%22%2C%20attr%29%3B%0A%7D%29%28%29%3B%0A%3C/script%3E%0A%3Cdiv%20id%3D%27scene_fast_text_mode%27%20data-scene-fast-text-mode%3D%22on%22%20style%3D%22display%3Anone%3B%22%3E%3C/div%3E%0A%0A%3Cdiv%20class%3D%22cnt-quest-scene%22%20data-skippable%3D%22%22%20data-sex%3D%221%22%20data-nick-name%3D%22%E3%83%86%E3%82%A3%E3%83%BC%E3%83%89%22%3E%0A%09%3Cdiv%20class%3D%22prt-next-btn-area%22%3E%3C/div%3E%0A%09%3Cdiv%20class%3D%22prt-quest-header%20scene%22%3E%0A%09%09%3Cdiv%20id%3D%22btn_switch_sound%22%20class%3D%22btn-switch-sound%20btn-bgm-change%22%3E%3C/div%3E%0A%09%09%3Cdiv%20class%3D%22prt-treasure%22%3E0%3C/div%3E%0A%09%09%3Cdiv%20class%3D%22prt-lupi%22%3E0%3C/div%3E%0A%09%09%0A%09%09%3Cdiv%20class%3D%22prt-scene-num%22%3E%0A%09%09%09%3Cdiv%20class%3D%22prt-scene-text%22%3E%3C/div%3E%0A%09%09%09%3Cdiv%20class%3D%22txt-info-num%22%3E%0A%09%09%09%09%3Cspan%20class%3D%22now%22%3E%3C/span%3E%0A%09%09%09%09%3Cspan%20class%3D%22num-info-slash%22%3E%3C/span%3E%0A%09%09%09%09%3Cspan%20class%3D%22all%22%3E%3C/span%3E%0A%09%09%09%3C/div%3E%0A%09%09%3C/div%3E%0A%09%09%3Cdiv%20class%3D%22btn-header%20logView%22%3E%3C/div%3E%0A%09%3C/div%3E%0A%09%3Cdiv%20class%3D%22prt-scene-stage%22%20data-duplicate-key%3D%221%22%3E%0A%09%09%3Cdiv%20class%3D%22onm-effect-layer%22%3E%3C/div%3E%0A%09%09%3Cdiv%20id%3D%22cjs-scene-effect-container%22%3E%0A%09%09%09%3Ccanvas%20id%3D%22cjs-scene-effect%22%20width%3D%22640%22%20height%3D%22900%22%20cjs-clip%3D%220%200%20640%20885%22%3E%3C/canvas%3E%0A%09%09%3C/div%3E%0A%09%09%3Cdiv%20class%3D%22prt-scene-bg%22%3E%0A%09%09%09%3Cimg%20class%3D%22img-scene-background%22%20id%3D%22bg1%22%20src%3D%22./assets/img/sp/spacer.png%22%20alt%3D%22spacer%22%20/%3E%0A%09%09%09%3Cimg%20class%3D%22img-scene-background%22%20id%3D%22bg2%22%20src%3D%22./assets/img/sp/spacer.png%22%20alt%3D%22spacer%22%20/%3E%0A%09%09%3C/div%3E%0A%09%09%3Cdiv%20id%3D%22cjs-bg-effect-container%22%3E%0A%09%09%09%3Ccanvas%20id%3D%22cjs-bg-effect%22%20width%3D%22640%22%20height%3D%22900%22%20cjs-clip%3D%220%200%20640%20885%22%3E%3C/canvas%3E%0A%09%09%3C/div%3E%0A%09%09%3Cdiv%20class%3D%22prt-character-display%22%3E%0A%09%09%09%3Cimg%20class%3D%22img-scene-character%22%20id%3D%22char1%22%20src%3D%22./assets/img/sp/spacer.png%22%20alt%3D%22spacer%22%20/%3E%0A%09%09%09%3Cimg%20class%3D%22img-scene-character%22%20id%3D%22char2%22%20src%3D%22./assets/img/sp/spacer.png%22%20alt%3D%22spacer%22%20/%3E%0A%09%09%09%3Cimg%20class%3D%22img-scene-character%22%20id%3D%22char3%22%20src%3D%22./assets/img/sp/spacer.png%22%20alt%3D%22spacer%22%20/%3E%0A%09%09%3C/div%3E%0A%09%3C/div%3E%0A%09%3Cdiv%20class%3D%22prt-comic-display%22%3E%0A%09%09%3Cdiv%20class%3D%22prt-scene-comic%22%3E%0A%09%09%09%3Cimg%20class%3D%22img-scene-comic%22%20id%3D%22comic%22%20src%3D%22./assets/img/sp/spacer.png%22%20alt%3D%22spacer%22%20/%3E%0A%09%09%3C/div%3E%0A%09%09%3Cdiv%20class%3D%22ico-cursor-talk-comic%22%3E%3C/div%3E%0A%09%3C/div%3E%0A%09%3Cdiv%20class%3D%22prt-log-display%22%3E%3C/div%3E%0A%09%3Cdiv%20class%3D%22prt-scene-comment%22%3E%0A%09%09%3Cdiv%20class%3D%22txt-character-name%22%3E%3C/div%3E%0A%09%09%3Cdiv%20class%3D%22prt-message-area%22%3E%3C/div%3E%0A%09%09%3Cdiv%20class%3D%22ico-cursor-talk%22%3E%3C/div%3E%0A%09%09%0A%09%09%3Cdiv%20class%3D%22btn-play-voice%22%3E%3C/div%3E%0A%09%09%3Cdiv%20id%3D%22btn-auto%22%20class%3D%22btn-auto%22%3E%3C/div%3E%0A%09%3C/div%3E%0A%09%3Cdiv%20class%3D%22prt-scene-comment-after-mask%22%3E%3C/div%3E%0A%09%3Cdiv%20class%3D%22btn-skip%22%3E%3C/div%3E%0A%09%3Cdiv%20class%3D%22prt-sel-area%22%3E%0A%09%09%3Cdiv%20class%3D%22prt-sel-inner%22%3E%0A%09%09%3C/div%3E%0A%09%3C/div%3E%0A%09%3Cdiv%20class%3D%22tap-blocker%22%3E%3C/div%3E%0A%09%3Cdiv%20id%3D%22pop%22%3E%3C/div%3E%0A%3C/div%3E%0A%0A%3Cdiv%20id%3D%22pop-event%22%3E%3C/div%3E%0A%0A%0A%3Cdiv%20id%3D%22prt-mask-cjs%22%3E%3C/div%3E%0A%3Ccanvas%20id%3D%22cjs-npc_get%22%3E%3C/canvas%3E%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22log-template%22%3E%0A%3C%25%20if%20%28%21_.isEmpty%28log.detail%29%20%7C%7C%20%28%21_.isEmpty%28log.voice%29%20%26%26%20log.voice%20%21%3D%3D%20%27silent%27%29%29%20%7B%20%25%3E%0A%09%3Cdiv%20class%3D%22prt-log-each%22%20data-scenario-index%3D%22%3C%25%3D%20log.scenarioIndex%20%25%3E%22%3E%0A%09%09%3Cdiv%20class%3D%22%3C%25%20if%20%28log.canChangeScene%29%20%7B%20%25%3Ebtn-log-each%3C%25%20%7D%20else%20%7B%20%25%3Eprt-disable-log-each%3C%25%20%7D%25%3E%22%20data-scenario-index%3D%22%3C%25%3D%20log.scenarioIndex%20%25%3E%22%3E%0A%09%09%09%3C%25%20if%20%28log.characterName%20%3D%3D%20%27null%27%29%20%7B%20%25%3E%0A%09%09%09%09%3Cdiv%20class%3D%22txt-log-name%22%3E%26nbsp%3B%3C/div%3E%0A%09%09%09%3C%25%20%7D%20else%20%7B%20%25%3E%0A%09%09%09%09%3Cdiv%20class%3D%22txt-log-name%3C%25%20if%20%28log.isSelect%29%20%7B%20%25%3E%20is-select%3C%25%20%7D%20%25%3E%22%3E%3C%25%3D%20log.characterName%20%25%3E%3C/div%3E%0A%09%09%09%3C%25%20%7D%20%25%3E%0A%09%09%09%3Cdiv%20class%3D%22txt-log-message%3C%25%20if%20%28log.isSelect%29%20%7B%20%25%3E%20is-select%3C%25%20%7D%20%25%3E%22%3E%3C%25%3D%20log.detail%20%25%3E%3C/div%3E%0A%09%09%3C/div%3E%0A%09%09%3C%25%20if%20%28log.voice%20%21%3D%3D%20%27silent%27%29%20%7B%20%25%3E%0A%09%09%09%3Cdiv%20class%3D%22btn-play-log-voice%22%20data-voice%3D%22%3C%25%3D%20log.voice%20%25%3E%22%3E%3C/div%3E%0A%09%09%3C%25%20%7D%20%25%3E%0A%09%09%3C/div%3E%0A%09%3C/div%3E%0A%3C%25%20%7D%20%25%3E%0A%3C/script%3E%0A%0A%0A%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22popup%22%3E%0A%3Cdiv%20class%3D%22pop-usual%20%3C%25%3D%20className%20%25%3E%22%20data-token%3D%22%22%3E%0A%09%3Cdiv%20class%3D%22prt-popup-header%3C%25%20if%28typeof%20maskSubMenu%20%21%3D%3D%20%27undefined%27%20%26%26%20maskSubMenu%29%7B%20%25%3E-sm%3C%25%20%7D%20%25%3E%3C%25%20if%28Game.lang%20%3D%3D%3D%20%27ja%27%20%26%26%20typeof%20title%20%21%3D%3D%20%27undefined%27%20%26%26%20title%20%26%26%20title.length%20%3E%2022%29%20%7B%20%25%3E%20txt-small%3C%25%20%7D%20%25%3E%22%3E%3C%25%3D%20title%20%25%3E%3C/div%3E%0A%09%3Cdiv%20class%3D%22prt-popup-body%3C%25%20if%28typeof%20maskSubMenu%20%21%3D%3D%20%27undefined%27%20%26%26%20maskSubMenu%29%7B%20%25%3E-sm%3C%25%20%7D%20%25%3E%22%3E%0A%09%09%3Cdiv%20class%3D%22txt-popup-body%3C%25%20if%28typeof%20maskSubMenu%20%21%3D%3D%20%27undefined%27%20%26%26%20maskSubMenu%29%7B%20%25%3E-sm%3C%25%20%7D%20%25%3E%22%3E%3C%25%3D%20body%20%25%3E%3C/div%3E%0A%09%09%3C%25%20if%20%28btnTreasure%20%3D%3D%3D%201%29%20%7B%20%25%3E%0A%09%09%09%3Cdiv%20class%3D%22prt-treasure-registration%22%3E%0A%09%09%09%09%3Cdiv%20class%3D%22txt-treasure-registration%22%3E%E3%81%8A%E6%B0%97%E3%81%AB%E5%85%A5%E3%82%8A%E7%99%BB%E9%8C%B2%E3%81%AF%E3%81%93%E3%82%8C%E4%BB%A5%E4%B8%8A%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93%3C/div%3E%0A%09%09%09%09%3Cdiv%20class%3D%22btn-treasure-registration%22%3E%3C/div%3E%0A%09%09%09%3C/div%3E%0A%09%09%3C%25%20%7D%20%25%3E%0A%09%3C/div%3E%0A%09%3Cdiv%20class%3D%22prt-popup-footer%3C%25%20if%28typeof%20maskSubMenu%20%21%3D%3D%20%27undefined%27%20%26%26%20maskSubMenu%29%7B%20%25%3E-sm%3C%25%20%7D%20%25%3E%22%3E%0A%09%09%3C%25%20if%28flagBtnCancel%3D%3D1%29%7B%20print%28%22%3Cdiv%20class%3D%27btn-usual-cancel%22%20%2B%20%28btnCancelClassName%20%3F%20%22%20%22%2BbtnCancelClassName%20%3A%20%22%22%29%20%2B%20%28arguments%5B0%5D.btnCancelText%20%3F%20%22%20hide-common-text%22%20%3A%20%22%22%29%20%2B%20%22%27%3E%22%20%2B%20%28arguments%5B0%5D.btnCancelText%20%7C%7C%20%27%27%29%20%2B%20%22%3C/div%3E%22%29%20%7D%20%25%3E%0A%09%09%3C%25%20if%28flagBtnClose%3D%3D1%29%7B%20print%28%22%3Cdiv%20class%3D%27btn-usual-close%22%20%2B%20%28btnCloseClassName%20%3F%20%22%20%22%2BbtnCloseClassName%20%3A%20%22%22%29%20%2B%20%28arguments%5B0%5D.btnCloseText%20%3F%20%22%20hide-common-text%22%20%3A%20%22%22%29%20%2B%20%22%27%3E%22%20%2B%20%28arguments%5B0%5D.btnCloseText%20%7C%7C%20%27%27%29%20%2B%20%22%3C/div%3E%22%29%20%7D%20%25%3E%0A%09%09%3C%25%20if%28flagBtnOk%3D%3D1%29%7B%20print%28%22%3Cdiv%20class%3D%27btn-usual-ok%22%20%2B%20%28btnOkClassName%20%3F%20%22%20%22%2BbtnOkClassName%20%3A%20%22%22%29%20%2B%20%28arguments%5B0%5D.btnOkText%20%3F%20%22%20hide-common-text%22%20%3A%20%22%22%29%20%20%2B%20%22%27%3E%22%20%2B%20%28arguments%5B0%5D.btnOkText%20%7C%7C%20%27%27%29%20%2B%20%22%3C/div%3E%22%29%20%7D%20%25%3E%0A%09%3C/div%3E%0A%3C/div%3E%0A%0A%3C/script%3E%0A%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22tpl-select-balloon%22%3E%3Cdiv%20class%3D%22btn-select-balloon%3C%25%3D%20exClass%20%25%3E%22%20data-select-index%3D%22%3C%25%3D%20selectIndex%20%25%3E%22%3E%3C%25%3D%20textHtml%20%25%3E%3C/div%3E%3C/script%3E%0A%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22tpl-choice-img%22%3E%0A%3Cimg%20class%3D%22img-choice%20btn-choice%20se-ok%22%20src%3D%22./assets/img/sp/quest/scene/answer/answer_%3C%25%3D%20itemId%20%25%3E.png%22%20data-item-id%3D%22%3C%25%3D%20itemId%20%25%3E%22%3E%0A%3C/script%3E%0A%0A%0A%3Cdiv%20id%3D%22img-preload%22%3E%3C/div%3E%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22tpl-synopsis%22%3E%0A%3Cdiv%20class%3D%22txt-synopsis%22%3E%E3%81%93%E3%81%AE%E3%81%8A%E8%A9%B1%E3%81%AE%E3%81%82%E3%82%89%E3%81%99%E3%81%98%3C/div%3E%0A%3Cdiv%20class%3D%22prt-pop-synopsis%22%3E%3C%25%3D%20synopsis%20%25%3E%3C/div%3E%0A%3C/script%3E%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22tpl-synopsis-buttons%22%3E%3Cdiv%20class%3D%22prt-synopsis-buttons%22%3E%3Cdiv%20class%3D%22btn-scenario-all-read%22%3E%E6%96%87%E7%AB%A0%E3%81%A7%E3%82%B7%E3%83%8A%E3%83%AA%E3%82%AA%E3%82%92%E8%AA%AD%E3%82%80%3C/div%3E%3Cdiv%20class%3D%22btn-scene-skip%22%3ESKIP%E3%81%99%E3%82%8B%3C/div%3E%3C/div%3E%3C/script%3E%0A%0A%0A%3Cscript%20type%3D%22text/template%22%20id%3D%22tpl-pop-vw-receive-item%22%3E%0A%09%3Cimg%20class%3D%22img-vw-present%22%20src%3D%22./assets/img/sp/%3C%25%3D%20imgFile%20%25%3E%22%3E%0A%09%3Cdiv%20class%3D%22txt-vw-present%22%3E%3C%25%3D%20item_name%20%25%3E%3C/div%3E%0A%09%3Cdiv%20class%3D%22txt-vw-present%22%3E%3C%25%3D%20npc_name%20%25%3E%E3%81%8B%E3%82%89%3Cbr%3E%3C%25%3D%20item_name%20%25%3E%E3%82%92%3Cbr%3E%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88%E3%81%95%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F%EF%BC%81%3Cbr%3E%3Cbr%3E%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0%E3%81%AF%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88%E3%83%AA%E3%82%B9%E3%83%88%E3%81%AB%E8%B4%88%E3%82%89%E3%82%8C%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%3C/div%3E%0A%3C/script%3E%0A",
+    "option": {
+        "langMsg": {
+            "general_chat_type_message": {
+                "msgid": "general_chat_type_message",
+                "msg": "テキスト入力"
+            },
+            "guild_main_103": {
+                "msgid": "guild_main_103",
+                "msg": "送信完了"
+            },
+            "guild_main_106": {
+                "msgid": "guild_main_106",
+                "msg": "チャットを送りました。"
+            },
+            "guild_main_107": {
+                "msgid": "guild_main_107",
+                "msg": "禁止ワードが含まれています。"
+            },
+            "guild_main_108": {
+                "msgid": "guild_main_108",
+                "msg": "チャット"
+            },
+            "guild_main_114": {
+                "msgid": "guild_main_114",
+                "msg": "スタンプを送りました。"
+            },
+            "guild_main_145": {
+                "msgid": "guild_main_145",
+                "msg": "利用制限"
+            },
+            "guild_main_146": {
+                "msgid": "guild_main_146",
+                "msg": "先の利用から5秒経過すると<br>再度利用可能です。"
+            },
+            "guild_main_147": {
+                "msgid": "guild_main_147",
+                "msg": "チャット(スタンプ)"
+            },
+            "guild_main_148": {
+                "msgid": "guild_main_148",
+                "msg": "エラーにより送信できませんでした。"
+            },
+            "guild_main_149": {
+                "msgid": "guild_main_149",
+                "msg": "1文字以上入力してください。"
+            },
+            "guild_main_150": {
+                "msgid": "guild_main_150",
+                "msg": "%s文字以内で入力してください。"
+            },
+            "logout_error_01": {
+                "msgid": "logout_error_01",
+                "msg": "エラー"
+            },
+            "logout_error_02": {
+                "msgid": "logout_error_02",
+                "msg": "かんたん会員の方はログアウトできません。"
+            },
+            "menu_pop_1": {
+                "msgid": "menu_pop_1",
+                "msg": "共闘"
+            },
+            "menu_pop_2": {
+                "msgid": "menu_pop_2",
+                "msg": "移動先選択"
+            },
+            "menu_pop_3": {
+                "msgid": "menu_pop_3",
+                "msg": "停止中"
+            },
+            "tutorial_movie_1": {
+                "msgid": "tutorial_movie_1",
+                "msg": "はじブルで攻略指南！！"
+            },
+            "pop_treasure_title": {
+                "msgid": "pop_treasure_title",
+                "msg": "トレジャー"
+            },
+            "pop_treasure_title_2": {
+                "msgid": "pop_treasure_title_2",
+                "msg": "お気に入り登録"
+            },
+            "sequencequest_progress_1": {
+                "msgid": "sequencequest_progress_1",
+                "msg": "クエスト再開"
+            },
+            "item_detail_1": {
+                "msgid": "item_detail_1",
+                "msg": "アイテム詳細"
+            },
+            "pop_get_title_1": {
+                "msgid": "pop_get_title_1",
+                "msg": "称号獲得"
+            },
+            "pop_get_title_2": {
+                "msgid": "pop_get_title_2",
+                "msg": "他称号を%s個獲得しました"
+            },
+            "pop_get_title_3": {
+                "msgid": "pop_get_title_3",
+                "msg": "称号設定"
+            },
+            "pop_select_set_title": {
+                "msgid": "pop_select_set_title",
+                "msg": "編成セット切り替え"
+            },
+            "pop_select_set_alert_1": {
+                "msgid": "pop_select_set_alert_1",
+                "msg": "このクエストでは<br>編成セットExtraのみ使用できます。"
+            },
+            "pop_select_set_alert_2": {
+                "msgid": "pop_select_set_alert_2",
+                "msg": "＜解放条件＞<br>アーカルムの転世 EXTREMEを<br>全てクリアすることで解放できます。"
+            },
+            "pop_select_set_alert_3": {
+                "msgid": "pop_select_set_alert_3",
+                "msg": "編成サンプルからの登録は<br>編成セットA/Bのみ登録可能です。"
+            },
+            "pop_select_set_alert_4": {
+                "msgid": "pop_select_set_alert_4",
+                "msg": "編成セットExtraは<br>レプリカルド・サンドボックスのみ<br>使用できます。"
+            },
+            "pop_select_set_setA": {
+                "msgid": "pop_select_set_setA",
+                "msg": "Set A"
+            },
+            "pop_select_set_setB": {
+                "msgid": "pop_select_set_setB",
+                "msg": "Set B"
+            },
+            "pop_select_set_extra": {
+                "msgid": "pop_select_set_extra",
+                "msg": "Extra"
+            },
+            "pop_mission_update_title": {
+                "msgid": "pop_mission_update_title",
+                "msg": "ミッション"
+            },
+            "pop_skyscope_achieved_mission_title": {
+                "msgid": "pop_skyscope_achieved_mission_title",
+                "msg": "スカイスコープ"
+            },
+            "pop_skyscope_achieved_mission_over_mission_message": {
+                "msgid": "pop_skyscope_achieved_mission_over_mission_message",
+                "msg": "他、%s件のミッションを達成"
+            },
+            "pop_skyscope_achieved_mission_got_reward": {
+                "msgid": "pop_skyscope_achieved_mission_got_reward",
+                "msg": "他、報酬を%sつ獲得！"
+            },
+            "pop_to_skyscope_button": {
+                "msgid": "pop_to_skyscope_button",
+                "msg": "スカイスコープへ"
+            },
+            "pop_common_rank_up_title": {
+                "msgid": "pop_common_rank_up_title",
+                "msg": "Rankアップ"
+            },
+            "pop_common_zenith_bonus_open_title": {
+                "msgid": "pop_common_zenith_bonus_open_title",
+                "msg": "Limit Bonus 解放"
+            },
+            "pop_common_zc_up_title": {
+                "msgid": "pop_common_zc_up_title",
+                "msg": "Limit Bonus Classアップ"
+            },
+            "campaign_mission_1": {
+                "msgid": "campaign_mission_1",
+                "msg": "サマーキャンペーン"
+            },
+            "campaign_mission_2": {
+                "msgid": "campaign_mission_2",
+                "msg": "他、%s件のサマーミッションをクリア！"
+            },
+            "retire_replicard_common_1": {
+                "msgid": "retire_replicard_common_1",
+                "msg": "<br><br>未クリアクエストのため、<br>AAP%sが返却されました。<br><br>AAP: %s→<span class='txt-after-ap'>%s</span>"
+            },
+            "campaign_mission_beginner_1": {
+                "msgid": "campaign_mission_beginner_1",
+                "msg": "新米騎空士応援キャンペーン"
+            },
+            "campaign_mission_beginner_2": {
+                "msgid": "campaign_mission_beginner_2",
+                "msg": "他、%s件の新米ミッションをクリア！"
+            },
+            "campaign_mission_beginner_3": {
+                "msgid": "campaign_mission_beginner_3",
+                "msg": "新米ミッションを達成！"
+            },
+            "campaign_mission_winter_1": {
+                "msgid": "campaign_mission_winter_1",
+                "msg": "ウィンターキャンペーン"
+            },
+            "campaign_mission_winter_2": {
+                "msgid": "campaign_mission_winter_2",
+                "msg": "他、%s件のウィンターミッションをクリア！"
+            },
+            "campaign_mission_winter_3": {
+                "msgid": "campaign_mission_winter_3",
+                "msg": "ウィンターミッションを達成！"
+            },
+            "pop_captcha_empty": {
+                "msgid": "pop_captcha_empty",
+                "msg": "1文字以上入力してください"
+            },
+            "pop_captcha_incorrect": {
+                "msgid": "pop_captcha_incorrect",
+                "msg": "もう一度入力してください<br>読み取りづらい場合は一度送信してください"
+            },
+            "quest_1": {
+                "msgid": "quest_1",
+                "msg": "マルチバトル一覧"
+            },
+            "quest_3": {
+                "msgid": "quest_3",
+                "msg": "消費なし"
+            },
+            "quest_4": {
+                "msgid": "quest_4",
+                "msg": "未確認のバトルはありません。"
+            },
+            "quest_5": {
+                "msgid": "quest_5",
+                "msg": "バトル履歴はありません。"
+            },
+            "quest_6": {
+                "msgid": "quest_6",
+                "msg": "マルチバトル"
+            },
+            "quest_9": {
+                "msgid": "quest_9",
+                "msg": "効果:味方全員の攻撃力100%UP"
+            },
+            "quest_10": {
+                "msgid": "quest_10",
+                "msg": "クエスト開始条件"
+            },
+            "quest_11": {
+                "msgid": "quest_11",
+                "msg": "サポーター選択"
+            },
+            "quest_12": {
+                "msgid": "quest_12",
+                "msg": "&lt;禁止条件&gt;"
+            },
+            "quest_13": {
+                "msgid": "quest_13",
+                "msg": "以下の属性キャラがパーティに<br>編成されているため、このクエストを<br>開始することが出来ません。"
+            },
+            "quest_14": {
+                "msgid": "quest_14",
+                "msg": "%s属性キャラ<br>"
+            },
+            "quest_15": {
+                "msgid": "quest_15",
+                "msg": "以下のキャラがパーティに<br>編成されているため、このクエストを<br>開始することが出来ません。"
+            },
+            "quest_16": {
+                "msgid": "quest_16",
+                "msg": "以下の指定属性以外のキャラが<br>編成されているため、このクエストを<br>開始することが出来ません。"
+            },
+            "quest_17": {
+                "msgid": "quest_17",
+                "msg": "選択中のパーティにGuestキャラが編成されているため、このクエストを開始することができません。<br><br>進行中のクエストをクリアまたは撤退することで、開始できるようになります。"
+            },
+            "quest_18": {
+                "msgid": "quest_18",
+                "msg": "以下のキャラがパーティに<br>編成されていないため、このクエストを<br>開始することが出来ません。"
+            },
+            "quest_19": {
+                "msgid": "quest_19",
+                "msg": "以下の指定レアリティの条件を<br>満たしていないため、このクエストを<br>開始することが出来ません。"
+            },
+            "quest_20": {
+                "msgid": "quest_20",
+                "msg": "以下の指定種族の条件を<br>満たしていないため、このクエストを<br>開始することが出来ません。"
+            },
+            "quest_21": {
+                "msgid": "quest_21",
+                "msg": "※初回クリア時まで<br>"
+            },
+            "quest_22": {
+                "msgid": "quest_22",
+                "msg": "&lt;開始条件&gt;"
+            },
+            "quest_23": {
+                "msgid": "quest_23",
+                "msg": "以下のクエスト開始条件を<br>満たしていないため、このクエストを<br>開始することが出来ません。"
+            },
+            "quest_24": {
+                "msgid": "quest_24",
+                "msg": "必要なアイテムが不足しているため<br>このクエストを開始することが出来ません。"
+            },
+            "quest_25": {
+                "msgid": "quest_25",
+                "msg": "マルチバトルで使用している編成は<br>チャレンジクエストでは使用できません。"
+            },
+            "quest_27": {
+                "msgid": "quest_27",
+                "msg": "おまかせ編成完了"
+            },
+            "quest_28": {
+                "msgid": "quest_28",
+                "msg": "おまかせ編成しました。"
+            },
+            "quest_29": {
+                "msgid": "quest_29",
+                "msg": "パーティ編成変更"
+            },
+            "quest_30": {
+                "msgid": "quest_30",
+                "msg": "現在のパーティ編成を変更しますか？"
+            },
+            "quest_32": {
+                "msgid": "quest_32",
+                "msg": "クエストリスト"
+            },
+            "quest_33": {
+                "msgid": "quest_33",
+                "msg": "AP使用確認"
+            },
+            "quest_37": {
+                "msgid": "quest_37",
+                "msg": "サポーターの召喚石が変更されました。<br>再度サポーターを選択してください。"
+            },
+            "quest_38": {
+                "msgid": "quest_38",
+                "msg": "最大AP不足"
+            },
+            "quest_39": {
+                "msgid": "quest_39",
+                "msg": "クエストを実行するためのAPが現在の<br>最大APを上回っています。<br><br>APはRankを上げることで最大値が<br>上昇します。"
+            },
+            "quest_40": {
+                "msgid": "quest_40",
+                "msg": "おまかせ編成確認"
+            },
+            "quest_41": {
+                "msgid": "quest_41",
+                "msg": "このクエストから撤退しました。"
+            },
+            "quest_42": {
+                "msgid": "quest_42",
+                "msg": "<br><br>未クリアクエストのため、<br>AP%sが返却されました。<br><br>AP: %s→<span class='txt-after-ap'>%s</span>"
+            },
+            "quest_43": {
+                "msgid": "quest_43",
+                "msg": "クエスト撤退確認"
+            },
+            "quest_44": {
+                "msgid": "quest_44",
+                "msg": "進行中のクエストがあります。<br>島を移動するには<br>進行中のクエストから撤退する必要があります。<br><br>クエストから撤退しますか？"
+            },
+            "quest_45": {
+                "msgid": "quest_45",
+                "msg": "カジノ艇"
+            },
+            "quest_47": {
+                "msgid": "quest_47",
+                "msg": "進行中のクエストから撤退しました。<br><br>未クリアクエストのため、<br>AP%sが返却されました。<br><br>AP: %s→<span class='txt-after-ap'>%s</span>"
+            },
+            "quest_48": {
+                "msgid": "quest_48",
+                "msg": "%sが足りません"
+            },
+            "quest_49": {
+                "msgid": "quest_49",
+                "msg": "使用個数確認"
+            },
+            "quest_50": {
+                "msgid": "quest_50",
+                "msg": "アイテム使用完了"
+            },
+            "quest_51": {
+                "msgid": "quest_51",
+                "msg": "%s時間%s分"
+            },
+            "quest_52": {
+                "msgid": "quest_52",
+                "msg": "%s分"
+            },
+            "quest_53": {
+                "msgid": "quest_53",
+                "msg": "アイテム使用"
+            },
+            "quest_54": {
+                "msgid": "quest_54",
+                "msg": "時間経過により%sが回復したため<br>アイテムは消費されませんでした。"
+            },
+            "quest_55": {
+                "msgid": "quest_55",
+                "msg": "%s不足"
+            },
+            "quest_56": {
+                "msgid": "quest_56",
+                "msg": "交換確認"
+            },
+            "quest_57": {
+                "msgid": "quest_57",
+                "msg": "交換エラー"
+            },
+            "quest_58": {
+                "msgid": "quest_58",
+                "msg": "交換できませんでした。"
+            },
+            "quest_59": {
+                "msgid": "quest_59",
+                "msg": "交換完了"
+            },
+            "quest_60": {
+                "msgid": "quest_60",
+                "msg": "%s個交換しました。"
+            },
+            "quest_61": {
+                "msgid": "quest_61",
+                "msg": "第2章クリアでラカムが仲間に！"
+            },
+            "quest_62": {
+                "msgid": "quest_62",
+                "msg": "「想いは陽炎の如く」"
+            },
+            "quest_63": {
+                "msgid": "quest_63",
+                "msg": "「征野の邂逅」"
+            },
+            "quest_64": {
+                "msgid": "quest_64",
+                "msg": "「薔薇散る剣閃」"
+            },
+            "quest_65": {
+                "msgid": "quest_65",
+                "msg": "お気に入りが登録されていません"
+            },
+            "quest_66": {
+                "msgid": "quest_66",
+                "msg": "既にバトルは終了しました。<br>未確認バトルをご確認ください。"
+            },
+            "quest_67": {
+                "msgid": "quest_67",
+                "msg": "クエストid:%s<br>レベル:%s<br>イメージ:%s<br>レベル:%s<br>AP:%s<br>クエスト数:%s<br>クリアクエスト数:%s<br>報酬タイプ:%s"
+            },
+            "quest_68": {
+                "msgid": "quest_68",
+                "msg": "%sへの挑戦"
+            },
+            "quest_69": {
+                "msgid": "quest_69",
+                "msg": "以下のクエスト開始条件を<br>満たしていないため、このクエストを<br>開始することが出来ません。<br><br><div class='ng'><開始条件>"
+            },
+            "quest_71": {
+                "msgid": "quest_71",
+                "msg": "バトルのないクエストのため、<br>イベントスキップ設定をONにしている状態で<br>クエストを開始することが出来ません。<br><br>イベントスキップ設定をOFFにすることで<br>クエストを開始することが出来ます。"
+            },
+            "quest_72": {
+                "msgid": "quest_72",
+                "msg": "クエスト解放"
+            },
+            "quest_73": {
+                "msgid": "quest_73",
+                "msg": "閉じる"
+            },
+            "quest_74": {
+                "msgid": "quest_74",
+                "msg": "メインクエスト"
+            },
+            "quest_75": {
+                "msgid": "quest_75",
+                "msg": "フリークエスト"
+            },
+            "quest_76": {
+                "msgid": "quest_76",
+                "msg": "キャラクタークエスト"
+            },
+            "quest_77": {
+                "msgid": "quest_77",
+                "msg": "マラソンクエスト"
+            },
+            "quest_79": {
+                "msgid": "quest_79",
+                "msg": "お気に入りクエスト解除"
+            },
+            "quest_80": {
+                "msgid": "quest_80",
+                "msg": "「%s」<br><br>このクエストをお気に入りから外しますか？"
+            },
+            "quest_81": {
+                "msgid": "quest_81",
+                "msg": "マルチバトル撤退"
+            },
+            "quest_82": {
+                "msgid": "quest_82",
+                "msg": "マルチバトルから撤退しました。"
+            },
+            "quest_84": {
+                "msgid": "quest_84",
+                "msg": "アサルトタイムについて"
+            },
+            "quest_85": {
+                "msgid": "quest_85",
+                "msg": "対象クエスト"
+            },
+            "quest_86": {
+                "msgid": "quest_86",
+                "msg": "新キャラ獲得条件"
+            },
+            "quest_87": {
+                "msgid": "quest_87",
+                "msg": "騎空団とは？"
+            },
+            "quest_89": {
+                "msgid": "quest_89",
+                "msg": "エクストラクエスト"
+            },
+            "quest_90": {
+                "msgid": "quest_90",
+                "msg": "進行中のマルチバトルがあるので実行できません。"
+            },
+            "quest_91": {
+                "msgid": "quest_91",
+                "msg": "フェイトエピソード"
+            },
+            "quest_92": {
+                "msgid": "quest_92",
+                "msg": "フェイトエピソード解放条件"
+            },
+            "quest_93": {
+                "msgid": "quest_93",
+                "msg": "次の条件を満たすことで<br>フェイトエピソードが解放されます。<br><br><span class='txt-condition'>「%s」クリア</span>"
+            },
+            "quest_96": {
+                "msgid": "quest_96",
+                "msg": "ワールド"
+            },
+            "quest_97": {
+                "msgid": "quest_97",
+                "msg": "クエストクリア"
+            },
+            "quest_98": {
+                "msgid": "quest_98",
+                "msg": "獲得アイテムを清算してクエストを終了します。"
+            },
+            "quest_99": {
+                "msgid": "quest_99",
+                "msg": "Rank%sに達していないため<br>このクエストを開始することが出来ません。"
+            },
+            "quest_100": {
+                "msgid": "quest_100",
+                "msg": "回数制限に達しているため<br>このクエストを開始することが出来ません。"
+            },
+            "quest_101": {
+                "msgid": "quest_101",
+                "msg": "回数制限に達しているため<br>このクエストを開始することが出来ません。<br><br>回数制限は毎日AM5:00に<br>リセットされます。"
+            },
+            "quest_103": {
+                "msgid": "quest_103",
+                "msg": "所持ルピ "
+            },
+            "quest_112": {
+                "msgid": "quest_112",
+                "msg": "終了しているマルチバトルです。<br>マイページに戻ります。"
+            },
+            "quest_113": {
+                "msgid": "quest_113",
+                "msg": "マルチバトルの制限時間が切れています。<br>マイページに戻ります。"
+            },
+            "quest_114": {
+                "msgid": "quest_114",
+                "msg": "バトルポイントが足りません。<br>マイページに戻ります。"
+            },
+            "quest_115": {
+                "msgid": "quest_115",
+                "msg": "このバトルは参加可能人数上限に達しています。<br>マイページに戻ります。"
+            },
+            "quest_116": {
+                "msgid": "quest_116",
+                "msg": "TGS限定イベントに<br>チェックインしていないため<br>参加できません。"
+            },
+            "quest_117": {
+                "msgid": "quest_117",
+                "msg": "不明なエラーです。<br>マイページに戻ります。"
+            },
+            "quest_118": {
+                "msgid": "quest_118",
+                "msg": "編成"
+            },
+            "quest_119": {
+                "msgid": "quest_119",
+                "msg": "必要なRankに達していないため<br>参戦出来ません。"
+            },
+            "quest_120": {
+                "msgid": "quest_120",
+                "msg": "未確認バトル"
+            },
+            "quest_121": {
+                "msgid": "quest_121",
+                "msg": "バトル履歴"
+            },
+            "quest_124": {
+                "msgid": "quest_124",
+                "msg": "剣"
+            },
+            "quest_125": {
+                "msgid": "quest_125",
+                "msg": "短剣"
+            },
+            "quest_126": {
+                "msgid": "quest_126",
+                "msg": "槍"
+            },
+            "quest_127": {
+                "msgid": "quest_127",
+                "msg": "斧"
+            },
+            "quest_128": {
+                "msgid": "quest_128",
+                "msg": "杖"
+            },
+            "quest_129": {
+                "msgid": "quest_129",
+                "msg": "銃"
+            },
+            "quest_130": {
+                "msgid": "quest_130",
+                "msg": "格闘"
+            },
+            "quest_131": {
+                "msgid": "quest_131",
+                "msg": "弓"
+            },
+            "quest_132": {
+                "msgid": "quest_132",
+                "msg": "楽器"
+            },
+            "quest_133": {
+                "msgid": "quest_133",
+                "msg": "刀"
+            },
+            "quest_135": {
+                "msgid": "quest_135",
+                "msg": "CAUTION!"
+            },
+            "quest_136": {
+                "msgid": "quest_136",
+                "msg": "1度参戦したのでこれ以上は<br>参戦することができません。"
+            },
+            "quest_137": {
+                "msgid": "quest_137",
+                "msg": "以下の条件を満たしていないため、<br>このクエストを開始することができません。"
+            },
+            "quest_138": {
+                "msgid": "quest_138",
+                "msg": "BP"
+            },
+            "quest_140": {
+                "msgid": "quest_140",
+                "msg": "このクエストはあと%s回挑戦できます。"
+            },
+            "quest_141": {
+                "msgid": "quest_141",
+                "msg": "敵の弱点属性について"
+            },
+            "quest_143": {
+                "msgid": "quest_143",
+                "msg": "開始条件を満たしていないため<br>このクエストを開始することが出来ません。"
+            },
+            "quest_144": {
+                "msgid": "quest_144",
+                "msg": " "
+            },
+            "quest_145": {
+                "msgid": "quest_145",
+                "msg": "時限クエスト"
+            },
+            "quest_146": {
+                "msgid": "quest_146",
+                "msg": "挑戦する"
+            },
+            "quest_147": {
+                "msgid": "quest_147",
+                "msg": "報酬を獲得"
+            },
+            "quest_148": {
+                "msgid": "quest_148",
+                "msg": "救援依頼一覧"
+            },
+            "quest_149": {
+                "msgid": "quest_149",
+                "msg": "救援依頼一覧へ"
+            },
+            "quest_150": {
+                "msgid": "quest_150",
+                "msg": "マルチバトル一覧へ"
+            },
+            "title_hell_skip_result": {
+                "msgid": "title_hell_skip_result",
+                "msg": "強敵に挑戦"
+            },
+            "user_66": {
+                "msgid": "user_66",
+                "msg": "日 "
+            },
+            "user_67": {
+                "msgid": "user_67",
+                "msg": "時間 "
+            },
+            "user_68": {
+                "msgid": "user_68",
+                "msg": "分 "
+            },
+            "user_69": {
+                "msgid": "user_69",
+                "msg": "秒"
+            },
+            "quest_limitation_weapon_1": {
+                "msgid": "quest_limitation_weapon_1",
+                "msg": "以下いずれかの装備が<br>編成に含まれているため、このクエストを<br>開始することが出来ません。"
+            },
+            "quest_limitation_weapon_2": {
+                "msgid": "quest_limitation_weapon_2",
+                "msg": "&lt;禁止条件&gt;"
+            },
+            "quest_limitation_summon_1": {
+                "msgid": "quest_limitation_summon_1",
+                "msg": "以下の召喚石がパーティに<br>編成されているため、このクエストを<br>開始することが出来ません。"
+            },
+            "quest_limitation_summon_2": {
+                "msgid": "quest_limitation_summon_2",
+                "msg": "&lt;禁止条件&gt;"
+            },
+            "quest_limitation_job_1": {
+                "msgid": "quest_limitation_job_1",
+                "msg": "以下の条件を満たしていないため、<br>このクエストを開始することができません。"
+            },
+            "quest_teamraid_supporter_1": {
+                "msgid": "quest_teamraid_supporter_1",
+                "msg": "イベントTOPへ"
+            },
+            "quest_teamraid_supporter_2": {
+                "msgid": "quest_teamraid_supporter_2",
+                "msg": "グラッジチャンク設置上限数が%s個に設定されているため、%sに挑戦することができません。"
+            },
+            "quest_teamraid_supporter_3": {
+                "msgid": "quest_teamraid_supporter_3",
+                "msg": "チャンクキャンドル設置上限数が%s個に設定されているため、%sに挑戦することができません。"
+            },
+            "quest_teamraid_supporter_4": {
+                "msgid": "quest_teamraid_supporter_4",
+                "msg": "メメントチャンク設置上限数が%s個に設定されているため、%sに挑戦することができません。"
+            },
+            "quest_ng_party_type": {
+                "msgid": "quest_ng_party_type",
+                "msg": "使用できる編成が異なるため<br>編成を変更する必要があります"
+            },
+            "quest_abstract_1": {
+                "msgid": "quest_abstract_1",
+                "msg": "クエスト確認"
+            },
+            "quest_abstract_2": {
+                "msgid": "quest_abstract_2",
+                "msg": "APを%s消費してクエストを開始します。<br>特別な編成で挑むクエストのため<br>サポーター召喚石の選択はありません。"
+            },
+            "quest_abstract_3": {
+                "msgid": "quest_abstract_3",
+                "msg": "AP%sを消費してクエストを開始します。<br>バトルがないクエストのため<br>サポーター召喚石の選択はありません。"
+            },
+            "revenge_bonus_select_1": {
+                "msgid": "revenge_bonus_select_1",
+                "msg": "リベンジボーナス確認"
+            },
+            "arcade_mode_1": {
+                "msgid": "arcade_mode_1",
+                "msg": "アーケードモード"
+            },
+            "survival_mode_1": {
+                "msgid": "survival_mode_1",
+                "msg": "サバイバルモード"
+            },
+            "quest_assist_pop_1": {
+                "msgid": "quest_assist_pop_1",
+                "msg": "救援依頼表示設定"
+            },
+            "quest_assist_pop_2": {
+                "msgid": "quest_assist_pop_2",
+                "msg": "%s<br>を表示します。<br><br><div class=\"txt-color-red\">※非表示に戻すことはできません</div>"
+            },
+            "quest_assist_search_1": {
+                "msgid": "quest_assist_search_1",
+                "msg": "検索設定"
+            },
+            "quest_assist_id_1": {
+                "msgid": "quest_assist_id_1",
+                "msg": "参戦ID入力"
+            },
+            "quest_do_1": {
+                "msgid": "quest_do_1",
+                "msg": "防衛指令確認"
+            },
+            "quest_no_skill": {
+                "msgid": "quest_no_skill",
+                "msg": "このクエストでは、装備中の武器のスキル、召喚石の加護効果が適用されない特殊制限バトルになります。"
+            },
+            "quest_extra_1": {
+                "msgid": "quest_extra_1",
+                "msg": "エクストラクエスト出現時間終了"
+            },
+            "quest_extra_2": {
+                "msgid": "quest_extra_2",
+                "msg": "チャレンジクエスト"
+            },
+            "quest_extra_3": {
+                "msgid": "quest_extra_3",
+                "msg": "エクストラストーリー"
+            },
+            "quest_do_2": {
+                "msgid": "quest_do_2",
+                "msg": "CAUTION!"
+            },
+            "quest_use_ceiling_1": {
+                "msgid": "quest_use_ceiling_1",
+                "msg": "蒼光の輝石が足りません。"
+            },
+            "riddle_text_1": {
+                "msgid": "riddle_text_1",
+                "msg": "あきらめる"
+            },
+            "air_space_1": {
+                "msgid": "air_space_1",
+                "msg": "空域図"
+            },
+            "quest_adventure_1": {
+                "msgid": "quest_adventure_1",
+                "msg": "スキップ確認"
+            },
+            "quest_adventure_2": {
+                "msgid": "quest_adventure_2",
+                "msg": "アドベンチャーパートをスキップしますか？<br><span class='color-yellow'>スキップしてもアイテムは入手できます。</span>"
+            },
+            "quest_adventure_3": {
+                "msgid": "quest_adventure_3",
+                "msg": "アイテム入手"
+            },
+            "quest_lobby_pop_1": {
+                "msgid": "quest_lobby_pop_1",
+                "msg": "クエストを開始できません"
+            },
+            "quest_airspace_guide_1": {
+                "msgid": "quest_airspace_guide_1",
+                "msg": "空域間の移動"
+            },
+            "quest_airspace_guide_2": {
+                "msgid": "quest_airspace_guide_2",
+                "msg": "空域解放"
+            },
+            "airspace_name_1": {
+                "msgid": "airspace_name_1",
+                "msg": "ナル・グランデ空域"
+            },
+            "airspace_name_2": {
+                "msgid": "airspace_name_2",
+                "msg": "アウライ・グランデ大空域"
+            },
+            "quest_without_summon_1": {
+                "msgid": "quest_without_summon_1",
+                "msg": "AP%sを消費してクエストを開始します。<br>召喚石使用不可のクエストのため<br>サポーター召喚石の選択はありません。"
+            },
+            "quest_supporter_1": {
+                "msgid": "quest_supporter_1",
+                "msg": ""
+            },
+            "quest_supporter_2": {
+                "msgid": "quest_supporter_2",
+                "msg": "火"
+            },
+            "quest_supporter_3": {
+                "msgid": "quest_supporter_3",
+                "msg": "水"
+            },
+            "quest_supporter_4": {
+                "msgid": "quest_supporter_4",
+                "msg": "土"
+            },
+            "quest_supporter_5": {
+                "msgid": "quest_supporter_5",
+                "msg": "風"
+            },
+            "quest_supporter_6": {
+                "msgid": "quest_supporter_6",
+                "msg": "光"
+            },
+            "quest_supporter_7": {
+                "msgid": "quest_supporter_7",
+                "msg": "闇"
+            },
+            "quest_start_numbers_name_1": {
+                "msgid": "quest_start_numbers_name_1",
+                "msg": "メイン武器に「%s」を装備"
+            },
+            "quest_numbers_fate_1": {
+                "msgid": "quest_numbers_fate_1",
+                "msg": "このクエストでは、装備中の武器のスキル、召喚石の加護効果、騎空団サポートが適用されない特殊制限バトルになります。"
+            },
+            "quest_solo_multi_pop_1": {
+                "msgid": "quest_solo_multi_pop_1",
+                "msg": "イベントマルチバトル"
+            },
+            "quest_difficulty_9": {
+                "msgid": "quest_difficulty_9",
+                "msg": "EXTREME＋"
+            },
+            "bookmark_quest_1": {
+                "msgid": "bookmark_quest_1",
+                "msg": "お気に入りクエスト登録"
+            },
+            "bookmark_quest_2": {
+                "msgid": "bookmark_quest_2",
+                "msg": "これ以上登録できません"
+            },
+            "assist_bonus_1": {
+                "msgid": "assist_bonus_1",
+                "msg": "アシストボーナス"
+            },
+            "arcarum_quest_3": {
+                "msgid": "arcarum_quest_3",
+                "msg": "アーカルムの転世に戻る"
+            },
+            "arcarum_quest_7": {
+                "msgid": "arcarum_quest_7",
+                "msg": "%sキャラ編成禁止"
+            },
+            "arcarum_quest_8": {
+                "msgid": "arcarum_quest_8",
+                "msg": "%s属性キャラ編成禁止"
+            },
+            "arcarum_quest_9": {
+                "msgid": "arcarum_quest_9",
+                "msg": "・"
+            },
+            "arcarum_quest_10": {
+                "msgid": "arcarum_quest_10",
+                "msg": "・"
+            },
+            "arcarum_quest_11": {
+                "msgid": "arcarum_quest_11",
+                "msg": "「%s」"
+            },
+            "arcarum_quest_12": {
+                "msgid": "arcarum_quest_12",
+                "msg": "種族"
+            },
+            "arcarum_quest_13": {
+                "msgid": "arcarum_quest_13",
+                "msg": "%sキャラ編成禁止"
+            },
+            "arcarum_quest_14": {
+                "msgid": "arcarum_quest_14",
+                "msg": ""
+            },
+            "pop_can_not_multi_battle_1": {
+                "msgid": "pop_can_not_multi_battle_1",
+                "msg": "%s1をクリアすることで<br>%s2が仲間に加わります。<br>クエストを進行しますか？"
+            },
+            "deal_rock_popup": {
+                "msgid": "deal_rock_popup",
+                "msg": "未完了のディールまたは<br>ディール対象バトルが5件あるため<br>このバトルを開始することが出来ません。"
+            },
+            "quest_supporter_confirm_1": {
+                "msgid": "quest_supporter_confirm_1",
+                "msg": "認証完了"
+            },
+            "quest_supporter_confirm_2": {
+                "msgid": "quest_supporter_confirm_2",
+                "msg": "ご協力ありがとうございました。"
+            },
+            "deal_rock_popup_1": {
+                "msgid": "deal_rock_popup_1",
+                "msg": "CAUTION!"
+            },
+            "deal_rock_popup_2": {
+                "msgid": "deal_rock_popup_2",
+                "msg": "未完了のディールまたは<br>ディール対象バトルが5件あるため<br>このバトルを開始することができません。"
+            },
+            "extra_deck_not_open": {
+                "msgid": "extra_deck_not_open",
+                "msg": "編成セットExtraが解放されていないため<br>このクエストを開始することができません。<br><br>編成セットExtraは<br>「アーカルムの転世」の難度EXTREMEを<br>全てクリアすることで解放されます。"
+            },
+            "caution_pop_1": {
+                "msgid": "caution_pop_1",
+                "msg": "難易度「%s1」のクエストを<br>開始しているため<br>難易度「%s2」のクエストを<br>開始することが出来ません。<br><br>制限は毎日AM5:00にリセットされます。"
+            },
+            "caution_pop_2": {
+                "msgid": "caution_pop_2",
+                "msg": "難易度「%s」以外のクエストを<br>開始しているため<br>難易度「%s」のクエストを<br>開始することが出来ません。<br><br>制限は毎日AM5:00にリセットされます。"
+            },
+            "set_assist_event_1": {
+                "msgid": "set_assist_event_1",
+                "msg": "イベント「%s」<br>の救援依頼を表示します。<br><br><div class=\"txt-color-yellow\">※表示設定は後から変更できます</div>"
+            },
+            "set_assist_event_2": {
+                "msgid": "set_assist_event_2",
+                "msg": "イベント「%s」<br>の救援依頼を非表示にします。<br><br><div class=\"txt-color-yellow\">※表示設定は後から変更できます</div>"
+            },
+            "pop_finished_specialbattle_1": {
+                "msgid": "pop_finished_specialbattle_1",
+                "msg": "スペシャルバトル"
+            },
+            "pop_finished_specialbattle_2": {
+                "msgid": "pop_finished_specialbattle_2",
+                "msg": "終了しているスペシャルバトルです。<br>イベントTOPに戻ります。"
+            },
+            "pop_finished_valiantbattle_1": {
+                "msgid": "pop_finished_valiantbattle_1",
+                "msg": "バリアントバトル"
+            },
+            "pop_finished_valiantbattle_2": {
+                "msgid": "pop_finished_valiantbattle_2",
+                "msg": "終了しているバリアントバトルです。<br>イベントTOPに戻ります。"
+            },
+            "pop_confirm_auth_title": {
+                "msgid": "pop_confirm_auth_title",
+                "msg": "ボタン認証"
+            },
+            "pop_episode_added_title": {
+                "msgid": "pop_episode_added_title",
+                "msg": "エピソード追加"
+            },
+            "pop_title_rank_250": {
+                "msgid": "pop_title_rank_250",
+                "msg": "神話の高みへ"
+            },
+            "rank_250_hint_1": {
+                "msgid": "rank_250_hint_1",
+                "msg": "神鏡が映す像は汝が儕輩なり。<br>鬩ぐ境界を越え反転世界へ百五十歩を<br>共に踏み出せば、戦場にて光輝は満つ"
+            },
+            "rank_250_hint_2": {
+                "msgid": "rank_250_hint_2",
+                "msg": "心臓は独りで動くものに非ず。<br>鎖にて繋がれた人と獣の合縁を示し、<br>蒼空に拍動の音を轟かせよ。"
+            },
+            "rank_250_hint_3": {
+                "msgid": "rank_250_hint_3",
+                "msg": "神代木は創世に遡る根を現さず。<br>故に汝が信仰を示さば、汝が根に遡り、<br>辿り、登り、降りて再び根に還れ……"
+            },
+            "rank_250_vyrn_1": {
+                "msgid": "rank_250_vyrn_1",
+                "msg": "150歩を共に……かぁ。<br>オイラたち、<br>もっとたくさん歩いてるぜ？"
+            },
+            "rank_250_vyrn_2": {
+                "msgid": "rank_250_vyrn_2",
+                "msg": "人と繋がれた獣……<br>普通のケモノのことじゃ<br>なさそうだな！"
+            },
+            "rank_250_vyrn_3": {
+                "msgid": "rank_250_vyrn_3",
+                "msg": "根に還れ……<br>故郷に帰れってことかぁ？"
+            },
+            "rank_250_lyria_1": {
+                "msgid": "rank_250_lyria_1",
+                "msg": "サイハイ？は仲間という<br>意味みたいですね<br>誰かと何かするんでしょうか？"
+            },
+            "rank_250_lyria_2": {
+                "msgid": "rank_250_lyria_2",
+                "msg": "合縁は、人と人が引き合う力を<br>そう呼ぶみたいです。<br>私がカタリナに出会ったのも……！"
+            },
+            "rank_250_lyria_3": {
+                "msgid": "rank_250_lyria_3",
+                "msg": "創世は、はじまりのことです！<br>[:nickname]の育った島を<br>ゆっくり見て回りたいなぁ♪"
+            },
+            "pop_drop_item_detail_1": {
+                "msgid": "pop_drop_item_detail_1",
+                "msg": "出現アイテム詳細"
+            },
+            "ng_job_domain_1": {
+                "msgid": "ng_job_domain_1",
+                "msg": "称号獲得条件"
+            },
+            "ng_job_domain_2": {
+                "msgid": "ng_job_domain_2",
+                "msg": "称号「%s」を獲得するには、<br>以下のいずれかのジョブでクエストを<br>クリアしてください。"
+            },
+            "ng_job_domain_3": {
+                "msgid": "ng_job_domain_3",
+                "msg": "・%s"
+            },
+            "campaign_title_1": {
+                "msgid": "campaign_title_1",
+                "msg": "キャンペーン情報"
+            },
+            "multi_owner_pop_event_1": {
+                "msgid": "multi_owner_pop_event_1",
+                "msg": "期間外イベント"
+            },
+            "multi_owner_pop_event_2": {
+                "msgid": "multi_owner_pop_event_2",
+                "msg": "期間外のイベントのため選択できません。"
+            },
+            "multi_owner_pop_1": {
+                "msgid": "multi_owner_pop_1",
+                "msg": "？？？"
+            },
+            "multi_owner_1": {
+                "msgid": "multi_owner_1",
+                "msg": "マルチバトルの難易度を選択してください"
+            },
+            "multi_owner_2": {
+                "msgid": "multi_owner_2",
+                "msg": "イベントを選択してください"
+            },
+            "multi_owner_3": {
+                "msgid": "multi_owner_3",
+                "msg": "対象のイベントはありません"
+            },
+            "sub_apbp_pop_recover_action_point": {
+                "msgid": "sub_apbp_pop_recover_action_point",
+                "msg": "AP回復"
+            },
+            "sub_apbp_pop_recover_battle_point": {
+                "msgid": "sub_apbp_pop_recover_battle_point",
+                "msg": "BP回復"
+            },
+            "sub_apbp_pop_disabled_recover": {
+                "msgid": "sub_apbp_pop_disabled_recover",
+                "msg": "現在%s1が%s2です。<br>%s3はこれ以上回復しません。"
+            },
+            "sub_apbp_use_item": {
+                "msgid": "sub_apbp_use_item",
+                "msg": "アイテム使用完了"
+            },
+            "sub_apbp_action_point": {
+                "msgid": "sub_apbp_action_point",
+                "msg": "AP"
+            },
+            "sub_apbp_battle_point": {
+                "msgid": "sub_apbp_battle_point",
+                "msg": "BP"
+            },
+            "replicard_recover_1": {
+                "msgid": "replicard_recover_1",
+                "msg": "AAP"
+            },
+            "replicard_recover_2": {
+                "msgid": "replicard_recover_2",
+                "msg": "AAP回復"
+            },
+            "replicard_recover_3": {
+                "msgid": "replicard_recover_3",
+                "msg": "現在AAPが%sです。<br>AAPはこれ以上回復しません。"
+            },
+            "replicard_recover_4": {
+                "msgid": "replicard_recover_4",
+                "msg": "アイテム使用完了"
+            },
+            "replicard_tutorial_14": {
+                "msgid": "replicard_tutorial_14",
+                "msg": "レプリカルド・サンドボックスのバトルでは<br>専用の編成セットExtraを使用します。"
+            },
+            "replicard_tutorial_15": {
+                "msgid": "replicard_tutorial_15",
+                "msg": "編成セットExtraは編成画面から変更できます。"
+            },
+            "replicard_book_effect_1": {
+                "msgid": "replicard_book_effect_1",
+                "msg": "発動中の効果"
+            },
+            "replicard_book_change_1": {
+                "msgid": "replicard_book_change_1",
+                "msg": "特殊導本の編成変更"
+            },
+            "replicard_book_change_2": {
+                "msgid": "replicard_book_change_2",
+                "msg": "特殊導本の編成を変更しますか？"
+            },
+            "replicard_ep_select": {
+                "msgid": "replicard_ep_select",
+                "msg": "シナリオパターン選択"
+            },
+            "season_message_title_1": {
+                "msgid": "season_message_title_1",
+                "msg": "チョコ受け取り"
+            },
+            "season_message_title_2": {
+                "msgid": "season_message_title_2",
+                "msg": "贈り物受け取り"
+            },
+            "morphe_and_phoebe_1": {
+                "msgid": "morphe_and_phoebe_1",
+                "msg": "ヴェトル"
+            },
+            "morphe_and_phoebe_2": {
+                "msgid": "morphe_and_phoebe_2",
+                "msg": "モルフェ"
+            },
+            "ascendant_prayer_1": {
+                "msgid": "ascendant_prayer_1",
+                "msg": "天破の祈り"
+            },
+            "btn_reset_and_start": {
+                "msgid": "btn_reset_and_start",
+                "msg": "リセットして開始"
+            },
+            "btn_continue": {
+                "msgid": "btn_continue",
+                "msg": " OK"
+            },
+            "pop_title_continue_confirm": {
+                "msgid": "pop_title_continue_confirm",
+                "msg": "コンティニュー確認"
+            },
+            "tower_deck_title": {
+                "msgid": "tower_deck_title",
+                "msg": "バブ・イールの塔 専用編成"
+            },
+            "party_deck_build": {
+                "msgid": "party_deck_build",
+                "msg": "新規編成を作成します"
+            },
+            "quest_skip_1": {
+                "msgid": "quest_skip_1",
+                "msg": "%s章までクリアする"
+            },
+            "quest_skip_2": {
+                "msgid": "quest_skip_2",
+                "msg": "%s1章～%s2章のクエストをすべてSKIPし<br>物語がダイジェストとして楽しめます。<br><br>クリアしたクエストはあとから個別に<br>楽しむことができます。"
+            },
+            "quest_skip_3": {
+                "msgid": "quest_skip_3",
+                "msg": "%s章までクリア"
+            },
+            "quest_skip_result_1": {
+                "msgid": "quest_skip_result_1",
+                "msg": "クエストクリア"
+            },
+            "quest_skip_result_2": {
+                "msgid": "quest_skip_result_2",
+                "msg": "第%s章までのクエストクリア報酬を<br>獲得しました。"
+            },
+            "quest_skip_result_3": {
+                "msgid": "quest_skip_result_3",
+                "msg": "以下のキャラクターが<br>新たに仲間になりました。"
+            },
+            "quest_skip_result_4": {
+                "msgid": "quest_skip_result_4",
+                "msg": "以下の島への航行が可能になりました。"
+            },
+            "pop_arousal_release_title": {
+                "msgid": "pop_arousal_release_title",
+                "msg": "覚醒Lv上限の解放"
+            },
+            "pop_drop_up_expired": {
+                "msgid": "pop_drop_up_expired",
+                "msg": "キャンペーンは終了しました。"
+            },
+            "pop_episode_caution": {
+                "msgid": "pop_episode_caution",
+                "msg": "注意"
+            },
+            "angel_halo_pro_1": {
+                "msgid": "angel_halo_pro_1",
+                "msg": "エンジェル・ヘイロー Pro"
+            },
+            "scene_select_character_name": {
+                "msgid": "scene_select_character_name",
+                "msg": "選択肢"
+            },
+            "lead_link_job": {
+                "msgid": "lead_link_job",
+                "msg": "ジョブ詳細に戻る"
+            },
+            "caution_1": {
+                "msgid": "caution_1",
+                "msg": "CAUTION!"
+            },
+            "reward_quest_complete_1": {
+                "msgid": "reward_quest_complete_1",
+                "msg": "クエストコンプリート報酬"
+            },
+            "pop_error_rank325_quest_start": {
+                "msgid": "pop_error_rank325_quest_start",
+                "msg": "武器を4種類以上所持していないため<br>このクエストを開始することが出来ません。"
+            },
+            "pop_error_rank350_quest_start": {
+                "msgid": "pop_error_rank350_quest_start",
+                "msg": "ファイター、ナイト、プリースト、<br>ウィザード以外のジョブを<br>4種類以上取得していないため<br>このクエストを開始することが出来ません。"
+            },
+            "page_title_common": {
+                "msgid": "page_title_common",
+                "msg": "フリークエストリスト"
+            }
+        },
+        "anenounce": null,
+        "force_process_ids": []
+    },
+    "display_list": false
+}

@@ -1,0 +1,46 @@
+{
+    "group_name": null,
+    "title": "PINYA HAZARD",
+    "id": "71922",
+    "chapter_name": "THE LAST HOPE",
+    "list": {
+        "1": {
+            "episode_name": "エピソード 1",
+            "quest_id": "719221",
+            "is_cleared": true,
+            "branch": false,
+            "npc_list": [],
+            "answer": null
+        },
+        "2": {
+            "episode_name": "エピソード 2",
+            "quest_id": "719222",
+            "is_cleared": true,
+            "branch": false,
+            "npc_list": [],
+            "answer": null
+        },
+        "3": {
+            "episode_name": "エピソード 3",
+            "quest_id": "719223",
+            "is_cleared": true,
+            "branch": false,
+            "npc_list": [],
+            "answer": null
+        },
+        "4": {
+            "episode_name": "エピソード 4",
+            "quest_id": "719224",
+            "is_cleared": true,
+            "branch": false,
+            "npc_list": [],
+            "answer": null
+        }
+    },
+    "prev_chapter": "71921",
+    "next_chapter": "",
+    "next_location_id": "71920",
+    "prev_location_id": "71920",
+    "part": 1,
+    "is_main_scenario": false
+}

@@ -1,0 +1,1 @@
+define(["jquery","backbone"],function(a,b){var c=b.Model.extend({defaults:{manifest:[{src:Game.imgUri+"/sp/cjs/quest_encount_base.jpg",id:"quest_encount_base",type:"image"},{src:Game.imgUri+"/sp/cjs/quest_encount_ef_zoom.jpg",id:"quest_encount_ef_zoom",type:"image"}]}});return c});
