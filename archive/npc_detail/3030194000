@@ -1,14 +1,14 @@
 {
     "id": "3030194000",
-    "name": "一ノ瀬志希",
-    "evo_name": "[ケミカル・パフューマー]一ノ瀬志希",
+    "name": "이치노세 시키",
+    "evo_name": "[케미컬・퍼퓨머] 이치노세 시키",
     "style": 1,
     "style_list": [],
     "default_attack": "1800",
     "default_hp": "360",
     "max_attack": "4900",
     "max_hp": "1100",
-    "comment": "少女達は夢幻の果てに、遥かな空の世界へと誘われる。香りを好む少女は、天より授かった才と培った知識を生かし、空を脅かす異変に終止符を打つ。",
+    "comment": "소녀들은 꿈과 환상의 끝에 아득한 하늘의 세계로 이끌려온다. 향을 즐기는 소녀는 하늘이 내린 재능과 가꾸어낸 지식을 활용해 하늘을 위협하는 이변을 종식시킨다.",
     "type": "5",
     "weapon": "5",
     "rarity": "3",
@@ -28,8 +28,8 @@
         "1": {
             "action_id": "9398",
             "action_sub_id": "9398",
-            "name": "フレグランスボディ＋",
-            "comment": "敵全体に魅了効果/自分の敵対心UP",
+            "name": "프레그런스 바디＋",
+            "comment": "적 전체에 매혹 효과 / 자신의 적대감UP",
             "type": "no_save_blank_scenario,charm,hate_up,special_skill_gauge_bonus",
             "icon_type": "4",
             "cjs_name": "ab_3030194000_01",
@@ -118,16 +118,16 @@
                 "buff": [
                     {
                         "status": "1463",
-                        "detail": "攻撃のターゲットになりやすい状態",
-                        "effect": "3ターン",
+                        "detail": "공격 표적이 되기 쉬운 상태",
+                        "effect": "3턴",
                         "help_flag": ""
                     }
                 ],
                 "debuff": [
                     {
                         "status": "1101",
-                        "detail": "攻撃行動が稀に制限される状態",
-                        "effect": "180秒",
+                        "detail": "공격 행동이 드물게 제한되는 상태",
+                        "effect": "180초",
                         "help_flag": ""
                     }
                 ]
@@ -138,8 +138,8 @@
         "2": {
             "action_id": "6710",
             "action_sub_id": "6710",
-            "name": "目覚める香り＋",
-            "comment": "<div class=prt-text-small>自分以外の味方全体の攻撃UP<span class=text-blue>◆残り効果時間で効果減少/効果終了後１ターン行動不可</span></div>",
+            "name": "깨어나는 향기＋",
+            "comment": "<div class=prt-text-small>자신을 제외한 아군 전원의 공격UP<span class=text-blue>◆남은 효과 시간 동안 효과 감소 / 효과 종료 후 1턴 간 행동 불가</span></div>",
             "type": "no_save_blank_scenario,rest_turn_ability,special_skill_gauge_bonus",
             "icon_type": "3",
             "cjs_name": "ab_3030194000_02",
@@ -228,8 +228,8 @@
                 "buff": [
                     {
                         "status": "6084",
-                        "detail": "残り効果時間に応じて攻撃力が上昇した状態 ◆効果終了後に1ターン行動不可",
-                        "effect": "5ターン",
+                        "detail": "남은 효과 시간에 따라 공격력이 상승된 상태 ◆효과 종료 후 1턴 간 행동 불가",
+                        "effect": "5턴",
                         "help_flag": ""
                     }
                 ]
@@ -240,8 +240,8 @@
         "3": {
             "action_id": "6700",
             "action_sub_id": "6700",
-            "name": "ヒラメキポイント",
-            "comment": "薬品を合成する　<span class=text-blue>◆合成した薬品に応じて効果が変化</span>",
+            "name": "번뜩 포인트",
+            "comment": "약품을 합성한다　<span class=text-blue>◆합성한 약품에 따라 효과가 달라진다</span>",
             "type": "random_ability_new",
             "icon_type": "3",
             "cjs_name": "",
@@ -338,26 +338,26 @@
                 "buff": [
                     {
                         "status": "60851",
-                        "detail": "セブンスヘブンで敵全体に風属性ダメージを与える状態",
-                        "effect": "1ターン",
+                        "detail": "세븐스 헤븐으로 적 전체에 풍속성 데미지를 주는 상태",
+                        "effect": "1턴",
                         "help_flag": ""
                     },
                     {
                         "status": "60852",
-                        "detail": "セブンスヘブンで敵全体に攻防DOWNを与える状態",
-                        "effect": "1ターン",
+                        "detail": "세븐스 헤븐으로 적 전체에 공방DOWN을 주는 상태",
+                        "effect": "1턴",
                         "help_flag": ""
                     },
                     {
                         "status": "60853",
-                        "detail": "セブンスヘブンで敵全体にスロウ効果を与える状態",
-                        "effect": "1ターン",
+                        "detail": "세븐스 헤븐으로 적 전체에 둔화 효과를 주는 상태",
+                        "effect": "1턴",
                         "help_flag": ""
                     },
                     {
                         "status": "60854",
-                        "detail": "セブンスヘブンで敵全体に風属性ダメージと攻防DOWNとスロウ効果を与える状態",
-                        "effect": "1ターン",
+                        "detail": "세븐스 헤븐으로 적 전체에 풍속성 데미지와 공방DOWN 및 둔화 효과를 주는 상태",
+                        "effect": "1턴",
                         "help_flag": ""
                     }
                 ]
@@ -369,8 +369,8 @@
                     {
                         "action_id": "6705",
                         "action_sub_id": "6705",
-                        "name": "セブンスヘブン",
-                        "comment": "薬品を敵にぶちまける　<span class=text-blue>◆敵全体に風属性ダメージ</span>",
+                        "name": "세븐스 헤븐",
+                        "comment": "약품을 적에게 뿌린다　<span class=text-blue>◆적 전체에 풍속성 데미지</span>",
                         "type": "voice_override,damage,ailment_delete,special_skill_gauge_bonus",
                         "icon_type": "1",
                         "cjs_name": "ab_all_3030194000_07",
@@ -468,8 +468,8 @@
                     {
                         "action_id": "6706",
                         "action_sub_id": "6706",
-                        "name": "セブンスヘブン",
-                        "comment": "薬品を敵にぶちまける　<span class=text-blue>◆敵全体に攻防DOWN</span>",
+                        "name": "세븐스 헤븐",
+                        "comment": "약품을 적에게 뿌린다　<span class=text-blue>◆적 전체에 공방DOWN</span>",
                         "type": "voice_override,attack_down,defense_down,ailment_delete,special_skill_gauge_bonus",
                         "icon_type": "4",
                         "cjs_name": "ab_all_3030194000_08",
@@ -566,14 +566,14 @@
                             "debuff": [
                                 {
                                     "status": "1010",
-                                    "detail": "攻撃力が減少した状態",
-                                    "effect": "180秒",
+                                    "detail": "공격력이 감소된 상태",
+                                    "effect": "180초",
                                     "help_flag": ""
                                 },
                                 {
                                     "status": "1020",
-                                    "detail": "防御力が減少した状態",
-                                    "effect": "180秒",
+                                    "detail": "방어력이 감소된 상태",
+                                    "effect": "180초",
                                     "help_flag": ""
                                 }
                             ]
@@ -582,8 +582,8 @@
                     {
                         "action_id": "6707",
                         "action_sub_id": "6707",
-                        "name": "セブンスヘブン",
-                        "comment": "薬品を敵にぶちまける　<span class=text-blue>◆敵全体にスロウ効果</span>",
+                        "name": "세븐스 헤븐",
+                        "comment": "약품을 적에게 뿌린다　<span class=text-blue>◆적 전체에 둔화 효과</span>",
                         "type": "voice_override,delay,ailment_delete,special_skill_gauge_bonus",
                         "icon_type": "4",
                         "cjs_name": "ab_all_3030194000_09",
@@ -681,8 +681,8 @@
                     {
                         "action_id": "6708",
                         "action_sub_id": "6708",
-                        "name": "セブンスヘブン",
-                        "comment": "薬品を敵にぶちまける　<span class=text-blue>◆敵全体に風属性ダメージ/攻防DOWN/スロウ効果</span>",
+                        "name": "세븐스 헤븐",
+                        "comment": "약품을 적에게 뿌린다　<span class=text-blue>◆적 전체에 풍속성 데미지 / 공방DOWN / 둔화 효과</span>",
                         "type": "voice_override,damage,attack_down,defense_down,delay,ailment_delete,special_skill_gauge_bonus",
                         "icon_type": "1",
                         "cjs_name": "ab_all_3030194000_10",
@@ -779,14 +779,14 @@
                             "debuff": [
                                 {
                                     "status": "1010",
-                                    "detail": "攻撃力が減少した状態",
-                                    "effect": "180秒",
+                                    "detail": "공격력이 감소된 상태",
+                                    "effect": "180초",
                                     "help_flag": ""
                                 },
                                 {
                                     "status": "1020",
-                                    "detail": "防御力が減少した状態",
-                                    "effect": "180秒",
+                                    "detail": "방어력이 감소된 상태",
+                                    "effect": "180초",
                                     "help_flag": ""
                                 }
                             ]
@@ -801,8 +801,8 @@
         "1": {
             "action_id": "36003",
             "id": "36003",
-            "name": "ジーニアストリガー",
-            "comment": "アビリティ使用時に奥義ゲージUP",
+            "name": "지니어스 트리거",
+            "comment": "어빌리티 사용 시 오의 게이지UP",
             "type": "blank",
             "icon_type": "3",
             "no_effect_flag": "",
@@ -844,8 +844,8 @@
     "tribe": "1",
     "tribe_2": "",
     "special_skill": {
-        "name": "アルカン・オードトワレ♪＋",
-        "comment": "器は満ちた、時は来たー！",
+        "name": "알칸・오드 트왈렛♪＋",
+        "comment": "그릇은 가득 찼다, 때가 왔노라ー！",
         "recast": "100"
     },
     "power_up_special_skill": [],
@@ -887,7 +887,7 @@
     "episode": [
         {
             "chapter_id": 20384,
-            "chapter_name": "ケミカルな調香師さん",
+            "chapter_name": "케미컬한 조향사 님",
             "is_cleared": true,
             "is_available": true,
             "is_show": false,
@@ -907,7 +907,7 @@
         },
         {
             "chapter_id": 21384,
-            "chapter_name": "蠱惑のお薬",
+            "chapter_name": "고혹의 약",
             "is_cleared": true,
             "is_available": true,
             "is_show": false,
