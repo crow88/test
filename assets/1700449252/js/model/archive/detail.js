@@ -1,0 +1,1 @@
+define(["backbone","model/token-data"],function(a,b){var c=b.extend({method:"",urlRoot:function(){return Game.baseUri+"archive/"+this.method+"_detail"},initialize:function(a){b.prototype.initialize.apply(this)}});return c});
