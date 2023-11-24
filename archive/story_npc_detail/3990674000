@@ -1,0 +1,49 @@
+{
+    "id": "3990674000",
+    "name": "桃色の生物",
+    "entry_event_list": [
+        {
+            "id": null,
+            "location_id": "71920",
+            "group_id": "",
+            "is_sidestory": false,
+            "is_uncapped_event": false
+        }
+    ],
+    "comment": "空の世界に突如現れた緑色や黒色の生物と近しい種とされる桃色の個体。体内で生成したピンク色の靄を噴出し、そのフェロモンの効果によって匂いを嗅いだ対象を支配する能力を有する。その見た目からは想像できないセクシーな鳴き声を上げる。",
+    "tribe_name": "？？？",
+    "voice_acter": "東山奈央",
+    "is_other": true,
+    "is_play_voice": true,
+    "is_archive": true,
+    "episode": [],
+    "kind_name": 1,
+    "white": {
+        "has_present": false
+    },
+    "white2": {
+        "has_present": false
+    },
+    "halloween": {
+        "has_present": false
+    },
+    "christmas": {
+        "has_present": false
+    },
+    "newyear": {
+        "has_present": false
+    },
+    "valentine": {
+        "has_present": false
+    },
+    "valentine2": {
+        "has_present": false
+    },
+    "birthday": {
+        "has_present": false
+    },
+    "prev_id": null,
+    "next_id": null,
+    "prev_type": null,
+    "next_type": null
+}

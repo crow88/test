@@ -1,0 +1,77 @@
+{
+    "id": "3990165000",
+    "name": "ぴにゃこら太",
+    "entry_event_list": [
+        {
+            "id": "2009",
+            "location_id": null,
+            "group_id": null,
+            "is_sidestory": false,
+            "is_uncapped_event": false
+        },
+        {
+            "id": null,
+            "location_id": "70400",
+            "group_id": "",
+            "is_sidestory": false,
+            "is_uncapped_event": false
+        },
+        {
+            "id": null,
+            "location_id": "70900",
+            "group_id": "",
+            "is_sidestory": false,
+            "is_uncapped_event": false
+        },
+        {
+            "id": null,
+            "location_id": "71370",
+            "group_id": "",
+            "is_sidestory": false,
+            "is_uncapped_event": false
+        },
+        {
+            "id": null,
+            "location_id": "71920",
+            "group_id": "",
+            "is_sidestory": false,
+            "is_uncapped_event": false
+        }
+    ],
+    "comment": "突如、空の各地に現れた謎の存在。その正体は魔物とも星晶獣ともつかず、各地でごろごろと暴れまわっていた。編み棒を所持していると襲われないという噂がある。",
+    "tribe_name": "？？？",
+    "voice_acter": "大橋彩香",
+    "is_other": true,
+    "is_play_voice": true,
+    "is_archive": true,
+    "episode": [],
+    "kind_name": 1,
+    "white": {
+        "has_present": false
+    },
+    "white2": {
+        "has_present": false
+    },
+    "halloween": {
+        "has_present": false
+    },
+    "christmas": {
+        "has_present": false
+    },
+    "newyear": {
+        "has_present": false
+    },
+    "valentine": {
+        "has_present": false
+    },
+    "valentine2": {
+        "has_present": false
+    },
+    "birthday": {
+        "has_present": false
+    },
+    "prev_id": null,
+    "next_id": null,
+    "prev_type": null,
+    "next_type": null
+}
