@@ -141,7 +141,7 @@
             "command2": "color_fadein(0,0,0,0,1.5s)",
             "command3": "",
             "command_list": "",
-            "detail": "<span class='scene-font-katari'>공연 전, 대기실에서</span><br>\n<span class='scene-font-katari'>홀로 대기 중인 닛타 미나미.。</span>",
+            "detail": "<span class='scene-font-katari'>공연 전, 대기실에서</span><br>\n<span class='scene-font-katari'>홀로 대기 중인 닛타 미나미.</span>",
             "effect1": "",
             "effect2": "",
             "effect3": "",
