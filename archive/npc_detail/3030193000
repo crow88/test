@@ -1,14 +1,14 @@
 {
     "id": "3030193000",
-    "name": "新田美波",
-    "evo_name": "[ノーブルヴァルキュリア]新田美波",
+    "name": "닛타 미나미",
+    "evo_name": "[노블 발큐리아]닛타 미나미",
     "style": 1,
     "style_list": [],
     "default_attack": "1850",
     "default_hp": "320",
     "max_attack": "4800",
     "max_hp": "1050",
-    "comment": "少女達は眩い光に導かれ、遥かな空へと降り立つ。初めて目にする世界に戸惑っていた少女は、その経験を己が成長の糧とすべく、勇気を胸に困難へと立ち向かう。",
+    "comment": "소녀들은 눈부신 빛에 이끌려 아득한 하늘에 내려선다. 처음 보는 세상에 당황했던 소녀는 그 경험을 자신의 성장의 자양분으로 삼고자 용기를 내어 어려움에 맞선다.",
     "type": "1",
     "weapon": "3",
     "rarity": "3",
@@ -28,8 +28,8 @@
         "1": {
             "action_id": "939",
             "action_sub_id": "939",
-            "name": "笑顔の魅力＋",
-            "comment": "味方全体の水属性攻撃UP/敵に魅了効果",
+            "name": "미소의 매력＋",
+            "comment": "아군 전원의 수속성 공격UP / 적에게 매료 효과",
             "type": "cjs_playback,attribution_attack_up,charm,special_skill_gauge_bonus",
             "icon_type": "3",
             "cjs_name": "",
@@ -118,16 +118,16 @@
                 "buff": [
                     {
                         "status": "1068",
-                        "detail": "水属性攻撃力が上昇した状態",
-                        "effect": "3ターン",
+                        "detail": "수속성 공격력 상승 상태",
+                        "effect": "3턴",
                         "help_flag": ""
                     }
                 ],
                 "debuff": [
                     {
                         "status": "1101",
-                        "detail": "攻撃行動が稀に制限される状態",
-                        "effect": "180秒",
+                        "detail": "공격 행동이 드물게 제한되는 상태",
+                        "effect": "180초",
                         "help_flag": ""
                     }
                 ]
@@ -138,8 +138,8 @@
         "2": {
             "action_id": "681",
             "action_sub_id": "681",
-            "name": "エンジェルブレス＋",
-            "comment": "味方全体の連続攻撃確率UP",
+            "name": "엔젤 블레스＋",
+            "comment": "아군 전원의 연속 공격 확률UP",
             "type": "double_attack_rate_up,triple_attack_rate_up,special_skill_gauge_bonus",
             "icon_type": "3",
             "cjs_name": "ab_all_0054",
@@ -228,14 +228,14 @@
                 "buff": [
                     {
                         "status": "1004",
-                        "detail": "2回攻撃の発生確率が上昇した状態",
-                        "effect": "3ターン",
+                        "detail": "2회 공격 발생 확률 상승 상태",
+                        "effect": "3턴",
                         "help_flag": ""
                     },
                     {
                         "status": "1044",
-                        "detail": "3回攻撃の発生確率が上昇した状態",
-                        "effect": "3ターン",
+                        "detail": "3회 공격 발생 확률 상승 상태",
+                        "effect": "3턴",
                         "help_flag": ""
                     }
                 ]
@@ -246,8 +246,8 @@
         "3": {
             "action_id": "1996",
             "action_sub_id": "1996",
-            "name": "ヴィーナスピアッシング",
-            "comment": "敵に水属性ダメージ/水属性防御DOWN",
+            "name": "비너스 피어싱",
+            "comment": "적의 수속성 데미지 / 수속성 방어DOWN",
             "type": "damage,attribution_defense_down,special_skill_gauge_bonus",
             "icon_type": "1",
             "cjs_name": "ab_all_3030193000_02",
@@ -344,8 +344,8 @@
                 "debuff": [
                     {
                         "status": "1022",
-                        "detail": "水属性の被ダメージに対する防御力が減少した状態",
-                        "effect": "180秒",
+                        "detail": "수속성 데미지에 대한 방어력 감소 상태",
+                        "effect": "180초",
                         "help_flag": ""
                     }
                 ]
@@ -359,8 +359,8 @@
         "1": {
             "action_id": "36002",
             "id": "36002",
-            "name": "恥じらいの笑顔",
-            "comment": "アビリティ使用時に奥義ゲージUP",
+            "name": "수줍은 웃음",
+            "comment": "어빌리티 사용 시 오의 게이지UP",
             "type": "blank",
             "icon_type": "3",
             "no_effect_flag": "",
@@ -402,8 +402,8 @@
     "tribe": "1",
     "tribe_2": "",
     "special_skill": {
-        "name": "リオース・ヴァルハラ＋",
-        "comment": "水属性ダメージ(大)/味方全体にクリティカル確率UP効果",
+        "name": "리오스・발할라＋",
+        "comment": "수속성 데미지(대) / 아군 전원의 크리티컬 확률UP 효과",
         "recast": "100"
     },
     "power_up_special_skill": [],
@@ -445,7 +445,7 @@
     "episode": [
         {
             "chapter_id": 20383,
-            "chapter_name": "新田美波というアイドル",
+            "chapter_name": "닛타 미나미라는 아이돌",
             "is_cleared": true,
             "is_available": true,
             "is_show": false,
@@ -465,7 +465,7 @@
         },
         {
             "chapter_id": 21383,
-            "chapter_name": "空のお仕事",
+            "chapter_name": "하늘에서의 일",
             "is_cleared": true,
             "is_available": true,
             "is_show": false,
