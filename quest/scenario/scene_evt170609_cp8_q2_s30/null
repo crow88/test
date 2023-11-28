@@ -3960,7 +3960,7 @@
             "command2": "color_fadein(0,0,0,1,2s)",
             "command3": "",
             "command_list": "",
-            "detail": "<span class='scene-font-katari'>村마을 사람들과 티드 일행은</span><br>\n<span class='scene-font-katari'>협력하여</span><span class='scene-font-spword'>「AMIBO」</span><span class='scene-font-katari'>를 살포할</span><br>\n<span class='scene-font-katari'>준비를 해 나갔다.</span>",
+            "detail": "<span class='scene-font-katari'>마을 사람들과 티드 일행은</span><br>\n<span class='scene-font-katari'>협력하여</span><span class='scene-font-spword'>「AMIBO」</span><span class='scene-font-katari'>를 살포할</span><br>\n<span class='scene-font-katari'>준비를 해 나갔다.</span>",
             "effect1": "",
             "effect2": "",
             "effect3": "",
