@@ -26,7 +26,7 @@
             "command2": "color_fadein(0,0,0,0.6,0s)",
             "command3": "",
             "command_list": "",
-            "detail": "<span class='scene-font-katari'>未전대미문의 위기가 지나가고</span><br>\n<span class='scene-font-katari'>평온을 되찾은 마을.</span>",
+            "detail": "<span class='scene-font-katari'>전대미문의 위기가 지나가고</span><br>\n<span class='scene-font-katari'>평온을 되찾은 마을.</span>",
             "effect1": "",
             "effect2": "",
             "effect3": "",
